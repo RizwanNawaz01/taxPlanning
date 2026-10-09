@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  @media (min-width: 1400px) {
+    .container {
+      max-width: 1400px;
+    }
+  }
+}
+
+/* Custom AOS blur effect */
+[data-aos="blur-in"] {
+  opacity: 0;
+  filter: blur(12px);
+  transform: translateY(20px) scale(0.98);
+  transition-property: opacity, filter, transform;
+}
+
+[data-aos="blur-in"].aos-animate {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateY(0) scale(1);
+}
