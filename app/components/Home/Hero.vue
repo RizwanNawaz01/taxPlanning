@@ -26,6 +26,13 @@
 </template>
 
 <script setup>
+useHead({
+  link: [
+    { rel: 'preload', as: 'image', href: '/Home/hero-mobile.png', media: '(max-width: 1023px)' },
+    { rel: 'preload', as: 'image', href: '/Home/hero.png', media: '(min-width: 1024px)' }
+  ]
+})
+
 // Make the left side (text, button, image) dynamic
 const heroContent = {
   bgImage: '/Home/hero.png',
