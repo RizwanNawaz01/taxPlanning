@@ -38,7 +38,7 @@
           <span class="text-gray-400 font-medium text-[12px] lg:text-sm pt-1 w-5 shrink-0">{{ item.id }}</span>
           <div class="flex-1">
             <div class="flex justify-between items-start gap-4">
-              <h4 class="text-[17px] lg:text-[28px] font-bold text-black lg:text-primary mb-0 lg:mb-3 leading-tight max-w-xs lg:max-w-lg pr-4 lg:pr-0">{{ item.title }}</h4>
+              <h3 class="text-[17px] lg:text-[28px] font-bold text-black lg:text-primary mb-0 lg:mb-3 leading-tight max-w-xs lg:max-w-lg pr-4 lg:pr-0">{{ item.title }}</h3>
               <!-- Caret (Mobile only) -->
               <svg class="lg:hidden w-5 h-5 shrink-0 transition-transform duration-300 text-black mt-1" :class="{'rotate-180': activeIndex === index}" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
             </div>

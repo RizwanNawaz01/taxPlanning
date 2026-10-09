@@ -27,7 +27,7 @@
             
             <!-- Text Content -->
             <div>
-              <h4 class="text-[20px] lg:text-[22px] font-bold text-slate-900 mb-2 leading-tight">{{ item.title }}</h4>
+              <h3 class="text-[20px] lg:text-[22px] font-bold text-slate-900 mb-2 leading-tight">{{ item.title }}</h3>
               <p class="text-slate-600 text-[15px] lg:text-[16px] xl:lg:text-[18px] leading-relaxed">{{ item.description }}</p>
             </div>
           </div>

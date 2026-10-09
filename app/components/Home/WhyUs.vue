@@ -21,7 +21,7 @@
             :data-aos-delay="index * 150"
           >
             <span class="glass-number text-[80px] font-black leading-none mb-10 block">{{ index + 1 }}</span>
-            <h4 class="text-xl font-bold mb-4 pr-4 leading-snug">{{ item.title }}</h4>
+            <h3 class="text-xl font-bold mb-4 pr-4 leading-snug">{{ item.title }}</h3>
             <p class="text-sm text-white/80 leading-relaxed">{{ item.description }}</p>
           </div>
         </div>
@@ -42,7 +42,7 @@
             <div class="glass-card px-8 pt-10 pb-10 rounded-[28px] flex flex-col h-[380px]">
               <span class="glass-number text-[88px] font-black leading-none mb-auto block tracking-tighter">{{ index + 1 }}</span>
               <div class="mt-auto relative z-10">
-                <h4 class="text-[20px] lg:text-[24px] font-bold mb-2 leading-tight pr-2">{{ item.title }}</h4>
+                <h3 class="text-[20px] lg:text-[24px] font-bold mb-2 leading-tight pr-2">{{ item.title }}</h3>
                 <p class="text-[15px] lg:text-[16px] text-white/80 leading-normal">{{ item.description }}</p>
               </div>
             </div>
