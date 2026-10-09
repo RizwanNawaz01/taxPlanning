@@ -54,12 +54,12 @@ const formContent = {
 
 <style scoped>
 .hero-bg {
-  background-image: url('/Home/hero-mobile.png');
+  background-image: url('/Home/hero-mobile.webp');
   background-position: top center;
 }
 @media (min-width: 1024px) {
   .hero-bg {
-    background-image: url('/Home/hero.png');
+    background-image: url('/Home/hero.webp');
     background-position: center;
   }
 }
