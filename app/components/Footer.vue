@@ -45,7 +45,7 @@
 
         <!-- Contact Info -->
         <div class="text-white/90 text-[14px] flex flex-col gap-4">
-          <h4 class="text-lime-400 font-bold mb-0">Registered Office</h4>
+          <h2 class="text-lime-400 font-bold mb-0 text-[14px]">Registered Office</h2>
           <p class="leading-relaxed">
             <span v-for="(line, index) in companyInfo.address" :key="index" class="block">{{ line }}</span>
           </p>

@@ -23,7 +23,7 @@
         </nav>
 
         <!-- CTA Button (Desktop & Icon on Mobile) -->
-        <a :href="ctaButton.href" class="flex items-center justify-center text-white font-semibold text-[15px] lg:border lg:border-[#8EE62B]/60 lg:px-5 lg:py-2.5 rounded-full hover:bg-[#8EE62B]/10 transition-colors relative z-50">
+        <a :href="ctaButton.href" aria-label="Call Us" class="flex items-center justify-center text-white font-semibold text-[15px] lg:border lg:border-[#8EE62B]/60 lg:px-5 lg:py-2.5 rounded-full hover:bg-[#8EE62B]/10 transition-colors relative z-50">
           <svg class="w-[20px] h-[20px] lg:w-4 lg:h-4" viewBox="0 0 24 24" fill="none" stroke="#8EE62B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
           <span class="hidden lg:inline ml-2">{{ ctaButton.label }}</span>
         </a>

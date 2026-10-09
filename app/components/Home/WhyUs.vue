@@ -54,11 +54,12 @@
           <button
             v-for="(_, index) in items"
             :key="index"
-            class="w-2 h-2 rounded-full transition-colors"
-            :class="activeSlide === index ? 'bg-white' : 'bg-white/30'"
+            class="p-2 -m-2"
             @click="scrollToSlide(index); stopAutoplay(); startAutoplay()"
             aria-label="Go to slide"
-          ></button>
+          >
+            <span class="block w-2 h-2 rounded-full transition-colors" :class="activeSlide === index ? 'bg-white' : 'bg-white/30'"></span>
+          </button>
         </div>
       </div>
 
