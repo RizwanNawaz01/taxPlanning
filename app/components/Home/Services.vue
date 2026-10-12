@@ -16,7 +16,7 @@ const services = [
     cardClass: 'bg-primary text-white',
     descClass: 'text-white/80',
     btnClass: 'bg-lime-400 text-primary hover:bg-lime-500',
-    bgImage: '/Home/services-left.png'
+    bgImage: '/Home/services-left.webp'
   },
   {
     title: 'Strategic Advisory',
@@ -26,7 +26,7 @@ const services = [
     cardClass: 'bg-surface-muted text-primary',
     descClass: 'text-slate-600',
     btnClass: 'bg-primary text-white hover:bg-secondary',
-    bgImage: '/Home/services-right.png'
+    bgImage: '/Home/services-right.webp'
   }
 ]
 </script>

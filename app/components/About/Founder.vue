@@ -39,7 +39,7 @@
         <div class="order-1 lg:order-2 lg:col-span-5 flex justify-center lg:justify-end self-end" data-aos="blur-in" data-aos-delay="200">
           <div class="relative w-full max-w-[280px] sm:max-w-[340px] md:max-w-[380px] lg:max-w-[420px] xl:max-w-[460px] -mb-1 lg:mb-0">
             <NuxtImg
-              src="/About/founder.png"
+              src="/About/founder.webp"
               alt="Muhammad Tariq - Founder & CEO"
               class="w-full h-auto object-contain block mx-auto lg:ml-auto lg:mr-0 filter drop-shadow-md"
               loading="lazy"

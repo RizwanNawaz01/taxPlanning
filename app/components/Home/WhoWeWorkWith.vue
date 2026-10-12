@@ -5,7 +5,7 @@
       <!-- Left Column -->
       <div class="relative flex flex-col items-center lg:items-start pt-0">
         <!-- Image -->
-        <NuxtImg src="/Home/who-we-work.png" alt="Who We Work With" format="webp" loading="lazy" class="relative z-10 w-[500px] max-w-[300px] md:w-[100%] lg:max-w-[340px] xl:max-w-full -mb-[1px] object-contain" data-aos="fade-right" />
+        <NuxtImg src="/Home/who-we-work.webp" alt="Who We Work With" format="webp" loading="lazy" class="relative z-10 w-[500px] max-w-[300px] md:w-[100%] lg:max-w-[340px] xl:max-w-full -mb-[1px] object-contain" data-aos="fade-right" />
         
         <!-- Text Content -->
         <div class="relative z-0 w-full flex flex-col items-center lg:items-start">

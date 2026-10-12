@@ -18,7 +18,7 @@
         <div class="order-1 lg:order-2 lg:col-span-6 flex justify-center lg:justify-end" data-aos="blur-in" data-aos-delay="200">
           <div class="w-full max-w-lg overflow-hidden rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.06)] border border-slate-100">
             <NuxtImg
-              src="/About/approach.png"
+              src="/About/approach.webp"
               alt="Our Approach"
               class="w-full h-auto object-cover transform hover:scale-105 transition-transform duration-700"
               loading="lazy"
@@ -33,7 +33,7 @@
         <div class="order-1 lg:order-1 lg:col-span-6 flex justify-center lg:justify-start" data-aos="blur-in">
           <div class="w-full max-w-lg overflow-hidden rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.06)] border border-slate-100">
             <NuxtImg
-              src="/About/team.png"
+              src="/About/team.webp"
               alt="Our Team"
               class="w-full h-auto object-cover transform hover:scale-105 transition-transform duration-700"
               loading="lazy"

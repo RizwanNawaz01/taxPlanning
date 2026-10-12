@@ -6,7 +6,7 @@
         <NuxtLink to="/">
           <NuxtImg :src="companyInfo.logo.src" :alt="companyInfo.logo.alt" class="h-8 lg:h-10 w-auto" />
         </NuxtLink>
-        <NuxtImg src="/footer-logo-arrow.png" alt="" class="h-10 lg:h-8 w-auto lg:hidden" />
+        <NuxtImg src="/footer-logo-arrow.webp" alt="" class="h-10 lg:h-8 w-auto lg:hidden" />
       </div>
 
       <!-- Desktop Links Row -->
@@ -75,7 +75,7 @@ const currentYear = computed(() => new Date().getFullYear())
 
 const companyInfo = {
   logo: {
-    src: '/logo.png',
+    src: '/logo.webp',
     alt: 'taxplanning.ae'
   },
   address: [

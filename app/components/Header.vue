@@ -104,7 +104,7 @@ watch(isMobileMenuOpen, (isOpen) => {
 })
 
 const logo = {
-  src: '/logo.png',
+  src: '/logo.webp',
   alt: 'taxplanning.ae'
 }
 

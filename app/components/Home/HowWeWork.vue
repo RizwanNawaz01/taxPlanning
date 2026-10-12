@@ -8,7 +8,7 @@
 
       <div class="grid lg:grid-cols-[40%_1fr] gap-16 lg:gap-24 items-center px-3">
         <div class="rounded-[2rem] overflow-hidden h-[500px] lg:h-[600px] bg-slate-100 relative" data-aos="blur-in" data-aos-delay="200">
-          <NuxtImg src="/Home/how-it-work.png" alt="Consultation" format="webp" loading="lazy" class="absolute inset-0 w-full h-full object-cover" />
+          <NuxtImg src="/Home/how-it-work.webp" alt="Consultation" format="webp" loading="lazy" class="absolute inset-0 w-full h-full object-cover" />
         </div>
         
         <div class="flex flex-col gap-10 max-w-[600px] lg:pt-12">
