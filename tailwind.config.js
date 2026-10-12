@@ -13,10 +13,25 @@ export default {
       colors: {
         primary: '#071721',
         secondary: '#152238',
+        dark: {
+          DEFAULT: '#0B121A',
+          card: '#0C151E',
+          header: '#1E2E45',
+          footer: '#0B121A',
+          overlay: '#0B162C'
+        },
+        surface: {
+          DEFAULT: '#F8F9FA',
+          light: '#FBFBFB',
+          muted: '#F4F4F4',
+          subtle: '#F4F5F6'
+        },
         lime: {
           400: '#B6FC4E',
-          500: '#A4E346'
-        }
+          500: '#A4E346',
+          accent: '#8EE62B'
+        },
+        whatsapp: '#25D366'
       },
       fontFamily: {
         sans: ['"Plus Jakarta Sans"', 'sans-serif'],

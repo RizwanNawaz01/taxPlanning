@@ -2,7 +2,7 @@
   <header class="fixed top-0 left-0 right-0 z-50 pt-4 lg:pt-8 px-4 lg:px-8 transition-all duration-300">
     <div 
       class="container mx-auto flex justify-between items-center backdrop-blur-md rounded-full px-4 lg:px-8 shadow-lg relative z-50 transition-all duration-500 border"
-      :class="isScrolled ? 'bg-[#0F172A]/95 border-white/10 py-3 lg:py-3.5' : 'bg-[#1E2E45]/50 border-white/15 py-4 lg:py-5'"
+      :class="isScrolled ? 'bg-slate-900/95 border-white/10 py-3 lg:py-3.5' : 'bg-dark-header/50 border-white/15 py-4 lg:py-5'"
     >
       <!-- Logo -->
       <NuxtLink to="/" class="pl-2 lg:pl-0" @click="isMobileMenuOpen = false">
@@ -23,8 +23,8 @@
         </nav>
 
         <!-- CTA Button (Desktop & Icon on Mobile) -->
-        <a :href="ctaButton.href" aria-label="Call Us" class="flex items-center justify-center text-white font-semibold text-[15px] lg:border lg:border-[#8EE62B]/60 lg:px-5 lg:py-2.5 rounded-full hover:bg-[#8EE62B]/10 transition-colors relative z-50">
-          <svg class="w-[20px] h-[20px] lg:w-4 lg:h-4" viewBox="0 0 24 24" fill="none" stroke="#8EE62B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+        <a :href="ctaButton.href" aria-label="Call Us" class="flex items-center justify-center text-white font-semibold text-[15px] lg:border lg:border-lime-accent/60 lg:px-5 lg:py-2.5 rounded-full hover:bg-lime-accent/10 transition-colors relative z-50">
+          <svg class="w-[20px] h-[20px] lg:w-4 lg:h-4 text-lime-accent" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
           <span class="hidden lg:inline ml-2">{{ ctaButton.label }}</span>
         </a>
 
@@ -45,7 +45,7 @@
 
     <!-- Mobile Menu Card -->
     <Transition name="menu-slide">
-      <div v-if="isMobileMenuOpen" class="container mx-auto mt-3 bg-[#1E2E45]/85 backdrop-blur-2xl rounded-3xl p-6 shadow-[0_8px_30px_rgb(0,0,0,0.4)] border border-white/10 lg:hidden flex flex-col relative z-40 max-h-[calc(100vh-100px)] overflow-y-auto">
+      <div v-if="isMobileMenuOpen" class="container mx-auto mt-3 bg-dark-header/85 backdrop-blur-2xl rounded-3xl p-6 shadow-[0_8px_30px_rgb(0,0,0,0.4)] border border-white/10 lg:hidden flex flex-col relative z-40 max-h-[calc(100vh-100px)] overflow-y-auto">
         <ul class="flex flex-col text-white/90">
           <li v-for="(link, index) in navLinks" :key="index" class="border-b border-white/10 last:border-b-0 menu-item" :style="{ animationDelay: `${index * 50}ms` }">
             <NuxtLink 
@@ -60,7 +60,7 @@
         </ul>
         
         <div class="mt-auto pt-10 pb-4 menu-item" :style="{ animationDelay: `${navLinks.length * 50 + 100}ms` }">
-          <a :href="ctaButton.href" class="w-full flex justify-center items-center py-4 rounded-full bg-white text-[#1E2E45] font-semibold text-lg hover:bg-gray-100 transition-colors" @click="isMobileMenuOpen = false">
+          <a :href="ctaButton.href" class="w-full flex justify-center items-center py-4 rounded-full bg-white text-dark-header font-semibold text-lg hover:bg-gray-100 transition-colors" @click="isMobileMenuOpen = false">
             {{ ctaButton.label }}
           </a>
         </div>
@@ -109,11 +109,11 @@ const logo = {
 }
 
 const navLinks = [
-  { label: 'Services', href: '#services' },
-  { label: 'Who we work with', href: '#who-we-work-with' },
-  { label: 'Our approach', href: '#our-approach' },
-  { label: 'Partners', href: '#partners' },
-  { label: 'About us', href: '#about-us' }
+  { label: 'Services', href: '/services' },
+  { label: 'Who we work with', href: '/#who-we-work-with' },
+  { label: 'Our approach', href: '/#how-we-work' },
+  { label: 'Partners', href: '/#partner' },
+  { label: 'About us', href: '/about' }
 ]
 
 const ctaButton = {

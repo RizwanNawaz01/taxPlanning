@@ -1,18 +1,18 @@
 <template>
   <section id="who-we-work-with" class="pt-0 lg:pt-12 pb-20 lg:pb-28 bg-white overflow-hidden relative">
-    <div class="container mx-auto px-7 xl:px-14 2xl:xl:px-12 grid lg:grid-cols-2 gap-12 lg:gap-20 items-center relative z-10">
+    <div class="container mx-auto px-7 xl:px-16 2xl:px-12 grid lg:grid-cols-2 gap-12 lg:gap-20 items-center relative z-10">
       
       <!-- Left Column -->
       <div class="relative flex flex-col items-center lg:items-start pt-0">
         <!-- Image -->
-        <img src="/Home/who-we-work.png" alt="Who We Work With" class="relative z-10 w-[500px] max-w-[300px] md:w-[100%]  lg:max-w-[340px] xl:max-w-full -mb-[1px] object-contain" data-aos="fade-right" />
+        <NuxtImg src="/Home/who-we-work.png" alt="Who We Work With" format="webp" loading="lazy" class="relative z-10 w-[500px] max-w-[300px] md:w-[100%] lg:max-w-[340px] xl:max-w-full -mb-[1px] object-contain" data-aos="fade-right" />
         
         <!-- Text Content -->
         <div class="relative z-0 w-full flex flex-col items-center lg:items-start">
           <!-- Background Shape (Desktop) -->
           <div class="hidden lg:block absolute top-0 bottom-0 right-[-1rem] lg:right-0 w-[150vw] bg-primary rounded-r-[3rem] lg:rounded-tr-[10rem] lg:rounded-br-[10rem] z-0"></div>
           
-          <div class="relative z-20 w-full bg-[#0C151E] lg:bg-transparent rounded-3xl lg:rounded-none px-6 py-10 lg:px-12 lg:pb-12 lg:pt-16 text-white text-center lg:text-left flex flex-col items-center lg:items-start shadow-xl lg:shadow-none" data-aos="fade-up">
+          <div class="relative z-20 w-full bg-dark-card lg:bg-transparent rounded-3xl lg:rounded-none px-6 py-10 lg:px-12 lg:pb-12 lg:pt-16 text-white text-center lg:text-left flex flex-col items-center lg:items-start shadow-xl lg:shadow-none" data-aos="fade-up">
             <h2 class="text-[24px] lg:text-[2.5rem] font-semibold mb-3 leading-tight">Who We Work With</h2>
             <p class="text-white/80 mb-0 lg:mb-5 text-[13px] lg:text-[16px] leading-relaxed max-w-sm lg:max-w-md mx-auto lg:mx-0">
               From a single company to an international group, we work across the structures and industries that make up the UAE economy.
@@ -54,7 +54,7 @@
         
         <!-- Mobile Bottom CTA -->
         <div class="flex justify-center mt-10 lg:hidden">
-          <a href="#" @click.prevent="isModalOpen = true" class="px-8 py-3 text-[14px] font-semibold bg-lime-400 text-[#0C151E] rounded-full hover:bg-lime-500 transition-colors shadow-lg">
+          <a href="#" @click.prevent="isModalOpen = true" class="px-8 py-3 text-[14px] font-semibold bg-lime-400 text-dark-card rounded-full hover:bg-lime-500 transition-colors shadow-lg">
             Book a Consultation
           </a>
         </div>

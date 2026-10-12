@@ -1,6 +1,6 @@
 <template>
   <section class="py-20 lg:py-24 bg-primary text-white">
-    <div class="container px-7 xl:px-14 2xl:xl:px-12">
+    <div class="container px-7 xl:px-16 2xl:px-12">
       <h2 class="text-center text-[35px] lg:text-5xl xl:text-[3rem]  font-semibold mb-10 lg:mb-16 leading-tight" data-aos="blur-in">
         Engagement Options
       </h2>
@@ -17,7 +17,7 @@
         </div>
       </div>
       <div class="text-center" data-aos="blur-in" data-aos-delay="600">
-        <a href="#" @click.prevent="isModalOpen = true" class="inline-block bg-[#F4F5F6] text-primary px-8 py-3 lg:px-12 lg:py-3.5 text-[14px] lg:text-base rounded-full font-bold hover:bg-white hover:-translate-y-1 transition-all shadow-lg">
+        <a href="#" @click.prevent="isModalOpen = true" class="inline-block bg-surface-subtle text-primary px-8 py-3 lg:px-12 lg:py-3.5 text-[14px] lg:text-base rounded-full font-bold hover:bg-white hover:-translate-y-1 transition-all shadow-lg">
           Discover our Packages
         </a>
       </div>
@@ -39,7 +39,7 @@ const options = [
   { 
     title: 'A single task.',
     description: 'For one obligation, one filing, or one specific question. This suits a registration, a return, a certificate application, or a one-time advisory matter.',
-    bgClass: 'bg-[#F4F5F6]',
+    bgClass: 'bg-surface-subtle',
     textClass: 'text-primary',
     descClass: 'text-black'
   },

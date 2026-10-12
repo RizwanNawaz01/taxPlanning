@@ -1,7 +1,7 @@
 <template>
   <div v-if="modelValue" class="fixed inset-0 z-[100] flex items-center justify-center p-4 sm:p-6">
     <!-- Backdrop -->
-    <div class="absolute inset-0 bg-[#0B162C]/60 backdrop-blur-sm" @click="closeModal"></div>
+    <div class="absolute inset-0 bg-dark-overlay/60 backdrop-blur-sm" @click="closeModal"></div>
     
     <!-- Modal Content -->
     <div class="relative w-full max-w-lg z-10">

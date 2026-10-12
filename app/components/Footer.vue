@@ -1,5 +1,5 @@
 <template>
-  <footer class="bg-[#0B121A] text-white pt-12 lg:pt-20 pb-8">
+  <footer class="bg-dark text-white pt-12 lg:pt-20 pb-8">
     <div class="container mx-auto px-8 lg:px-10 xl:px-16">
       <!-- Logo Row -->
       <div class="flex items-center gap-10 lg:gap-3 mb-10 lg:mb-16">
@@ -87,39 +87,39 @@ const companyInfo = {
 }
 
 const mobileLinks = [
-  { text: 'Services', url: '#' },
-  { text: 'Who we work with', url: '#' },
-  { text: 'Our approach', url: '#' },
-  { text: 'Partners', url: '#' },
-  { text: 'About us', url: '#' }
+  { text: 'Services', url: '/services' },
+  { text: 'Who we work with', url: '/#who-we-work-with' },
+  { text: 'Our approach', url: '/#how-we-work' },
+  { text: 'Partners', url: '/#partner' },
+  { text: 'About us', url: '/about' }
 ]
 
 const footerLinks = [
   {
     links: [
-      { text: 'Services', url: '#' },
-      { text: 'Who we work with', url: '#' },
-      { text: 'Our approach', url: '#' },
-      { text: 'Partners', url: '#' },
-      { text: 'About us', url: '#' }
+      { text: 'Services', url: '/services' },
+      { text: 'Who we work with', url: '/#who-we-work-with' },
+      { text: 'Our approach', url: '/#how-we-work' },
+      { text: 'Partners', url: '/#partner' },
+      { text: 'About us', url: '/about' }
     ]
   },
   {
     links: [
-      { text: 'Services', url: '#' },
-      { text: 'Who we work with', url: '#' },
-      { text: 'Our approach', url: '#' },
-      { text: 'Partners', url: '#' },
-      { text: 'About us', url: '#' }
+      { text: 'Services', url: '/services' },
+      { text: 'Who we work with', url: '/#who-we-work-with' },
+      { text: 'Our approach', url: '/#how-we-work' },
+      { text: 'Partners', url: '/#partner' },
+      { text: 'About us', url: '/about' }
     ]
   },
   {
     links: [
-      { text: 'Services', url: '#' },
-      { text: 'Who we work with', url: '#' },
-      { text: 'Our approach', url: '#' },
-      { text: 'Partners', url: '#' },
-      { text: 'About us', url: '#' }
+      { text: 'Services', url: '/services' },
+      { text: 'Who we work with', url: '/#who-we-work-with' },
+      { text: 'Our approach', url: '/#how-we-work' },
+      { text: 'Partners', url: '/#partner' },
+      { text: 'About us', url: '/about' }
     ]
   }
 ]

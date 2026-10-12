@@ -1,10 +1,13 @@
 <template>
-  <div class="bg-[#FBFBFB] p-10 lg:p-8 rounded-3xl shadow-2xl relative overflow-hidden min-h-[520px] flex flex-col">
+  <div class="bg-surface-light p-10 lg:p-8 rounded-3xl shadow-2xl relative overflow-hidden min-h-[520px] flex flex-col">
     
     <div v-if="!isSubmitted" class="transition-opacity duration-500 h-full flex flex-col justify-center" :class="{'opacity-50 pointer-events-none': isLoading}">
       <h2 class="text-[22px] font-bold text-center text-primary mb-10">{{ title }}</h2>
       
       <form @submit.prevent="handleSubmit" class="space-y-4">
+          <!-- Honeypot anti-spam field (hidden from real users) -->
+          <input v-model="formData.website" type="text" name="website" tabindex="-1" autocomplete="off" class="hidden" aria-hidden="true" />
+
           <input aria-label="Full Name" v-model="formData.name" type="text" class="w-full bg-transparent border-0 border-b border-slate-200 pb-3 px-0 text-[15px] focus:outline-none focus:border-primary focus:ring-0 placeholder:text-slate-600 transition-colors" placeholder="Full Name" required />
         
           <input aria-label="Email Address" v-model="formData.email" type="email" class="w-full bg-transparent border-0 border-b border-slate-200 pb-3 px-0 text-[15px] focus:outline-none focus:border-primary focus:ring-0 placeholder:text-slate-600 transition-colors" placeholder="Email" required />
@@ -21,6 +24,8 @@
         
           <textarea aria-label="Message" v-model="formData.message" class="w-full bg-transparent border-0 border-b border-slate-200 pb-3 px-0 text-[15px] focus:outline-none focus:border-primary focus:ring-0 placeholder:text-slate-600 transition-colors resize-none mt-2 min-h-[100px]" placeholder="Message" rows="1"></textarea>
         
+        <p v-if="errorMessage" class="text-rose-500 text-xs text-center mt-2">{{ errorMessage }}</p>
+
         <div class="pt-3 flex justify-center">
           <Button type="submit" variant="dark" class="w-[85%] md:w-[75%] lg:w-[72%]" :disabled="isLoading">
             <span v-if="isLoading">Sending...</span>
@@ -31,7 +36,7 @@
     </div>
 
     <!-- Success Message & Animation -->
-    <div v-else class="absolute inset-0 flex flex-col items-center justify-center p-8 animate-fade-in bg-[#FBFBFB] z-10">
+    <div v-else class="absolute inset-0 flex flex-col items-center justify-center p-8 animate-fade-in bg-surface-light z-10">
       <svg class="checkmark mb-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
         <circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none" />
         <path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8" />
@@ -61,17 +66,20 @@ defineProps({
 
 const isSubmitted = ref(false)
 const isLoading = ref(false)
+const errorMessage = ref('')
 
 const formData = ref({
   name: '',
   email: '',
   phone: '',
   service: '',
-  message: ''
+  message: '',
+  website: '' // honeypot
 })
 
 const handleSubmit = async () => {
   isLoading.value = true
+  errorMessage.value = ''
   
   try {
     const response = await $fetch('/api/contact', {
@@ -81,12 +89,11 @@ const handleSubmit = async () => {
     
     if (response.success) {
       isSubmitted.value = true
-      // Optional: reset form
-      formData.value = { name: '', email: '', phone: '', service: '', message: '' }
+      formData.value = { name: '', email: '', phone: '', service: '', message: '', website: '' }
     }
   } catch (error) {
     console.error('Failed to submit form', error)
-    alert('An error occurred while sending your message. Please check the console or ensure SMTP is configured.')
+    errorMessage.value = error?.data?.statusMessage || error?.statusMessage || 'An error occurred while sending your message. Please try again.'
   } finally {
     isLoading.value = false
   }

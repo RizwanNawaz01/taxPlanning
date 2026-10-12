@@ -17,5 +17,12 @@ export default defineNuxtConfig({
     families: {
       'Plus+Jakarta+Sans': [300, 400, 500, 600, 700, 800]
     }
+  },
+  runtimeConfig: {
+    smtpHost: process.env.SMTP_HOST || 'smtp.gmail.com',
+    smtpPort: process.env.SMTP_PORT || '465',
+    smtpUser: process.env.SMTP_USER || '',
+    smtpPass: process.env.SMTP_PASS || '',
+    adminEmail: process.env.ADMIN_EMAIL || 'admin@taxplanning.ae'
   }
 })
