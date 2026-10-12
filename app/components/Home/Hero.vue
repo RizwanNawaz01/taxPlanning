@@ -1,6 +1,6 @@
 <template>
   <section class="relative pt-36 lg:pt-56 pb-[400px] md:pb-24 overflow-hidden bg-cover bg-center bg-no-repeat hero-bg">
-    <div class="container grid lg:grid-cols-12 gap-8 lg:gap-16 items-center relative z-10 px-7">
+    <div class="container grid lg:grid-cols-12 gap-8 lg:gap-16 items-center relative z-10 px-7 xl:px-14 2xl:xl:px-12">
       <!-- Left Side: Hero Content -->
       <div class="lg:col-span-7 text-white">
         <h1 class="text-5xl lg:text-6xl xl:text-7xl font-semibold leading-tight mb-6" data-aos="blur-in" v-html="heroContent.title"></h1>
@@ -37,7 +37,7 @@ useHead({
 const heroContent = {
   bgImage: '/Home/hero.webp',
   bgMobileImage: '/Home/hero-mobile.webp',
-  title: 'Tax planning<br/><span class="text-lime-400">that thinks ahead.</span>',
+  title: 'Tax planning <span class="block mt-2 lg:mt-7 text-lime-400">that thinks ahead.</span>',
   description: 'We help UAE businesses manage their tax obligations from registration and filing through to questions around growth and structure.',
   button: {
     text: 'Explore Our Tax Services',

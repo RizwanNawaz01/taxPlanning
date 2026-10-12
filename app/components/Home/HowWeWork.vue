@@ -1,9 +1,9 @@
 <template>
   <section id="how-we-work" class="py-24 bg-white">
-    <div class="container mx-auto px-7">
+    <div class="container mx-auto px-7 xl:px-14 2xl:xl:px-12">
       <div class="mb-12 lg:mb-16 max-w-3xl" data-aos="blur-in">
         <h2 class="text-4xl lg:text-[2.5rem] xl:text-[3rem] font-bold text-primary mb-4">How We Work</h2>
-        <p class="text-[17px] xl:text-[22px] text-slate-700">We start with where your business actually stands, not a standard form.</p>
+        <p class="text-[17px] xl:text-[22px] text-black">We start with where your business actually stands, not a standard form.</p>
       </div>
 
       <div class="grid lg:grid-cols-[40%_1fr] gap-16 lg:gap-24 items-center px-3">
@@ -27,8 +27,8 @@
             
             <!-- Text Content -->
             <div>
-              <h3 class="text-[20px] lg:text-[22px] font-bold text-slate-900 mb-2 leading-tight">{{ item.title }}</h3>
-              <p class="text-slate-600 text-[15px] lg:text-[16px] xl:lg:text-[18px] leading-relaxed">{{ item.description }}</p>
+              <h3 class="text-[20px] lg:text-[22px] font-bold text-black mb-2 leading-tight">{{ item.title }}</h3>
+              <p class="text-black text-[15px] lg:text-[16px] xl:lg:text-[18px] leading-relaxed">{{ item.description }}</p>
             </div>
           </div>
           

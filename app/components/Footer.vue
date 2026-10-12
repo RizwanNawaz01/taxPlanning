@@ -10,9 +10,9 @@
       </div>
 
       <!-- Desktop Links Row -->
-      <div class="hidden lg:grid grid-cols-4 gap-8 xl:gap-16 mb-20">
+      <div class="hidden lg:grid lg:grid-cols-5 gap-8 xl:gap-16 mb-20">
         <!-- Contact Info -->
-        <div class="text-white/90 text-[13px] xl:text-[14px] space-y-5">
+        <div class="lg:col-span-2 text-white/90 text-[13px] xl:text-lg space-y-5">
           <p class="leading-relaxed">
             <span v-for="(line, index) in companyInfo.address" :key="index" class="block">{{ line }}</span>
           </p>
@@ -22,7 +22,7 @@
         
         <!-- Footer Columns -->
         <div v-for="(section, index) in footerLinks" :key="index">
-          <ul class="space-y-4 xl:space-y-5 text-white/90 text-[13px] xl:text-[14px]">
+          <ul class="space-y-4 xl:space-y-5 text-white/90 text-[13px] xl:text-lg">
             <li v-for="(link, linkIndex) in section.links" :key="linkIndex" class="flex items-center gap-3">
               <div class="w-1 h-1 bg-white rounded-full shrink-0"></div>
               <a :href="link.url" class="hover:text-lime-400 transition-colors">{{ link.text }}</a>
@@ -35,7 +35,7 @@
       <div class="flex flex-col lg:hidden gap-10 mb-12">
         <!-- Main Links -->
         <div>
-          <ul class="space-y-4 text-white/90 text-[14px]">
+          <ul class="space-y-4 text-white/90 text-lg">
             <li v-for="(link, linkIndex) in mobileLinks" :key="linkIndex" class="flex items-center gap-3">
               <div class="w-1 h-1 bg-white rounded-full shrink-0"></div>
               <a :href="link.url" class="hover:text-lime-400 transition-colors">{{ link.text }}</a>
@@ -44,8 +44,8 @@
         </div>
 
         <!-- Contact Info -->
-        <div class="text-white/90 text-[14px] flex flex-col gap-4">
-          <h2 class="text-lime-400 font-bold mb-0 text-[14px]">Registered Office</h2>
+        <div class="text-white/90 text-lg flex flex-col gap-4">
+          <h2 class="text-lime-400 font-bold mb-0 text-lg">Registered Office</h2>
           <p class="leading-relaxed">
             <span v-for="(line, index) in companyInfo.address" :key="index" class="block">{{ line }}</span>
           </p>

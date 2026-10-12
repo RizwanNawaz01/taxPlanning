@@ -4,7 +4,7 @@
     :to="to"
     :type="!to ? type : undefined"
     :class="[
-      'inline-flex items-center justify-center rounded-full font-bold transition-all hover:-translate-y-1',
+      'inline-flex items-center justify-center rounded-full font-bold transition-all hover:-translate-y-1 text-lg',
       variantClasses
     ]"
   >

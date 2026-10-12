@@ -1,11 +1,11 @@
 <template>
-  <section ref="statsSection" class="py-10 bg-[#F8F9FA] px-7">
+  <section ref="statsSection" class="py-10 bg-[#F8F9FA] px-7 xl:px-14 2xl:xl:px-12">
     <div class="container flex flex-col md:flex-row justify-center items-center text-center md:divide-x divide-slate-300">
       <div v-for="(stat, index) in stats" :key="index" class="relative flex-1 w-full py-8 md:py-2 px-4 after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-20 after:h-[1px] after:bg-slate-300 md:after:hidden last:after:hidden">
         <h3 class="text-[28px] lg:text-[26px]  xl:text-[32px] font-semibold text-black mb-3">
           {{ displayValues[index] }}
         </h3>
-        <p class="text-[17px] lg:text-[15px] xl:text-[20px] text-[#222] max-w-[240px] mx-auto leading-snug" v-html="stat.label"></p>
+        <p class="text-[17px] lg:text-[15px] xl:text-[20px] text-[#222] max-w-[300px] mx-auto leading-snug" v-html="stat.label"></p>
       </div>
     </div>
   </section>

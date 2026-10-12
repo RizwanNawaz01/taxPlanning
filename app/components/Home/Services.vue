@@ -1,17 +1,17 @@
 <template>
   <section id="services" class="py-16 lg:py-24 bg-white px-5">
-    <div class="container px-7">
+    <div class="container px-7 xl:px-14 2xl:xl:px-12">
       <div class="flex flex-col lg:flex-row justify-between items-start lg:items-end mb-8 lg:mb-16 gap-3 lg:gap-6" data-aos="fade-up">
         <h2 class="text-4xl lg:text-5xl xl:text-6xl font-semibold text-primary">Services</h2>
-        <p class="text-black/90 max-w-md text-[15px] lg:text-lg xl:text-lg leading-snug">Our work covers the full range of tax and accounting obligations a UAE business faces, along with advisory support for bigger decisions.</p>
+        <p class="text-black/90 max-w-md text-[15px] lg:text-lg xl:text-lg leading-snug lg:leading-7 xl:leading-7">Our work covers the full range of tax and accounting obligations a UAE business faces, along with advisory support for bigger decisions.</p>
       </div>
       <div class="grid lg:grid-cols-2 gap-6 lg:gap-8">
-        <div v-for="(service, index) in services" :key="index" :class="['p-6 lg:px-12 lg:pt-24 lg:pb-24 rounded-2xl lg:rounded-[2rem] relative overflow-hidden flex flex-col justify-center', service.cardClass]" data-aos="fade-up" :data-aos-delay="index * 150">
+        <div v-for="(service, index) in services" :key="index" :class="['p-6 lg:px-14 lg:pt-24 lg:pb-24 rounded-2xl lg:rounded-[2rem] relative overflow-hidden flex flex-col justify-center', service.cardClass]" data-aos="fade-up" :data-aos-delay="index * 150">
           <img :src="service.bgImage" alt="" class="absolute inset-0 w-full h-full object-cover object-right pointer-events-none" />
           <div class="relative z-10">
             <h3 class="text-xl lg:text-3xl font-bold mb-2 lg:mb-3">{{ service.title }}</h3>
-            <p class="mb-5 lg:mb-8 text-[11px] lg:text-base leading-snug lg:leading-normal pr-4 lg:pr-0 max-w-full lg:max-w-[85%]" :class="service.descClass" v-html="service.description"></p>
-            <button type="button" @click.prevent="isModalOpen = true" :class="['inline-block px-4 py-1.5 lg:px-12 lg:py-3 text-[10px] lg:text-base rounded-full font-semibold hover:-translate-y-1 transition-all', service.btnClass]">{{ service.linkText }}</button>
+            <p class="mb-5 lg:mb-8 text-[11px] lg:text-base leading-snug lg:leading-normal pr-4 lg:pr-0 max-w-full" :class="service.descClass" v-html="service.description"></p>
+            <button type="button" @click.prevent="isModalOpen = true" :class="['inline-block px-4 py-1.5 lg:px-8 lg:py-2 text-[10px] lg:text-base rounded-full font-bold hover:-translate-y-1 transition-all', service.btnClass]">{{ service.linkText }}</button>
           </div>
         </div>
       </div>

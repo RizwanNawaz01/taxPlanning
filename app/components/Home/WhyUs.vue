@@ -1,7 +1,7 @@
 <template>
   <section id="why-us" class="relative pt-20 pb-5 lg:py-24 bg-primary text-white overflow-hidden">
 
-    <div class="container relative px-7">
+    <div class="container relative px-7 xl:px-14 2xl:xl:px-12">
 
       <!-- Header -->
       <div class="flex flex-col lg:flex-row justify-between items-center lg:items-start gap-4 lg:gap-32 mb-10 lg:mb-16 text-center lg:text-left px-0" data-aos="fade-up">

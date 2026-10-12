@@ -1,6 +1,6 @@
 <template>
   <section id="who-we-work-with" class="pt-0 lg:pt-12 pb-20 lg:pb-28 bg-white overflow-hidden relative">
-    <div class="container mx-auto px-7 grid lg:grid-cols-2 gap-12 lg:gap-20 items-center relative z-10">
+    <div class="container mx-auto px-7 xl:px-14 2xl:xl:px-12 grid lg:grid-cols-2 gap-12 lg:gap-20 items-center relative z-10">
       
       <!-- Left Column -->
       <div class="relative flex flex-col items-center lg:items-start pt-0">
@@ -44,7 +44,7 @@
             </div>
             <!-- Description -->
             <p 
-              class="text-gray-600 text-[14px] lg:text-base leading-relaxed mt-3 lg:mt-0"
+              class="text-black text-[14px] lg:text-base leading-relaxed mt-3 lg:mt-0"
               :class="{'hidden lg:block': activeIndex !== index, 'block': activeIndex === index}"
             >
               {{ item.description }}

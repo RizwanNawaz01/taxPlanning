@@ -1,6 +1,6 @@
 <template>
   <section class="py-20 lg:py-24 bg-primary text-white">
-    <div class="container px-7">
+    <div class="container px-7 xl:px-14 2xl:xl:px-12">
       <h2 class="text-center text-[35px] lg:text-5xl xl:text-[3rem]  font-semibold mb-10 lg:mb-16 leading-tight" data-aos="blur-in">
         Engagement Options
       </h2>
@@ -12,8 +12,8 @@
           data-aos="blur-in"
           :data-aos-delay="200 + (index * 200)"
         >
-          <h3 class="text-[20px] lg:text-3xl xl:text-4xl font-semibold mb-3 lg:mb-6">{{ option.title }}</h3>
-          <p class="text-[14px] lg:text-base leading-relaxed max-w-[450px]" :class="option.descClass">{{ option.description }}</p>
+          <h3 class="text-[20px] lg:text-3xl xl:text-5xl font-medium mb-3 lg:mb-6">{{ option.title }}</h3>
+          <p class="text-[14px] lg:text-lg leading-relaxed lg:leading-snug max-w-[500px] text-black" :class="option.descClass">{{ option.description }}</p>
         </div>
       </div>
       <div class="text-center" data-aos="blur-in" data-aos-delay="600">
@@ -41,14 +41,14 @@ const options = [
     description: 'For one obligation, one filing, or one specific question. This suits a registration, a return, a certificate application, or a one-time advisory matter.',
     bgClass: 'bg-[#F4F5F6]',
     textClass: 'text-primary',
-    descClass: 'text-primary/80'
+    descClass: 'text-black'
   },
   {
     title: 'Ongoing support.',
     description: 'For businesses that want their tax and accounting handled continuously through the year, rather than one filing at a time. We agree the scope once and take it from there.',
     bgClass: 'bg-lime-400',
     textClass: 'text-primary',
-    descClass: 'text-primary/90'
+    descClass: 'text-black'
   }
 ]
 </script>
