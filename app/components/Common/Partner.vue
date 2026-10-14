@@ -9,7 +9,7 @@
       
       <p 
         v-if="description" 
-        class="text-lg xl:text-xl text-black max-w-2xl mx-auto mb-10" 
+        class="text-lg xl:text-xl text-black max-w-3xl mx-auto mb-10" 
         data-aos="blur-in" 
         data-aos-delay="200"
       >
@@ -20,7 +20,7 @@
         <a 
           href="#" 
           @click.prevent="isModalOpen = true" 
-          class="inline-block bg-primary text-white px-8 py-3 lg:px-8 lg:py-3.5 text-[14px] lg:text-base rounded-full font-bold hover:bg-secondary hover:-translate-y-1 transition-all shadow-[0_4px_12px_rgba(11,22,44,0.2)]" 
+          class="inline-block bg-primary text-white px-8 py-3 lg:px-10 lg:py-2 text-[14px] lg:text-base rounded-full font-bold hover:bg-secondary hover:-translate-y-1 transition-all shadow-[0_4px_12px_rgba(11,22,44,0.2)]" 
           data-aos="blur-in" 
           data-aos-delay="400"
         >

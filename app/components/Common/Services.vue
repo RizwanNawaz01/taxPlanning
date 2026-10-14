@@ -4,7 +4,7 @@
       <!-- Section Header -->
       <div class="flex flex-col lg:flex-row justify-between items-start lg:items-end mb-8 lg:mb-16 gap-3 lg:gap-6" data-aos="fade-up">
         <h2 class="text-4xl lg:text-5xl xl:text-6xl font-semibold text-primary" v-html="title"></h2>
-        <p v-if="description" class="text-black/90 max-w-md text-[15px] lg:text-lg xl:text-lg leading-snug lg:leading-7 xl:leading-7">
+        <p v-if="description" class="text-black max-w-md text-[15px] lg:text-lg xl:text-lg leading-snug lg:leading-snug xl:leading-snug">
           {{ description }}
         </p>
       </div>

@@ -3,11 +3,11 @@
     <div class="container relative px-7 xl:px-16 2xl:px-12">
       <!-- Header -->
       <div 
-        class="flex flex-col lg:flex-row justify-between items-center lg:items-start gap-4 lg:gap-32 mb-10 lg:mb-16 text-center lg:text-left px-0" 
+        class="flex flex-col lg:flex-row justify-between items-center lg:items-center gap-4 lg:gap-32 mb-10 lg:mb-16 text-center lg:text-left px-0" 
         data-aos="fade-up"
       >
-        <h2 class="text-[32px] lg:text-5xl font-bold leading-tight" v-html="title"></h2>
-        <p v-if="description" class="text-[14px] lg:text-lg text-white/80 max-w-sm lg:max-w-md mx-auto lg:mx-0">
+        <h2 class="text-[32px] lg:text-5xl font-semibold leading-tight" v-html="title"></h2>
+        <p v-if="description" class="text-[14px] lg:text-lg text-white max-w-sm lg:max-w-md mx-auto lg:mx-0 lg:leading-snug">
           {{ description }}
         </p>
       </div>
@@ -19,19 +19,17 @@
           <div
             v-for="(item, index) in items"
             :key="index"
-            class="glass-card p-8 rounded-[24px] flex flex-col justify-between"
+            class="glass-card p-8  flex flex-col"
             data-aos="fade-up"
             :data-aos-delay="index * 150"
           >
-            <div>
-              <span class="glass-number text-[80px] font-black leading-none mb-8 lg:mb-10 block select-none">
-                {{ item.number || index + 1 }}
-              </span>
-              <h3 class="text-xl font-bold mb-4 pr-4 leading-snug text-white">
-                {{ item.title }}
-              </h3>
-            </div>
-            <p class="text-sm text-white/80 leading-relaxed mt-2">
+            <span class="glass-number text-[64px] font-black leading-none mb-8 lg:mb-10 block select-none">
+              {{ item.number || index + 1 }}
+            </span>
+            <h3 class="text-xl font-semibold mb-4 pr-4 leading-snug text-white">
+              {{ item.title }}
+            </h3>
+            <p class="text-sm text-white lg:leading-snug">
               {{ item.description }}
             </p>
           </div>
@@ -89,7 +87,7 @@
           <Button 
             v-if="buttonLink" 
             :to="buttonLink" 
-            class="hidden lg:inline-flex"
+            class="hidden lg:inline-flex lg:px-10 lg:py-2"
           >
             {{ buttonText }}
           </Button>
@@ -241,29 +239,8 @@ onUnmounted(() => {
 .glass-card {
   position: relative;
   overflow: hidden;
-  background: linear-gradient(145deg, rgba(255,255,255,0.09) 0%, rgba(255,255,255,0.04) 100%);
-  -webkit-backdrop-filter: blur(12px);
-  backdrop-filter: blur(12px);
-  box-shadow:
-    inset 0 1px 0 rgba(255,255,255,0.12),
-    0 10px 30px -10px rgba(0,0,0,0.35);
-}
-
-/* Thin, even border with a slightly brighter top-left */
-.glass-card::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  border-radius: inherit;
-  padding: 1px;
-  background: linear-gradient(135deg,
-    rgba(255,255,255,0.28) 0%,
-    rgba(255,255,255,0.10) 40%,
-    rgba(255,255,255,0.08) 100%);
-  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
-  -webkit-mask-composite: xor;
-  mask: linear-gradient(#000 0 0) content-box exclude, linear-gradient(#000 0 0);
-  pointer-events: none;
+  background: url('/Home/glass-effect.png') no-repeat center center;
+  background-size: 100% 100%;
 }
 
 /* Number styling */

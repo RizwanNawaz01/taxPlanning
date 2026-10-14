@@ -5,7 +5,7 @@
       <!-- Left Column -->
       <div class="relative flex flex-col items-center lg:items-start pt-0">
         <!-- Image -->
-        <NuxtImg src="/Home/who-we-work.webp" alt="Who We Work With" format="webp" loading="lazy" class="relative z-10 w-[500px] max-w-[300px] md:w-[100%] lg:max-w-[340px] xl:max-w-full -mb-[1px] object-contain" data-aos="fade-right" />
+        <NuxtImg src="/Home/who-we-work.webp" alt="Who We Work With" format="webp" loading="lazy" class="relative z-10 w-[500px] max-w-[300px] md:w-[100%] lg:max-w-[340px] xl:max-w-[340px] xl:left-20 -mb-[1px] object-contain" data-aos="fade-right" />
         
         <!-- Text Content -->
         <div class="relative z-0 w-full flex flex-col items-center lg:items-start">
@@ -14,10 +14,10 @@
           
           <div class="relative z-20 w-full bg-dark-card lg:bg-transparent rounded-3xl lg:rounded-none px-6 py-10 lg:px-12 lg:pb-12 lg:pt-16 text-white text-center lg:text-left flex flex-col items-center lg:items-start shadow-xl lg:shadow-none" data-aos="fade-up">
             <h2 class="text-[24px] lg:text-[2.5rem] font-semibold mb-3 leading-tight">Who We Work With</h2>
-            <p class="text-white/80 mb-0 lg:mb-5 text-[13px] lg:text-[16px] leading-relaxed max-w-sm lg:max-w-md mx-auto lg:mx-0">
+            <p class="text-white/80 mb-0 lg:mb-5 text-[13px] lg:text-[16px] lg:leading-snug max-w-sm lg:max-w-md mx-auto lg:mx-0">
               From a single company to an international group, we work across the structures and industries that make up the UAE economy.
             </p>
-            <Button @click="isModalOpen = true" class="hidden lg:inline-flex mt-6 lg:mt-0">
+            <Button @click="isModalOpen = true" class="hidden lg:inline-flex mt-6 lg:mt-0 lg:px-10 lg:py-2 lg:text-base">
               Book a Consultation
             </Button>
           </div>
@@ -38,13 +38,13 @@
           <span class="text-gray-400 font-medium text-[12px] lg:text-sm pt-1 w-5 shrink-0">{{ item.id }}</span>
           <div class="flex-1">
             <div class="flex justify-between items-start gap-4">
-              <h3 class="text-[17px] lg:text-[28px] font-bold text-black lg:text-primary mb-0 lg:mb-3 leading-tight max-w-xs lg:max-w-lg pr-4 lg:pr-0">{{ item.title }}</h3>
+              <h3 class="text-[17px] lg:text-[28px] font-bold text-black  mb-0 lg:mb-3 leading-tight max-w-xs lg:max-w-lg pr-4 lg:pr-0">{{ item.title }}</h3>
               <!-- Caret (Mobile only) -->
               <svg class="lg:hidden w-5 h-5 shrink-0 transition-transform duration-300 text-black mt-1" :class="{'rotate-180': activeIndex === index}" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
             </div>
             <!-- Description -->
             <p 
-              class="text-black text-[14px] lg:text-base leading-relaxed mt-3 lg:mt-0"
+              class="text-black text-[14px] lg:text-base lg:leading-snug mt-3 lg:mt-0"
               :class="{'hidden lg:block': activeIndex !== index, 'block': activeIndex === index}"
             >
               {{ item.description }}

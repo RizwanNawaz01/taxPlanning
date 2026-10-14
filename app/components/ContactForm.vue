@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-surface-light p-10 lg:p-8 rounded-3xl shadow-2xl relative overflow-hidden min-h-[520px] flex flex-col">
+  <div class="bg-surface-light p-10 lg:p-8 lg:py-10 rounded-2xl shadow-2xl relative overflow-hidden min-h-[520px] flex flex-col">
     
     <div v-if="!isSubmitted" class="transition-opacity duration-500 h-full flex flex-col justify-center" :class="{'opacity-50 pointer-events-none': isLoading}">
       <h2 class="text-[22px] font-bold text-center text-primary mb-7">{{ title }}</h2>
@@ -79,7 +79,7 @@
         <p v-if="errorMessage" class="text-rose-500 text-xs text-center mt-2">{{ errorMessage }}</p>
 
         <div class="pt-3 flex justify-center">
-          <Button type="submit" variant="dark" class="w-[85%] md:w-[75%] lg:w-[62%] lg:py-2.5" :disabled="isLoading">
+          <Button type="submit" variant="dark" class="w-[85%] md:w-[75%] lg:w-[52%] lg:py-2.5 lg:text-base" :disabled="isLoading">
             <span v-if="isLoading">Sending...</span>
             <span v-else>{{ buttonText }}</span>
           </Button>

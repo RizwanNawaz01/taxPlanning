@@ -4,13 +4,13 @@
       <!-- Left Side -->
       <div class="lg:max-w-xl" data-aos="fade-up">
         <span class="block text-base font-bold text-slate-400 uppercase tracking-wider mb-2">{{ calloutContent.overline }}</span>
-        <h2 class="text-4xl lg:text-5xl xl:text-6xl font-bold text-primary leading-[1.15]" v-html="calloutContent.title"></h2>
+        <h2 class="text-4xl lg:text-5xl xl:text-6xl font-semibold text-primary leading-[1.15]" v-html="calloutContent.title"></h2>
       </div>
       
       <!-- Right Side -->
       <div class="lg:pt-10" data-aos="fade-up" data-aos-delay="200">
-        <p class="text-[17px] xl:text-[20px] text-black mb-8 leading-snug lg:leading-relaxed   lg:max-w-lg xl:max-w-xl">{{ calloutContent.description }}</p>
-        <Button @click="isModalOpen = true" variant="primary">
+        <p class="text-[17px] xl:text-[20px] text-black mb-8 leading-snug lg:leading-snug lg:max-w-lg xl:max-w-2xl">{{ calloutContent.description }}</p>
+        <Button @click="isModalOpen = true" variant="primary" class="lg:px-10 lg:py-2">
           {{ calloutContent.button.text }}
         </Button>
       </div>
@@ -29,7 +29,7 @@ const isModalOpen = ref(false)
 
 const calloutContent = {
   overline: "BUILD FOR DECISION THAT MATTER",
-  title: 'Good advice starts <span class="lg:block lg:mt-3">before a decision is</span> <span class="lg:block lg:mt-3">made.</span>',
+  title: 'Good advice starts <span class="lg:block lg:mt-1">before a decision is</span> <span class="lg:block lg:mt-1">made.</span>',
   description: "We work with clients while they are weighing up an investment, a new market, or a change in ownership, and want to understand the tax implications before committing to anything. That can mean a straightforward VAT or Corporate Tax filing, or a longer conversation about how a business is structured and where it's heading.",
   button: {
     text: "Enquire Now"

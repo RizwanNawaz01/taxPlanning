@@ -2,7 +2,7 @@
   <section id="how-we-work" class="py-24 bg-white">
     <div class="container mx-auto px-7 xl:px-16 2xl:px-12">
       <div class="mb-12 lg:mb-16 max-w-3xl" data-aos="blur-in">
-        <h2 class="text-4xl lg:text-[2.5rem] xl:text-[3rem] font-bold text-primary mb-4">How We Work</h2>
+        <h2 class="text-4xl lg:text-[2.5rem] xl:text-[3.5rem] font-semibold text-primary mb-4">How We Work</h2>
         <p class="text-[17px] xl:text-[22px] text-black">We start with where your business actually stands, not a standard form.</p>
       </div>
 
@@ -28,12 +28,12 @@
             <!-- Text Content -->
             <div>
               <h3 class="text-[20px] lg:text-[22px] font-bold text-black mb-2 leading-tight">{{ item.title }}</h3>
-              <p class="text-black text-[15px] lg:text-[16px] xl:lg:text-[18px] leading-relaxed">{{ item.description }}</p>
+              <p class="text-black text-[15px] lg:text-[16px] xl:lg:text-[18px] lg:leading-snug">{{ item.description }}</p>
             </div>
           </div>
           
           <div class="pl-10 mt-2 hidden lg:block" data-aos="blur-in" data-aos-delay="1000">
-            <Button @click="isModalOpen = true">Book a Consultation</Button>
+            <Button @click="isModalOpen = true" class="lg:px-10 lg:py-2">Book a Consultation</Button>
           </div>
         </div>
       </div>

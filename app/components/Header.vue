@@ -1,7 +1,7 @@
 <template>
   <header class="fixed top-0 left-0 right-0 z-50 pt-4 lg:pt-8 px-4 lg:px-8 transition-all duration-300">
     <div 
-      class="container mx-auto flex justify-between items-center backdrop-blur-md rounded-full px-4 lg:px-8 shadow-lg relative z-50 transition-all duration-500 border"
+      class="container mx-auto flex justify-between items-center backdrop-blur-md rounded-full px-4 lg:px-10 shadow-lg relative z-50 transition-all duration-500 border"
       :class="isScrolled ? 'bg-slate-900/95 border-white/10 py-3 lg:py-3.5' : 'bg-dark-header/50 border-white/15 py-4 lg:py-3.5'"
     >
       <!-- Logo -->
@@ -13,7 +13,7 @@
       <div class="flex items-center gap-5 lg:gap-12">
         <!-- Navigation -->
         <nav class="hidden lg:block">
-          <ul class="flex gap-8 text-white/90 font-medium text-[15px]">
+          <ul class="flex gap-10 lg:gap-8 xl:gap-12 text-white/90 font-medium text-[15px]">
             <li v-for="(link, index) in navLinks" :key="index">
               <NuxtLink :to="link.href" class="hover:text-lime-400 transition-colors">
                 {{ link.label }}

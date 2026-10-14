@@ -1,7 +1,7 @@
 <template>
   <section class="py-20 lg:py-24 bg-primary text-white">
     <div class="container px-7 xl:px-16 2xl:px-12">
-      <h2 class="text-center text-[35px] lg:text-5xl xl:text-[3rem]  font-semibold mb-10 lg:mb-16 leading-tight" data-aos="blur-in">
+      <h2 class="text-center text-[35px] lg:text-5xl xl:text-[3.5rem]  font-semibold mb-10 lg:mb-16 leading-tight" data-aos="blur-in">
         Engagement Options
       </h2>
       <div class="grid lg:grid-cols-2 gap-4 lg:gap-8 mb-10 lg:mb-12">

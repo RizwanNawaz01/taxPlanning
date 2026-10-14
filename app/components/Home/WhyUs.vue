@@ -16,7 +16,7 @@ const items = [
     description: "taxplanning.ae draws on InZone's experience in accounting and taxation supporting businesses across the UAE with their evolving tax and compliance needs."
   },
   {
-    title: 'A seamless and friendly service',
+    title: 'A team built specifically for tax',
     description: 'A dedicated team in a digital environment. No confusing jargon, only clear instructions and guidance.'
   },
   {
