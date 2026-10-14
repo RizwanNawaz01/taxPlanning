@@ -17,15 +17,14 @@
       </p>
 
       <slot name="action">
-        <a 
-          href="#" 
-          @click.prevent="isModalOpen = true" 
-          class="inline-block bg-primary text-white px-8 py-3 lg:px-10 lg:py-2 text-[14px] lg:text-base rounded-full font-bold hover:bg-secondary hover:-translate-y-1 transition-all shadow-[0_4px_12px_rgba(11,22,44,0.2)]" 
+        <Button 
+          variant="dark"
+          @click="isModalOpen = true" 
           data-aos="blur-in" 
           data-aos-delay="400"
         >
           {{ buttonText }}
-        </a>
+        </Button>
       </slot>
     </div>
 

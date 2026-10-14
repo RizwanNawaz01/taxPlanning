@@ -8,9 +8,23 @@
     "date": "October 10, 2026",
     "readTime": "6 min read",
     "author": {
-      "name": "Tax Planning UAE Editorial Team",
-      "role": "Senior Corporate Tax Advisory"
+      "slug": "aramide-shuaib",
+      "name": "Aramide Shuaib",
+      "role": "Content Writer",
+      "company": "Tax Planning",
+      "badgeText": "Tax Planning",
+      "bio": "Aramide Shuaib is a Content Writer at Tax Planning who works closely with the firm's legal specialists to simplify complex legal topics into accurate and practical guidance for individuals, families, and businesses across the UAE."
     },
+    "reviewer": {
+      "slug": "tapan-vahal",
+      "name": "Tapan Vahal",
+      "role": "Legal Manager",
+      "company": "Tax Planning",
+      "badgeText": "Tax Planning",
+      "bio": "Tapan Vahal is a Legal Manager and Senior Lawyer at Tax Planning, bringing 9 years of legal experience across UAE personal legal matters, including wills, powers of attorney, and estate planning for individuals and families. He works closely with clients to simplify complex legal matters and guide them through each step with clarity and care. He reviews all content published by Tax Planning to ensure it is accurate, practical, and aligned with current UAE laws."
+    },
+    "showAuthor": true,
+    "showReviewer": true,
     "image": "/Blog/uae-corporate-tax-guide-2026.webp",
     "imageAlt": "Businessman working on laptop with corporate tax documents in Dubai office",
     "content": [
@@ -54,9 +68,23 @@
     "date": "October 04, 2026",
     "readTime": "5 min read",
     "author": {
+      "slug": "tax-planning-editorial",
       "name": "Tax Planning UAE Editorial Team",
-      "role": "VAT & Indirect Tax Specialist"
+      "role": "Senior Corporate Tax Advisory",
+      "company": "Tax Planning UAE",
+      "badgeText": "Tax Planning\nUAE",
+      "bio": "The Tax Planning UAE Editorial Team comprises senior chartered tax advisors, certified VAT practitioners, and corporate structuring specialists with over 15 years of UAE regulatory expertise. Our editorial board verifies all insights against the latest Federal Tax Authority (FTA) public clarifications and Cabinet Decisions."
     },
+    "reviewer": {
+      "slug": "tapan-vahal",
+      "name": "Tapan Vahal",
+      "role": "Legal Manager",
+      "company": "Tax Planning",
+      "badgeText": "Tax Planning",
+      "bio": "Tapan Vahal is a Legal Manager and Senior Lawyer at Tax Planning, bringing 9 years of legal experience across UAE personal legal matters, including wills, powers of attorney, and estate planning for individuals and families. He works closely with clients to simplify complex legal matters and guide them through each step with clarity and care. He reviews all content published by Tax Planning to ensure it is accurate, practical, and aligned with current UAE laws."
+    },
+    "showAuthor": true,
+    "showReviewer": true,
     "image": "/Blog/vat-registration-requirements-uae.webp",
     "imageAlt": "Business professionals collaborating over VAT tax paperwork and laptop",
     "content": [
@@ -95,9 +123,23 @@
     "date": "September 28, 2026",
     "readTime": "4 min read",
     "author": {
-      "name": "Tax Planning UAE Editorial Team",
-      "role": "Financial Reporting & Audit Lead"
+      "slug": "aramide-shuaib",
+      "name": "Aramide Shuaib",
+      "role": "Content Writer",
+      "company": "Tax Planning",
+      "badgeText": "Tax Planning",
+      "bio": "Aramide Shuaib is a Content Writer at Tax Planning who works closely with the firm's legal specialists to simplify complex legal topics into accurate and practical guidance for individuals, families, and businesses across the UAE."
     },
+    "reviewer": {
+      "slug": "tapan-vahal",
+      "name": "Tapan Vahal",
+      "role": "Legal Manager",
+      "company": "Tax Planning",
+      "badgeText": "Tax Planning",
+      "bio": "Tapan Vahal is a Legal Manager and Senior Lawyer at Tax Planning, bringing 9 years of legal experience across UAE personal legal matters, including wills, powers of attorney, and estate planning for individuals and families."
+    },
+    "showAuthor": true,
+    "showReviewer": false,
     "image": "/Blog/accounting-bookkeeping-requirements-uae.webp",
     "imageAlt": "Accountant calculating balance sheets and audit performance reports",
     "content": [
@@ -136,9 +178,23 @@
     "date": "September 19, 2026",
     "readTime": "5 min read",
     "author": {
+      "slug": "tax-planning-editorial",
       "name": "Tax Planning UAE Editorial Team",
-      "role": "Indirect Tax Specialist"
+      "role": "Indirect Tax Specialist",
+      "company": "Tax Planning UAE",
+      "badgeText": "Tax Planning\nUAE",
+      "bio": "The Tax Planning UAE Editorial Team comprises senior chartered tax advisors, certified VAT practitioners, and corporate structuring specialists with over 15 years of UAE regulatory expertise."
     },
+    "reviewer": {
+      "slug": "tapan-vahal",
+      "name": "Tapan Vahal",
+      "role": "Legal Manager",
+      "company": "Tax Planning",
+      "badgeText": "Tax Planning",
+      "bio": "Tapan Vahal is a Legal Manager and Senior Lawyer at Tax Planning, bringing 9 years of legal experience across UAE personal legal matters, including wills, powers of attorney, and estate planning for individuals and families. He reviews all content published by Tax Planning to ensure it is accurate, practical, and aligned with current UAE laws."
+    },
+    "showAuthor": true,
+    "showReviewer": true,
     "image": "/Blog/corporate-tax-compliance-free-zones.webp",
     "imageAlt": "Tax advisor reviewing tax legislation documents in executive office",
     "content": [
@@ -174,9 +230,23 @@
     "date": "September 08, 2026",
     "readTime": "7 min read",
     "author": {
-      "name": "Tax Planning UAE Editorial Team",
-      "role": "Head of Accounting Operations"
+      "slug": "aramide-shuaib",
+      "name": "Aramide Shuaib",
+      "role": "Content Writer",
+      "company": "Tax Planning",
+      "badgeText": "Tax Planning",
+      "bio": "Aramide Shuaib is a Content Writer at Tax Planning who works closely with the firm's legal specialists to simplify complex legal topics into accurate and practical guidance for individuals, families, and businesses across the UAE."
     },
+    "reviewer": {
+      "slug": "tapan-vahal",
+      "name": "Tapan Vahal",
+      "role": "Legal Manager",
+      "company": "Tax Planning",
+      "badgeText": "Tax Planning",
+      "bio": "Tapan Vahal is a Legal Manager and Senior Lawyer at Tax Planning, bringing 9 years of legal experience across UAE personal legal matters, including wills, powers of attorney, and estate planning for individuals and families."
+    },
+    "showAuthor": true,
+    "showReviewer": true,
     "image": "/Blog/annual-audit-financial-reporting-guide.webp",
     "imageAlt": "Senior finance executive reviewing company financial report",
     "content": [
@@ -211,9 +281,23 @@
     "date": "August 25, 2026",
     "readTime": "6 min read",
     "author": {
+      "slug": "tax-planning-editorial",
       "name": "Tax Planning UAE Editorial Team",
-      "role": "Free Zone Structuring Lead"
+      "role": "Free Zone Structuring Lead",
+      "company": "Tax Planning UAE",
+      "badgeText": "Tax Planning\nUAE",
+      "bio": "The Tax Planning UAE Editorial Team comprises senior chartered tax advisors, certified VAT practitioners, and corporate structuring specialists with over 15 years of UAE regulatory expertise."
     },
+    "reviewer": {
+      "slug": "tapan-vahal",
+      "name": "Tapan Vahal",
+      "role": "Legal Manager",
+      "company": "Tax Planning",
+      "badgeText": "Tax Planning",
+      "bio": "Tapan Vahal is a Legal Manager and Senior Lawyer at Tax Planning, bringing 9 years of legal experience across UAE personal legal matters, including wills, powers of attorney, and estate planning for individuals and families."
+    },
+    "showAuthor": true,
+    "showReviewer": false,
     "image": "/Blog/uae-corporate-tax-guide-2026.webp",
     "imageAlt": "Corporate office in Dubai with view of skyscrapers",
     "content": [
@@ -240,9 +324,23 @@
     "date": "August 14, 2026",
     "readTime": "8 min read",
     "author": {
-      "name": "Tax Planning UAE Editorial Team",
-      "role": "International Tax Consultant"
+      "slug": "aramide-shuaib",
+      "name": "Aramide Shuaib",
+      "role": "Content Writer",
+      "company": "Tax Planning",
+      "badgeText": "Tax Planning",
+      "bio": "Aramide Shuaib is a Content Writer at Tax Planning who works closely with the firm's legal specialists to simplify complex legal topics into accurate and practical guidance for individuals, families, and businesses across the UAE."
     },
+    "reviewer": {
+      "slug": "tapan-vahal",
+      "name": "Tapan Vahal",
+      "role": "Legal Manager",
+      "company": "Tax Planning",
+      "badgeText": "Tax Planning",
+      "bio": "Tapan Vahal is a Legal Manager and Senior Lawyer at Tax Planning, bringing 9 years of legal experience across UAE personal legal matters, including wills, powers of attorney, and estate planning for individuals and families."
+    },
+    "showAuthor": true,
+    "showReviewer": true,
     "image": "/Blog/corporate-tax-compliance-free-zones.webp",
     "imageAlt": "Business analysts discussing transfer pricing charts",
     "content": [
@@ -261,9 +359,23 @@
     "date": "August 02, 2026",
     "readTime": "5 min read",
     "author": {
+      "slug": "tax-planning-editorial",
       "name": "Tax Planning UAE Editorial Team",
-      "role": "Cross-Border Tax Advisory"
+      "role": "Cross-Border Tax Advisory",
+      "company": "Tax Planning UAE",
+      "badgeText": "Tax Planning\nUAE",
+      "bio": "The Tax Planning UAE Editorial Team comprises senior chartered tax advisors, certified VAT practitioners, and corporate structuring specialists with over 15 years of UAE regulatory expertise."
     },
+    "reviewer": {
+      "slug": "tapan-vahal",
+      "name": "Tapan Vahal",
+      "role": "Legal Manager",
+      "company": "Tax Planning",
+      "badgeText": "Tax Planning",
+      "bio": "Tapan Vahal is a Legal Manager and Senior Lawyer at Tax Planning, bringing 9 years of legal experience across UAE personal legal matters, including wills, powers of attorney, and estate planning for individuals and families."
+    },
+    "showAuthor": true,
+    "showReviewer": true,
     "image": "/Blog/vat-registration-requirements-uae.webp",
     "imageAlt": "International trade and finance agreement signing",
     "content": [

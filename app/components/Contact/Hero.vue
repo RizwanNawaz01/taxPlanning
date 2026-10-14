@@ -5,7 +5,7 @@
       <div class="absolute inset-0 bg-gradient-to-b from-[#0c1e2e]/40 via-transparent to-transparent"></div>
     </div>
 
-    <div class="container mx-auto px-6 lg:px-8 xl:px-12 2xl:px-16 relative z-10 pt-40 sm:pt-32 lg:pt-36 xl:pt-40 pb-16 lg:pb-20">
+    <div class="container mx-auto px-6 lg:px-8 xl:px-12 2xl:px-16 relative z-10 pt-40 sm:pt-32 lg:pt-36 xl:pt-48 pb-16 lg:pb-20">
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 xl:gap-16 items-start">
         
         <!-- Left Column: Title in dark section, Contact info in white section (desktop) -->

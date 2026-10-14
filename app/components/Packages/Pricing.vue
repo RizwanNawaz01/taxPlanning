@@ -2,7 +2,7 @@
   <section id="packages-pricing" class="py-16 lg:py-24 bg-white scroll-mt-24">
     <div class="container mx-auto px-7 xl:px-16 2xl:px-12">
       <!-- Section Header -->
-      <div class="text-center max-w-3xl mx-auto mb-10 lg:mb-14" data-aos="blur-in">
+      <div class="text-center max-w-5xl mx-auto mb-10 lg:mb-14" data-aos="blur-in">
         <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold text-primary mb-4 lg:mb-5 leading-tight">
           Which Package Fits Your Business
         </h2>
@@ -60,7 +60,7 @@
           </div>
 
           <!-- Card Body -->
-          <div class="p-6 lg:p-8 flex flex-col flex-1 justify-between bg-white rounded-b-3xl">
+          <div class="p-6 lg:p-8 flex flex-col flex-1 justify-between rounded-b-3xl" :class="{ 'bg-[#B6FC4E1F]': pkg.isPopular, 'bg-white': !pkg.isPopular }">
             <div>
               <!-- Price Display -->
               <div class="text-center mb-6 pt-2">
@@ -107,13 +107,12 @@
 
       <!-- Action Button Under Cards -->
       <div class="text-center" data-aos="blur-in" data-aos-delay="350">
-        <button
-          type="button"
+        <Button
+          variant="dark"
           @click="$emit('selectPackage', { tier: selectedTier, packageName: 'General Package Enquiry' })"
-          class="inline-flex items-center justify-center rounded-full font-bold transition-all duration-300 hover:-translate-y-1 text-base md:text-lg bg-primary text-white hover:bg-secondary shadow-[0_4px_12px_rgba(11,22,44,0.2)] px-10 py-3.5"
         >
           Get Package Advice
-        </button>
+        </Button>
       </div>
     </div>
   </section>

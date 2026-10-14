@@ -48,7 +48,7 @@
             :key="index"
             class="w-full shrink-0 snap-center px-6 flex flex-col"
           >
-            <div class="glass-card px-8 pt-10 pb-10 rounded-[28px] flex flex-col h-[380px]">
+            <div class="glass-card px-8 pt-10 pb-10 flex flex-col h-[380px]">
               <span class="glass-number text-[88px] font-black leading-none mb-auto block tracking-tighter select-none">
                 {{ item.number || index + 1 }}
               </span>
@@ -87,18 +87,17 @@
           <Button 
             v-if="buttonLink" 
             :to="buttonLink" 
-            class="hidden lg:inline-flex lg:px-10 lg:py-2"
+            variant="primary"
           >
             {{ buttonText }}
           </Button>
-          <button 
+          <Button 
             v-else-if="buttonText"
-            type="button"
+            variant="primary"
             @click="openModal"
-            class="hidden lg:inline-flex bg-lime-400 text-primary font-bold px-8 py-3.5 rounded-full hover:bg-lime-500 hover:-translate-y-0.5 transition-all shadow-lg text-[15px]"
           >
             {{ buttonText }}
-          </button>
+          </Button>
         </div>
       </slot>
     </div>

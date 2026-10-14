@@ -19,11 +19,11 @@
           :data-aos-delay="index % 2 === 0 ? '0' : '200'"
         >
           <h3 
-            class="text-3xl md:text-4xl lg:text-[42px] font-bold text-primary mb-6 tracking-tight"
+            class="text-3xl md:text-4xl lg:text-[50px] font-bold text-primary mb-6 tracking-tight"
             v-html="item.title"
           ></h3>
           
-          <div class="space-y-4 text-black text-base md:text-lg lg:text-[18px] leading-relaxed">
+          <div class="space-y-4 text-black text-base md:text-lg lg:text-[18px] leading-relaxed max-w-lg">
             <template v-if="Array.isArray(item.description)">
               <p 
                 v-for="(para, pIndex) in item.description" 
@@ -46,7 +46,7 @@
           data-aos="blur-in"
           :data-aos-delay="index % 2 === 0 ? '200' : '0'"
         >
-          <div class="w-full max-w-lg overflow-hidden rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.06)] border border-slate-100">
+          <div class="w-full  overflow-hidden rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.06)] border border-slate-100">
             <NuxtImg
               :src="item.image"
               :alt="item.imageAlt || item.title"

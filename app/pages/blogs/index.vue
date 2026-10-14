@@ -10,7 +10,7 @@
           <!-- Title on Left -->
           <div>
             <h1 class="text-4xl sm:text-5xl lg:text-[3.5rem] xl:text-[4rem] font-bold text-white tracking-tight leading-tight">
-              Blog
+              Blogs
             </h1>
           </div>
 
@@ -38,7 +38,7 @@
           >
             <!-- Thumbnail Image -->
             <NuxtLink
-              :to="`/blog/${blog.slug}`"
+              :to="`/blogs/${blog.slug}`"
               :aria-label="blog.title"
               class="w-full md:w-[280px] lg:w-[330px] xl:w-[360px] shrink-0 aspect-[16/10] overflow-hidden rounded-2xl lg:rounded-3xl bg-slate-100 shadow-sm group-hover:shadow-md transition-all duration-300 block"
             >
@@ -53,7 +53,7 @@
 
             <!-- Card Content (Title & Read More) -->
             <div class="flex-1 flex flex-col justify-center">
-              <NuxtLink :to="`/blog/${blog.slug}`" class="block">
+              <NuxtLink :to="`/blogs/${blog.slug}`" class="block">
                 <h2 class="text-lg sm:text-xl lg:text-[1.5rem] xl:text-[1.65rem] font-bold text-slate-900 group-hover:text-primary transition-colors leading-snug sm:leading-snug lg:leading-tight mb-2 sm:mb-3">
                   {{ blog.title }}
                 </h2>
@@ -61,7 +61,7 @@
 
               <div>
                 <NuxtLink
-                  :to="`/blog/${blog.slug}`"
+                  :to="`/blogs/${blog.slug}`"
                   class="inline-flex items-center gap-1.5 text-slate-600 font-medium text-sm sm:text-base group-hover:text-primary transition-all duration-200"
                 >
                   <span>Read More</span>
@@ -74,13 +74,13 @@
 
         <!-- Load More Button (Centered) -->
         <div v-if="hasMore" class="flex justify-center mt-12 sm:mt-16 lg:mt-20" data-aos="fade-up">
-          <button
+          <Button
+            variant="dark"
+            size="lg"
             @click="loadMore"
-            type="button"
-            class="bg-[#0B162C] hover:bg-[#152238] active:scale-95 text-white px-8 sm:px-10 py-3 sm:py-3.5 rounded-full font-bold text-sm sm:text-base shadow-md hover:shadow-lg transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary"
           >
             Load More
-          </button>
+          </Button>
         </div>
       </div>
     </section>
@@ -98,13 +98,19 @@
 <script setup>
 import { ref, computed } from 'vue'
 import rawBlogs from '~/data/blogs.json'
+import { calculateReadTime } from '~/utils/readTime'
 
 definePageMeta({
   alias: ['/blogs']
 })
 
-// Blog data sourced directly from JSON
-const blogs = ref(rawBlogs || [])
+// Blog data sourced directly from JSON with dynamic readTime calculation
+const blogs = ref(
+  (rawBlogs || []).map(blog => ({
+    ...blog,
+    readTime: calculateReadTime(blog.content) || blog.readTime
+  }))
+)
 
 // Initially display 5 blogs as shown in the desktop/mobile mockups
 const visibleCount = ref(5)

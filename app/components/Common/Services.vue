@@ -1,5 +1,5 @@
 <template>
-  <section :id="sectionId" :class="['py-16 lg:py-24 px-5', bgClass]">
+  <section :id="sectionId" :class="['py-12 lg:py-24 px-5', bgClass]">
     <div class="container px-6 lg:px-8 xl:px-12 2xl:px-12">
       <!-- Section Header -->
       <div class="flex flex-col lg:flex-row justify-between items-start lg:items-end mb-8 lg:mb-16 gap-3 lg:gap-6" data-aos="fade-up">
@@ -36,13 +36,14 @@
               v-html="service.description"
             ></p>
             
-            <button 
-              type="button" 
+            <Button 
+              :variant="service.btnClass && service.btnClass.includes('lime') ? 'primary' : 'dark'"
               @click.prevent="openContactModal(service)" 
-              :class="['inline-block px-4 py-1.5 lg:px-8 lg:py-2 text-[10px] lg:text-base rounded-full font-bold hover:-translate-y-1 transition-all', service.btnClass || 'bg-primary text-white hover:bg-secondary']"
+              size="sm"
+              class="lg:text-[15px] lg:px-8 lg:py-2"
             >
               {{ service.linkText || 'Learn more' }}
-            </button>
+            </Button>
           </div>
         </div>
       </div>

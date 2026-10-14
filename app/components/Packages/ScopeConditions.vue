@@ -21,7 +21,7 @@
           <h3 class="text-lg lg:text-xl font-bold text-primary mb-4 lg:mb-5">
             {{ card.title }}
           </h3>
-          <ul class="space-y-2.5">
+          <ul class="space-y-1">
             <li
               v-for="(item, itemIndex) in card.items"
               :key="itemIndex"

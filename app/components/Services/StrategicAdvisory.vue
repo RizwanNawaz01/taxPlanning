@@ -7,17 +7,16 @@
     section-class="lg:py-28"
   >
     <template #action>
-      <div class="text-center max-w-2xl mx-auto" data-aos="fade-up">
+      <div class="text-center max-w-5xl mx-auto" data-aos="fade-up">
         <p class="text-base lg:text-lg text-white/90 mb-6 leading-relaxed">
           Not sure which of these applies to you? Tell us where your business is, and we will point you in the right direction.
         </p>
-        <button 
-          type="button"
+        <Button 
+          variant="primary"
           @click="isModalOpen = true"
-          class="bg-lime-400 text-primary font-bold px-8 py-3.5 rounded-full hover:bg-lime-500 hover:-translate-y-0.5 transition-all shadow-lg text-[15px]"
         >
           Book a Consultation
-        </button>
+        </Button>
       </div>
 
       <!-- Contact Modal -->

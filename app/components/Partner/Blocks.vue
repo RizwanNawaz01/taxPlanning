@@ -8,7 +8,7 @@
       >
         <!-- Mobile Title (Visible only below lg) -->
         <div class="lg:hidden">
-          <h2 class="text-3xl font-bold text-primary tracking-tight">
+          <h2 class="text-3xl font-semibold text-primary tracking-tight">
             {{ block.title }}
           </h2>
         </div>
@@ -19,7 +19,7 @@
           :class="index % 2 === 1 ? 'lg:order-1 lg:justify-start' : 'lg:order-2 lg:justify-end'"
           data-aos="blur-in"
         >
-          <div class="w-full max-w-lg overflow-hidden rounded-2xl lg:rounded-3xl shadow-lg border border-slate-100">
+          <div class="w-full overflow-hidden rounded-2xl lg:rounded-3xl shadow-lg border border-slate-100">
             <NuxtImg
               :src="block.image"
               :alt="block.title"
@@ -37,10 +37,10 @@
           :data-aos-delay="150"
         >
           <!-- Desktop Title (Visible on lg and above) -->
-          <h2 class="hidden lg:block text-3xl md:text-4xl lg:text-[42px] font-bold text-primary mb-6 tracking-tight leading-tight">
+          <h2 class="hidden lg:block text-3xl md:text-4xl lg:text-[42px] font-semibold text-primary mb-6 tracking-tight leading-snug">
             {{ block.title }}
           </h2>
-          <p class="text-slate-700 text-base md:text-lg lg:text-[17px] leading-relaxed max-w-xl">
+          <p class="text-slate-700 text-base md:text-lg lg:text-[17px] lg:leading-snug max-w-xl">
             {{ block.description }}
           </p>
         </div>

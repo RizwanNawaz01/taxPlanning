@@ -1,0 +1,64 @@
+[
+  {
+    "id": "tapan-vahal",
+    "slug": "tapan-vahal",
+    "name": "Tapan Vahal",
+    "role": "Legal Manager",
+    "fullRole": "Legal Manager & Senior Lawyer",
+    "company": "Tax Planning",
+    "badgeText": "TaxPlanning",
+    "bio": "Tapan Vahal is a Legal Manager and Senior Lawyer at Tax Planning, bringing 9 years of legal experience across UAE personal legal matters, including wills, powers of attorney, and estate planning for individuals and families. He works closely with clients to simplify complex legal matters and guide them through each step with clarity and care. He reviews all content published by Tax Planning to ensure it is accurate, practical, and aligned with current UAE laws.",
+    "experience": "9+ Years UAE Legal Experience",
+    "location": "Dubai, United Arab Emirates",
+    "specialties": [
+      "UAE Personal Legal Matters",
+      "Wills & Powers of Attorney",
+      "Estate Planning for Expatriates",
+      "Corporate Legal Compliance",
+      "Regulatory Review"
+    ],
+    "email": "tapan@estateplanningpartners.ae",
+    "linkedin": "https://www.linkedin.com"
+  },
+  {
+    "id": "aramide-shuaib",
+    "slug": "aramide-shuaib",
+    "name": "Aramide Shuaib",
+    "role": "Content Writer",
+    "fullRole": "Content Writer & Legal Research Associate",
+    "company": "Tax Planning",
+    "badgeText": "TaxPlanning",
+    "bio": "Aramide Shuaib is a Content Writer at Tax Planning who works closely with the firm's legal specialists to simplify complex legal topics into accurate and practical guidance for individuals, families, and businesses across the UAE.",
+    "experience": "5+ Years Legal & Financial Content",
+    "location": "Dubai, United Arab Emirates",
+    "specialties": [
+      "Legal Content Strategy",
+      "UAE Regulatory Guides",
+      "Client Guidance & Education",
+      "Corporate & Personal Law Writing"
+    ],
+    "email": "aramide@estateplanningpartners.ae",
+    "linkedin": "https://www.linkedin.com"
+  },
+  {
+    "id": "tax-planning-editorial",
+    "slug": "tax-planning-editorial",
+    "name": "Tax Planning UAE Editorial Team",
+    "role": "Senior Corporate Tax & VAT Advisory",
+    "fullRole": "Senior Corporate Tax, VAT & Accounting Editorial Board",
+    "company": "Tax Planning UAE",
+    "badgeText": "Tax Planning\nUAE",
+    "bio": "The Tax Planning UAE Editorial Team comprises senior chartered tax advisors, certified VAT practitioners, and corporate structuring specialists with over 15 years of UAE regulatory expertise. Our editorial board verifies all insights against the latest Federal Tax Authority (FTA) public clarifications and Cabinet Decisions.",
+    "experience": "15+ Years UAE Tax Experience",
+    "location": "Dubai, United Arab Emirates",
+    "specialties": [
+      "UAE Corporate Tax (Federal Decree-Law 47)",
+      "VAT Advisory & Audits",
+      "Free Zone Substance Rules (QFZP)",
+      "Cross-Border Double Taxation Agreements",
+      "Transfer Pricing Regulations"
+    ],
+    "email": "editorial@taxplanning.ae",
+    "linkedin": "https://www.linkedin.com"
+  }
+]

@@ -7,7 +7,7 @@
       <div class="container mx-auto px-6 lg:px-8 xl:px-12 2xl:px-16 relative z-10">
         <!-- Back Link & Breadcrumb -->
         <div class="mb-6 flex items-center gap-2 text-white/70 text-xs sm:text-sm font-medium">
-          <NuxtLink to="/blog" class="hover:text-lime-400 transition-colors flex items-center gap-1.5">
+          <NuxtLink to="/blogs" class="hover:text-lime-400 transition-colors flex items-center gap-1.5">
             <span>&larr;</span>
             <span>Back to all insights</span>
           </NuxtLink>
@@ -27,9 +27,16 @@
             <span>{{ blog.date }}</span>
           </span>
           <span class="text-white/30">•</span>
-          <span>{{ blog.readTime }}</span>
+          <span>{{ readTime }}</span>
           <span class="text-white/30">•</span>
-          <span>By {{ blog.author?.name || 'Tax Planning Editorial' }}</span>
+          <NuxtLink
+            v-if="resolvedAuthor?.slug"
+            :to="`/authors/${resolvedAuthor.slug}`"
+            class="hover:text-lime-400 transition-colors underline-offset-2 hover:underline"
+          >
+            By {{ resolvedAuthor.name }}
+          </NuxtLink>
+          <span v-else>By {{ blog.author?.name || 'Tax Planning Editorial' }}</span>
         </div>
       </div>
     </section>
@@ -67,24 +74,37 @@
           </template>
         </div>
 
-        <!-- Author Bio Card -->
-        <div class="mt-14 pt-8 border-t border-slate-200 flex items-center justify-between flex-wrap gap-4">
-          <div class="flex items-center gap-4">
-            <div class="w-12 h-12 rounded-full bg-[#071721] text-white flex items-center justify-center font-bold text-lg">
-              TP
-            </div>
-            <div>
-              <p class="font-bold text-slate-900">{{ blog.author?.name || 'Tax Planning Editorial' }}</p>
-              <p class="text-xs sm:text-sm text-slate-500">{{ blog.author?.role || 'Tax Advisory Specialist' }}</p>
-            </div>
-          </div>
+        <!-- Author & Legal Reviewer Cards (Matching Design Screenshot) -->
+        <div v-if="shouldShowReviewer || shouldShowAuthor" class="mt-14 space-y-6 sm:space-y-8">
+          <!-- 1. Legally Reviewed by Section (Can be shown/hidden individually via showReviewer) -->
+          <BlogAuthorReviewerCard
+            v-if="shouldShowReviewer"
+            title-prefix="Legally Reviewed by"
+            :person="resolvedReviewer"
+            type="reviewer"
+          />
 
+          <!-- 2. Authored by Section (Can be shown/hidden individually via showAuthor) -->
+          <BlogAuthorReviewerCard
+            v-if="shouldShowAuthor"
+            title-prefix="Authored by"
+            :person="resolvedAuthor"
+            type="author"
+          />
+        </div>
+
+        <!-- Navigation back to blogs -->
+        <div class="mt-10 pt-6 border-t border-slate-200 flex items-center justify-between flex-wrap gap-4">
           <NuxtLink
-            to="/blog"
+            to="/blogs"
             class="inline-flex items-center gap-2 text-sm font-semibold text-primary hover:text-secondary hover:underline transition-all"
           >
             <span>&larr; More Articles</span>
           </NuxtLink>
+
+          <span class="text-xs text-slate-400">
+            Published on {{ blog.date }}
+          </span>
         </div>
       </div>
     </article>
@@ -102,15 +122,17 @@
   <div v-else class="min-h-[50vh] flex flex-col items-center justify-center py-20 text-center px-4">
     <h1 class="text-3xl font-bold text-slate-900 mb-4">Article Not Found</h1>
     <p class="text-slate-600 mb-6">The blog post you are looking for does not exist or has been moved.</p>
-    <NuxtLink to="/blog" class="bg-primary text-white px-6 py-2.5 rounded-full font-bold hover:bg-secondary">
+    <Button to="/blogs" variant="dark">
       Return to Blog
-    </NuxtLink>
+    </Button>
   </div>
 </template>
 
 <script setup>
 import { computed } from 'vue'
 import rawBlogs from '~/data/blogs.json'
+import { calculateReadTime } from '~/utils/readTime'
+import { resolveAuthor } from '~/utils/author'
 
 definePageMeta({
   alias: ['/blogs/:slug']
@@ -120,7 +142,40 @@ const route = useRoute()
 const slug = computed(() => route.params.slug)
 
 const blog = computed(() => {
-  return rawBlogs.find(item => item.slug === slug.value)
+  const found = rawBlogs.find(item => item.slug === slug.value)
+  if (!found) return null
+  return {
+    ...found,
+    readTime: calculateReadTime(found.content) || found.readTime
+  }
+})
+
+// Dynamic read time computed from article content
+const readTime = computed(() => blog.value?.readTime || '1 min read')
+
+// Resolved Author & Reviewer Profiles
+const resolvedAuthor = computed(() => {
+  if (!blog.value?.author) return null
+  return resolveAuthor(blog.value.author)
+})
+
+const resolvedReviewer = computed(() => {
+  const reviewerData = blog.value?.reviewer || blog.value?.reviewedBy
+  if (!reviewerData) return null
+  return resolveAuthor(reviewerData)
+})
+
+// Conditions to show/hide individually
+const shouldShowAuthor = computed(() => {
+  if (!blog.value) return false
+  if (blog.value.showAuthor === false) return false
+  return Boolean(resolvedAuthor.value && (resolvedAuthor.value.bio || resolvedAuthor.value.name))
+})
+
+const shouldShowReviewer = computed(() => {
+  if (!blog.value) return false
+  if (blog.value.showReviewer === false) return false
+  return Boolean(resolvedReviewer.value && (resolvedReviewer.value.bio || resolvedReviewer.value.name))
 })
 
 // Set SEO for article
@@ -132,7 +187,7 @@ if (blog.value) {
     description: blog.value.excerpt,
     ogTitle: blog.value.title,
     ogDescription: blog.value.excerpt,
-    ogUrl: `${siteUrl}/blog/${blog.value.slug}`,
+    ogUrl: `${siteUrl}/blogs/${blog.value.slug}`,
     ogType: 'article',
     ogImage: `${siteUrl}${blog.value.image}`,
     twitterCard: 'summary_large_image',
@@ -144,7 +199,7 @@ if (blog.value) {
   useHead({
     title: `${blog.value.title} | Tax Planning UAE`,
     link: [
-      { rel: 'canonical', href: `${siteUrl}/blog/${blog.value.slug}` }
+      { rel: 'canonical', href: `${siteUrl}/blogs/${blog.value.slug}` }
     ],
     script: [
       {

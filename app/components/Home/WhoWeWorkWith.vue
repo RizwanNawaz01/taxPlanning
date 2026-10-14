@@ -5,7 +5,7 @@
       <!-- Left Column -->
       <div class="relative flex flex-col items-center lg:items-start pt-0">
         <!-- Image -->
-        <NuxtImg src="/Home/who-we-work.webp" alt="Who We Work With" format="webp" loading="lazy" class="relative z-10 w-[500px] max-w-[300px] md:w-[100%] lg:max-w-[340px] xl:max-w-[340px] xl:left-8 2xl:left-14 -mb-[1px] object-contain" data-aos="fade-right" />
+        <NuxtImg src="/Home/who-we-work.webp" alt="Who We Work With" format="webp" loading="lazy" class="relative max-h-80 lg:max-h-full z-10 w-[500px] max-w-[300px] md:w-[100%] lg:max-w-[340px] xl:max-w-[340px] xl:left-8 2xl:left-14 -mb-[1px] object-contain" data-aos="fade-right" />
         
         <!-- Text Content -->
         <div class="relative z-0 w-full flex flex-col items-center lg:items-start">
@@ -17,7 +17,7 @@
             <p class="text-white/80 mb-0 lg:mb-5 text-[13px] lg:text-[16px] lg:leading-snug max-w-sm lg:max-w-md mx-auto lg:mx-0">
               From a single company to an international group, we work across the structures and industries that make up the UAE economy.
             </p>
-            <Button @click="isModalOpen = true" class="hidden lg:inline-flex mt-6 lg:mt-0 lg:px-10 lg:py-2 lg:text-base">
+            <Button @click="isModalOpen = true" variant="primary" class="hidden lg:inline-flex mt-6 lg:mt-0">
               Book a Consultation
             </Button>
           </div>
@@ -54,9 +54,9 @@
         
         <!-- Mobile Bottom CTA -->
         <div class="flex justify-center mt-10 lg:hidden">
-          <a href="#" @click.prevent="isModalOpen = true" class="px-8 py-3 text-[14px] font-semibold bg-lime-400 text-dark-card rounded-full hover:bg-lime-500 transition-colors shadow-lg">
+          <Button @click="isModalOpen = true" variant="primary">
             Book a Consultation
-          </a>
+          </Button>
         </div>
       </div>
       

@@ -17,9 +17,9 @@
         </div>
       </div>
       <div class="text-center" data-aos="blur-in" data-aos-delay="600">
-        <NuxtLink to="/packages" class="inline-block bg-surface-subtle text-primary px-8 py-3 lg:px-12 lg:py-3.5 text-[14px] lg:text-base rounded-full font-bold hover:bg-white hover:-translate-y-1 transition-all shadow-lg">
+        <Button to="/packages" variant="light" size="lg">
           Discover our Packages
-        </NuxtLink>
+        </Button>
       </div>
     </div>
 

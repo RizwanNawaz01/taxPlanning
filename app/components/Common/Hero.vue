@@ -13,7 +13,7 @@
         <slot name="badge" />
 
         <h1 
-          class="text-4xl sm:text-5xl lg:text-[3.25rem] xl:text-7xl font-semibold leading-tight mb-6" 
+          class="text-5xl sm:text-5xl lg:text-[3.25rem] xl:text-7xl font-semibold leading-tight mb-6" 
           data-aos="blur-in" 
           v-html="title"
         ></h1>

@@ -12,44 +12,113 @@
     "email": "info@taxplanning.ae"
   },
   "mobileLinks": [
-    { "text": "Services", "url": "/services" },
-    { "text": "Who we work with", "url": "/#who-we-work-with" },
-    { "text": "Blogs", "url": "/blog" },
-    { "text": "Our approach", "url": "/#how-we-work" },
-    { "text": "Partners", "url": "/partner" },
-    { "text": "About us", "url": "/about" }
+    {
+      "text": "Services",
+      "url": "/services"
+    },
+    {
+      "text": "Who we work with",
+      "url": "/#who-we-work-with"
+    },
+    {
+      "text": "Blogs",
+      "url": "/blogs"
+    },
+    {
+      "text": "Our approach",
+      "url": "/#how-we-work"
+    },
+    {
+      "text": "Partners",
+      "url": "/partner"
+    },
+    {
+      "text": "About us",
+      "url": "/about"
+    }
   ],
   "footerLinks": [
     {
       "links": [
-        { "text": "Services", "url": "/services" },
-        { "text": "Who we work with", "url": "/#who-we-work-with" },
-        { "text": "Blogs", "url": "/blog" },
-        { "text": "Partners", "url": "/partner" },
-        { "text": "About us", "url": "/about" }
+        {
+          "text": "Services",
+          "url": "/services"
+        },
+        {
+          "text": "Who we work with",
+          "url": "/#who-we-work-with"
+        },
+        {
+          "text": "Blogs",
+          "url": "/blogs"
+        },
+        {
+          "text": "Partners",
+          "url": "/partner"
+        },
+        {
+          "text": "About us",
+          "url": "/about"
+        }
       ]
     },
     {
       "links": [
-        { "text": "Services", "url": "/services" },
-        { "text": "Who we work with", "url": "/#who-we-work-with" },
-        { "text": "Our approach", "url": "/#how-we-work" },
-        { "text": "Partners", "url": "/partner" },
-        { "text": "About us", "url": "/about" }
+        {
+          "text": "Services",
+          "url": "/services"
+        },
+        {
+          "text": "Who we work with",
+          "url": "/#who-we-work-with"
+        },
+        {
+          "text": "Our approach",
+          "url": "/#how-we-work"
+        },
+        {
+          "text": "Partners",
+          "url": "/partner"
+        },
+        {
+          "text": "About us",
+          "url": "/about"
+        }
       ]
     },
     {
       "links": [
-        { "text": "Services", "url": "/services" },
-        { "text": "Who we work with", "url": "/#who-we-work-with" },
-        { "text": "Our approach", "url": "/#how-we-work" },
-        { "text": "Partners", "url": "/partner" },
-        { "text": "About us", "url": "/about" }
+        {
+          "text": "Services",
+          "url": "/services"
+        },
+        {
+          "text": "Who we work with",
+          "url": "/#who-we-work-with"
+        },
+        {
+          "text": "Our approach",
+          "url": "/#how-we-work"
+        },
+        {
+          "text": "Partners",
+          "url": "/partner"
+        },
+        {
+          "text": "About us",
+          "url": "/about"
+        }
       ]
     }
   ],
   "legalLinks": [
-    { "text": "Terms and conditions", "url": "#" },
-    { "text": "Privacy Policy", "url": "#" }
+    {
+      "text": "Terms and conditions",
+      "url": "#"
+    },
+    {
+      "text": "Privacy Policy",
+      "url": "#"
+    }
   ]
 }

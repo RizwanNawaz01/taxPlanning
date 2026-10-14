@@ -42,11 +42,11 @@ defineProps({
   },
   sectionClass: {
     type: String,
-    default: 'py-20 lg:py-28'
+    default: 'py-20 lg:py-20'
   },
   maxWidthClass: {
     type: String,
-    default: 'max-w-4xl'
+    default: 'max-w-6xl'
   },
   textColorClass: {
     type: String,

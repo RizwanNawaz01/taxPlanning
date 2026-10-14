@@ -79,7 +79,7 @@
         <p v-if="errorMessage" class="text-rose-500 text-xs text-center mt-2">{{ errorMessage }}</p>
 
         <div class="pt-3 flex justify-center">
-          <Button type="submit" variant="dark" class="w-[80%] md:w-[75%] lg:w-[72%] xl:w-[58%] lg:py-2.5 text-base" :disabled="isLoading">
+          <Button type="submit" variant="dark" class="w-[80%] md:w-[75%] lg:w-[72%] xl:w-[50%] lg:py-2.5 text-base" :disabled="isLoading">
             <span v-if="isLoading">Sending...</span>
             <span v-else>{{ buttonText }}</span>
           </Button>

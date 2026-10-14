@@ -7,17 +7,17 @@
           <div class="max-w-[580px] mx-auto lg:mx-0">
             <h2 
               v-if="name" 
-              class="text-3xl md:text-4xl lg:text-[40px] font-bold text-primary tracking-tight mb-3 uppercase"
+              class="text-3xl md:text-4xl lg:text-[56px] font-semibold text-primary tracking-tight mb-3 uppercase"
               v-html="name"
             ></h2>
 
-            <div v-if="badge" class="inline-block mb-6 lg:mb-8">
-              <span class="inline-flex items-center px-4 py-1.5 rounded-full text-xs md:text-sm font-bold bg-lime-400 text-primary tracking-wide shadow-sm">
+            <div v-if="badge" class="inline-block mb-6 lg:mb-4">
+              <span class="inline-flex items-center px-4 py-1.5 rounded-full text-xs md:text-sm xl:text-xl mt-2 font-bold bg-lime-400 text-primary tracking-wide shadow-sm">
                 {{ badge }}
               </span>
             </div>
 
-            <div class="space-y-4 text-black text-left text-[15px] md:text-base leading-[1.65]">
+            <div class="space-y-1 text-black text-left text-[15px] md:text-base lg:text-[19px] leading-[1.65]">
               <template v-if="Array.isArray(paragraphs)">
                 <p 
                   v-for="(para, index) in paragraphs" 
