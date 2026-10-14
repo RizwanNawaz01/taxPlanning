@@ -2,32 +2,84 @@
   <div class="bg-surface-light p-10 lg:p-8 rounded-3xl shadow-2xl relative overflow-hidden min-h-[520px] flex flex-col">
     
     <div v-if="!isSubmitted" class="transition-opacity duration-500 h-full flex flex-col justify-center" :class="{'opacity-50 pointer-events-none': isLoading}">
-      <h2 class="text-[22px] font-bold text-center text-primary mb-10">{{ title }}</h2>
+      <h2 class="text-[22px] font-bold text-center text-primary mb-7">{{ title }}</h2>
       
       <form @submit.prevent="handleSubmit" class="space-y-4">
           <!-- Honeypot anti-spam field (hidden from real users) -->
           <input v-model="formData.website" type="text" name="website" tabindex="-1" autocomplete="off" class="hidden" aria-hidden="true" />
 
-          <input aria-label="Full Name" v-model="formData.name" type="text" class="w-full bg-transparent border-0 border-b border-slate-200 pb-3 px-0 text-[15px] focus:outline-none focus:border-primary focus:ring-0 placeholder:text-slate-600 transition-colors" placeholder="Full Name" required />
+          <input aria-label="Full Name" v-model="formData.name" type="text" class="w-full bg-transparent border-0 border-b border-slate-200 pb-3 px-0 text-[15px] focus:outline-none focus:border-primary focus:ring-0 placeholder:text-slate-400 transition-colors" placeholder="Full Name" required />
         
-          <input aria-label="Email Address" v-model="formData.email" type="email" class="w-full bg-transparent border-0 border-b border-slate-200 pb-3 px-0 text-[15px] focus:outline-none focus:border-primary focus:ring-0 placeholder:text-slate-600 transition-colors" placeholder="Email" required />
+          <input aria-label="Email Address" v-model="formData.email" type="email" class="w-full bg-transparent border-0 border-b border-slate-200 pb-3 px-0 text-[15px] focus:outline-none focus:border-primary focus:ring-0 placeholder:text-slate-400 transition-colors" placeholder="Email" required />
         
-          <input aria-label="Phone Number" v-model="formData.phone" type="tel" class="w-full bg-transparent border-0 border-b border-slate-200 pb-3 px-0 text-[15px] focus:outline-none focus:border-primary focus:ring-0 placeholder:text-slate-600 transition-colors" placeholder="Phone" required />
+          <input aria-label="Phone Number" v-model="formData.phone" type="tel" class="w-full bg-transparent border-0 border-b border-slate-200 pb-3 px-0 text-[15px] focus:outline-none focus:border-primary focus:ring-0 placeholder:text-slate-400 transition-colors" placeholder="Phone" required />
         
-          <select aria-label="Service required" v-model="formData.service" class="w-full bg-transparent border-0 border-b border-slate-200 pb-3 px-0 text-[15px] focus:outline-none focus:border-primary focus:ring-0 text-slate-600 transition-colors appearance-none" required>
-            <option value="" disabled selected>Service required</option>
-            <option value="corporate-tax" class="text-slate-800">Corporate Tax</option>
-            <option value="vat" class="text-slate-800">VAT Registration</option>
-            <option value="accounting" class="text-slate-800">Accounting & Bookkeeping</option>
-            <option value="other" class="text-slate-800">Other</option>
-          </select>
+          <!-- Custom Styled Service Dropdown -->
+          <div ref="dropdownRef" class="relative">
+            <button
+              type="button"
+              @click="toggleDropdown"
+              class="w-full bg-transparent border-0 border-b border-slate-200 pb-3 px-0 text-[15px] flex items-center justify-between text-left focus:outline-none transition-colors cursor-pointer"
+              :class="[
+                isDropdownOpen ? 'border-primary' : '',
+                selectedServiceLabel ? 'text-slate-800 font-medium' : 'text-slate-400'
+              ]"
+              aria-haspopup="listbox"
+              :aria-expanded="isDropdownOpen"
+            >
+              <span>{{ selectedServiceLabel || 'Service required' }}</span>
+              <svg 
+                class="w-4 h-4 text-slate-400 transition-transform duration-200 shrink-0 ml-2" 
+                :class="{ 'rotate-180 text-primary': isDropdownOpen }"
+                viewBox="0 0 20 20" 
+                fill="currentColor"
+              >
+                <path 
+                  fill-rule="evenodd" 
+                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" 
+                  clip-rule="evenodd" 
+                />
+              </svg>
+            </button>
+
+            <!-- Floating Menu -->
+            <Transition name="dropdown">
+              <div 
+                v-if="isDropdownOpen" 
+                class="absolute left-0 right-0 top-full mt-1.5 bg-white rounded-2xl shadow-[0_12px_32px_rgba(0,0,0,0.15)] border border-slate-100 z-50 overflow-hidden py-1.5"
+                role="listbox"
+              >
+                <div
+                  v-for="option in serviceOptions"
+                  :key="option.value"
+                  @click="selectService(option.value)"
+                  class="px-4 py-2.5 text-[14.5px] cursor-pointer flex items-center justify-between transition-colors select-none"
+                  :class="formData.service === option.value 
+                    ? 'bg-lime-400/20 text-primary font-semibold' 
+                    : 'text-slate-700 hover:bg-slate-50 hover:text-primary'"
+                  role="option"
+                  :aria-selected="formData.service === option.value"
+                >
+                  <span>{{ option.label }}</span>
+                  <svg 
+                    v-if="formData.service === option.value" 
+                    class="w-4 h-4 text-lime-600 shrink-0 ml-2" 
+                    viewBox="0 0 20 20" 
+                    fill="currentColor"
+                  >
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                  </svg>
+                </div>
+              </div>
+            </Transition>
+          </div>
         
-          <textarea aria-label="Message" v-model="formData.message" class="w-full bg-transparent border-0 border-b border-slate-200 pb-3 px-0 text-[15px] focus:outline-none focus:border-primary focus:ring-0 placeholder:text-slate-600 transition-colors resize-none mt-2 min-h-[100px]" placeholder="Message" rows="1"></textarea>
+          <textarea aria-label="Message" v-model="formData.message" class="w-full bg-transparent border-0 border-b border-slate-200 pb-3 px-0 text-[15px] focus:outline-none focus:border-primary focus:ring-0 placeholder:text-slate-400 transition-colors resize-none mt-2 min-h-[100px]" placeholder="Message" rows="1"></textarea>
         
         <p v-if="errorMessage" class="text-rose-500 text-xs text-center mt-2">{{ errorMessage }}</p>
 
         <div class="pt-3 flex justify-center">
-          <Button type="submit" variant="dark" class="w-[85%] md:w-[75%] lg:w-[72%]" :disabled="isLoading">
+          <Button type="submit" variant="dark" class="w-[85%] md:w-[75%] lg:w-[62%] lg:py-2.5" :disabled="isLoading">
             <span v-if="isLoading">Sending...</span>
             <span v-else>{{ buttonText }}</span>
           </Button>
@@ -51,7 +103,7 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
+import { ref, computed, onMounted, onUnmounted } from 'vue'
 
 defineProps({
   title: {
@@ -68,6 +120,16 @@ const isSubmitted = ref(false)
 const isLoading = ref(false)
 const errorMessage = ref('')
 
+const isDropdownOpen = ref(false)
+const dropdownRef = ref(null)
+
+const serviceOptions = [
+  { value: 'corporate-tax', label: 'Corporate Tax' },
+  { value: 'vat', label: 'VAT Registration' },
+  { value: 'accounting', label: 'Accounting & Bookkeeping' },
+  { value: 'other', label: 'Other' }
+]
+
 const formData = ref({
   name: '',
   email: '',
@@ -77,7 +139,45 @@ const formData = ref({
   website: '' // honeypot
 })
 
+const selectedServiceLabel = computed(() => {
+  const match = serviceOptions.find(opt => opt.value === formData.value.service)
+  return match ? match.label : ''
+})
+
+const toggleDropdown = () => {
+  isDropdownOpen.value = !isDropdownOpen.value
+}
+
+const selectService = (value) => {
+  formData.value.service = value
+  isDropdownOpen.value = false
+  if (errorMessage.value) errorMessage.value = ''
+}
+
+const handleClickOutside = (event) => {
+  if (dropdownRef.value && !dropdownRef.value.contains(event.target)) {
+    isDropdownOpen.value = false
+  }
+}
+
+onMounted(() => {
+  if (import.meta.client) {
+    document.addEventListener('click', handleClickOutside)
+  }
+})
+
+onUnmounted(() => {
+  if (import.meta.client) {
+    document.removeEventListener('click', handleClickOutside)
+  }
+})
+
 const handleSubmit = async () => {
+  if (!formData.value.service) {
+    errorMessage.value = 'Please select a service required.'
+    return
+  }
+
   isLoading.value = true
   errorMessage.value = ''
   
@@ -101,6 +201,18 @@ const handleSubmit = async () => {
 </script>
 
 <style scoped>
+/* Smooth Dropdown Popover Animation */
+.dropdown-enter-active,
+.dropdown-leave-active {
+  transition: opacity 0.2s ease, transform 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.dropdown-enter-from,
+.dropdown-leave-to {
+  opacity: 0;
+  transform: translateY(-6px) scale(0.98);
+}
+
 .animate-fade-in {
   animation: fadeIn 0.5s ease-out forwards;
 }

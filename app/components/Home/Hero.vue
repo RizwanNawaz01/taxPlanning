@@ -14,7 +14,7 @@
 const heroContent = {
   bgImage: '/Home/hero.webp',
   bgMobileImage: '/Home/hero-mobile.webp',
-  title: 'Tax planning <span class="block mt-2 lg:mt-7 text-lime-400">that thinks ahead.</span>',
+  title: 'Tax planning <span class="block mt-2 lg:mt-5 text-lime-400">that thinks ahead.</span>',
   description: 'We help UAE businesses manage their tax obligations from registration and filing through to questions around growth and structure.',
   button: {
     text: 'Explore Our Tax Services',

@@ -1,6 +1,6 @@
 <template>
   <section 
-    class="relative pt-36 lg:pt-56 pb-[400px] md:pb-24 overflow-hidden bg-cover bg-center bg-no-repeat hero-bg"
+    class="relative pt-36 lg:pt-56 pb-[400px] md:pb-24 overflow-hidden bg-cover bg-center bg-no-repeat hero-bg xl:min-h-[910px]"
     :style="{
       '--hero-bg-desktop': `url(${bgImage})`,
       '--hero-bg-mobile': `url(${bgMobileImage || bgImage})`
@@ -20,7 +20,7 @@
 
         <p 
           v-if="description" 
-          class="text-lg xl:text-xl text-white/80 mb-8 max-w-lg xl:max-w-xl" 
+          class="text-lg xl:text-xl text-white/80 mb-8 max-w-lg" 
           data-aos="blur-in" 
           data-aos-delay="200"
         >
