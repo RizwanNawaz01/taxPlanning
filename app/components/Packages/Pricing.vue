@@ -13,18 +13,21 @@
 
       <!-- Transaction Volume Tabs -->
       <div class="flex justify-center mb-12 lg:mb-16" data-aos="blur-in" data-aos-delay="150">
-        <div class="flex items-center gap-2 md:gap-3 overflow-x-auto no-scrollbar py-1 px-1 max-w-full">
-          <button
-            v-for="tier in tiers"
-            :key="tier.id"
-            @click="selectedTier = tier.id"
-            class="whitespace-nowrap px-6 py-2.5 rounded-full text-sm md:text-[15px] font-medium transition-all duration-300"
-            :class="selectedTier === tier.id 
-              ? 'bg-primary text-white shadow-md' 
-              : 'bg-[#FBF4F2] text-slate-700 hover:bg-[#F3EBE8]'"
-          >
-            {{ tier.label }}
-          </button>
+        <div class="w-full max-w-full overflow-x-auto no-scrollbar py-2 px-4 flex justify-start md:justify-center">
+          <div class="inline-flex items-center bg-[#FAF4F2] rounded-full p-1 md:p-1.5 shrink-0 select-none">
+            <button
+              v-for="tier in tiers"
+              :key="tier.id"
+              type="button"
+              @click="selectTier(tier.id, $event)"
+              class="whitespace-nowrap px-5 sm:px-6 lg:px-8 py-2.5 lg:py-3 rounded-full text-sm md:text-[15px] font-medium transition-all duration-300"
+              :class="selectedTier === tier.id 
+                ? 'bg-primary text-white font-semibold shadow-sm' 
+                : 'text-slate-600 hover:text-primary bg-transparent'"
+            >
+              {{ tier.label }}
+            </button>
+          </div>
         </div>
       </div>
 
@@ -129,6 +132,13 @@ const tiers = [
   { id: '75', label: '75 Transactions' },
   { id: '100', label: '100 Transactions' }
 ]
+
+const selectTier = (id, event) => {
+  selectedTier.value = id
+  if (event?.currentTarget && typeof event.currentTarget.scrollIntoView === 'function') {
+    event.currentTarget.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' })
+  }
+}
 
 const packages = computed(() => [
   {
