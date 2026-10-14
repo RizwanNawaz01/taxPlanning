@@ -90,7 +90,7 @@ const mobileLinks = [
   { text: 'Services', url: '/services' },
   { text: 'Who we work with', url: '/#who-we-work-with' },
   { text: 'Our approach', url: '/#how-we-work' },
-  { text: 'Partners', url: '/#partner' },
+  { text: 'Partners', url: '/partner' },
   { text: 'About us', url: '/about' }
 ]
 
@@ -100,7 +100,7 @@ const footerLinks = [
       { text: 'Services', url: '/services' },
       { text: 'Who we work with', url: '/#who-we-work-with' },
       { text: 'Our approach', url: '/#how-we-work' },
-      { text: 'Partners', url: '/#partner' },
+      { text: 'Partners', url: '/partner' },
       { text: 'About us', url: '/about' }
     ]
   },
@@ -109,7 +109,7 @@ const footerLinks = [
       { text: 'Services', url: '/services' },
       { text: 'Who we work with', url: '/#who-we-work-with' },
       { text: 'Our approach', url: '/#how-we-work' },
-      { text: 'Partners', url: '/#partner' },
+      { text: 'Partners', url: '/partner' },
       { text: 'About us', url: '/about' }
     ]
   },
@@ -118,7 +118,7 @@ const footerLinks = [
       { text: 'Services', url: '/services' },
       { text: 'Who we work with', url: '/#who-we-work-with' },
       { text: 'Our approach', url: '/#how-we-work' },
-      { text: 'Partners', url: '/#partner' },
+      { text: 'Partners', url: '/partner' },
       { text: 'About us', url: '/about' }
     ]
   }

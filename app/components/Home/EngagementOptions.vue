@@ -17,9 +17,9 @@
         </div>
       </div>
       <div class="text-center" data-aos="blur-in" data-aos-delay="600">
-        <a href="#" @click.prevent="isModalOpen = true" class="inline-block bg-surface-subtle text-primary px-8 py-3 lg:px-12 lg:py-3.5 text-[14px] lg:text-base rounded-full font-bold hover:bg-white hover:-translate-y-1 transition-all shadow-lg">
+        <NuxtLink to="/packages" class="inline-block bg-surface-subtle text-primary px-8 py-3 lg:px-12 lg:py-3.5 text-[14px] lg:text-base rounded-full font-bold hover:bg-white hover:-translate-y-1 transition-all shadow-lg">
           Discover our Packages
-        </a>
+        </NuxtLink>
       </div>
     </div>
 

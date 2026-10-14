@@ -1,17 +1,22 @@
 <template>
-  <section class="py-20 lg:py-28 bg-white">
+  <section :class="[sectionClass, bgClass]">
     <div class="container mx-auto px-6 lg:px-12 xl:px-16">
-      <div class="max-w-4xl mx-auto text-center" data-aos="blur-in">
-        <h2 class="text-3xl md:text-4xl lg:text-[44px] font-bold text-primary mb-8 tracking-tight">
-          Our Story
-        </h2>
-        <div class="space-y-6 text-slate-700 text-base md:text-lg lg:text-[19px] leading-relaxed font-normal">
-          <p>
-            UAE businesses face a growing set of tax obligations. Registration and filing are only part of the picture; ownership structure, cross-border transactions, and long-term planning all carry tax implications of their own.
-          </p>
-          <p>
-            taxplanning.ae is a dedicated team built specifically for tax, covering everything from day-to-day compliance to the advisory work behind bigger decisions.
-          </p>
+      <div :class="[maxWidthClass, 'mx-auto text-center']" data-aos="blur-in">
+        <h2 
+          v-if="title" 
+          class="text-3xl md:text-4xl lg:text-[44px] font-bold text-primary mb-8 tracking-tight"
+          v-html="title"
+        ></h2>
+        
+        <div :class="['space-y-6 text-base md:text-lg lg:text-[19px] leading-relaxed font-normal', textColorClass]">
+          <template v-if="Array.isArray(paragraphs)">
+            <p 
+              v-for="(para, index) in paragraphs" 
+              :key="index"
+              v-html="para"
+            ></p>
+          </template>
+          <p v-else v-html="paragraphs"></p>
         </div>
       </div>
     </div>
@@ -19,5 +24,33 @@
 </template>
 
 <script setup>
-// Our Story section for About Us
+defineProps({
+  title: {
+    type: String,
+    default: 'Our Story'
+  },
+  paragraphs: {
+    type: [Array, String],
+    default: () => [
+      'UAE businesses face a growing set of tax obligations. Registration and filing are only part of the picture; ownership structure, cross-border transactions, and long-term planning all carry tax implications of their own.',
+      'taxplanning.ae is a dedicated team built specifically for tax, covering everything from day-to-day compliance to the advisory work behind bigger decisions.'
+    ]
+  },
+  bgClass: {
+    type: String,
+    default: 'bg-white'
+  },
+  sectionClass: {
+    type: String,
+    default: 'py-20 lg:py-28'
+  },
+  maxWidthClass: {
+    type: String,
+    default: 'max-w-4xl'
+  },
+  textColorClass: {
+    type: String,
+    default: 'text-slate-700'
+  }
+})
 </script>

@@ -110,10 +110,10 @@ const logo = {
 
 const navLinks = [
   { label: 'Services', href: '/services' },
-  { label: 'Who we work with', href: '/#who-we-work-with' },
-  { label: 'Our approach', href: '/#how-we-work' },
-  { label: 'Partners', href: '/#partner' },
-  { label: 'About us', href: '/about' }
+  { label: 'About us', href: '/about' },
+  { label: 'Packages', href: '/packages' },
+  { label: 'Partner with us', href: '/partner' },
+  { label: 'Book a consultation', href: '/#book-a-consultation' }
 ]
 
 const ctaButton = {
