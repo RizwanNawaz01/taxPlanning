@@ -1,11 +1,11 @@
 <template>
   <section id="who-we-work-with" class="pt-0 lg:pt-12 pb-20 lg:pb-28 bg-white overflow-hidden relative">
-    <div class="container mx-auto px-7 xl:px-16 2xl:px-12 grid lg:grid-cols-2 gap-12 lg:gap-20 items-center relative z-10">
+    <div class="container mx-auto px-6 lg:px-8 xl:px-12 2xl:px-12 grid lg:grid-cols-2 gap-8 lg:gap-12 xl:gap-20 items-center relative z-10">
       
       <!-- Left Column -->
       <div class="relative flex flex-col items-center lg:items-start pt-0">
         <!-- Image -->
-        <NuxtImg src="/Home/who-we-work.webp" alt="Who We Work With" format="webp" loading="lazy" class="relative z-10 w-[500px] max-w-[300px] md:w-[100%] lg:max-w-[340px] xl:max-w-[340px] xl:left-20 -mb-[1px] object-contain" data-aos="fade-right" />
+        <NuxtImg src="/Home/who-we-work.webp" alt="Who We Work With" format="webp" loading="lazy" class="relative z-10 w-[500px] max-w-[300px] md:w-[100%] lg:max-w-[340px] xl:max-w-[340px] xl:left-8 2xl:left-14 -mb-[1px] object-contain" data-aos="fade-right" />
         
         <!-- Text Content -->
         <div class="relative z-0 w-full flex flex-col items-center lg:items-start">

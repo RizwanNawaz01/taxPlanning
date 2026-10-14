@@ -1,10 +1,10 @@
 <template>
   <section class="py-24 bg-white">
-    <div class="container grid lg:grid-cols-2 gap-10 lg:gap-16 items-start lg:px-7 xl:px-14 2xl:px-12">
+    <div class="container grid lg:grid-cols-2 gap-10 lg:gap-12 xl:gap-16 items-start px-6 lg:px-8 xl:px-12 2xl:px-12">
       <!-- Left Side -->
       <div class="lg:max-w-xl" data-aos="fade-up">
         <span class="block text-base font-bold text-slate-400 uppercase tracking-wider mb-2">{{ calloutContent.overline }}</span>
-        <h2 class="text-4xl lg:text-5xl xl:text-6xl font-semibold text-primary leading-[1.15]" v-html="calloutContent.title"></h2>
+        <h2 class="text-4xl lg:text-4xl xl:text-6xl font-semibold text-primary leading-[1.15]" v-html="calloutContent.title"></h2>
       </div>
       
       <!-- Right Side -->

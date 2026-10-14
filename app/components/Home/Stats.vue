@@ -1,5 +1,5 @@
 <template>
-  <section ref="statsSection" class="py-10 bg-surface px-7 xl:px-16 2xl:px-12">
+  <section ref="statsSection" class="py-10 bg-surface px-6 lg:px-8 xl:px-12 2xl:px-12">
     <div class="container flex flex-col md:flex-row justify-center items-center text-center md:divide-x divide-slate-300">
       <div v-for="(stat, index) in stats" :key="index" class="relative flex-1 w-full py-8 md:py-2 px-4 after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-20 after:h-[1px] after:bg-slate-300 md:after:hidden last:after:hidden">
         <h3 class="text-[28px] lg:text-[26px]  xl:text-[32px] font-semibold text-black mb-2">

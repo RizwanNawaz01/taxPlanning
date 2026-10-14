@@ -6,14 +6,14 @@
       '--hero-bg-mobile': `url(${bgMobileImage || bgImage})`
     }"
   >
-    <div class="container grid lg:grid-cols-12 gap-8 lg:gap-16 items-center relative z-10 px-7 xl:px-16 2xl:px-12">
+    <div class="container grid lg:grid-cols-12 gap-8 lg:gap-10 xl:gap-16 items-center relative z-10 px-6 lg:px-8 xl:px-12 2xl:px-12">
       <!-- Left Side: Content -->
       <div :class="showForm ? 'lg:col-span-7' : 'lg:col-span-10 xl:col-span-8'" class="text-white">
         <!-- Optional Pre-Title / Badge Slot -->
         <slot name="badge" />
 
         <h1 
-          class="text-5xl lg:text-6xl xl:text-7xl font-semibold leading-tight mb-6" 
+          class="text-4xl sm:text-5xl lg:text-[3.25rem] xl:text-7xl font-semibold leading-tight mb-6" 
           data-aos="blur-in" 
           v-html="title"
         ></h1>

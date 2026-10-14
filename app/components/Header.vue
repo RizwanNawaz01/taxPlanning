@@ -1,21 +1,21 @@
 <template>
-  <header class="fixed top-0 left-0 right-0 z-50 pt-4 lg:pt-8 px-4 lg:px-8 transition-all duration-300">
+  <header class="fixed top-0 left-0 right-0 z-50 pt-4 lg:pt-8 px-4 lg:px-6 xl:px-8 transition-all duration-300">
     <div 
-      class="container mx-auto flex justify-between items-center backdrop-blur-md rounded-full px-4 lg:px-10 shadow-lg relative z-50 transition-all duration-500 border"
+      class="container mx-auto flex justify-between items-center backdrop-blur-md rounded-full px-4 lg:px-6 xl:px-10 shadow-lg relative z-50 transition-all duration-500 border"
       :class="isScrolled ? 'bg-slate-900/95 border-white/10 py-3 lg:py-3.5' : 'bg-dark-header/50 border-white/15 py-4 lg:py-3.5'"
     >
       <!-- Logo -->
-      <NuxtLink to="/" class="pl-2 lg:pl-0" @click="isMobileMenuOpen = false">
-        <NuxtImg :src="logo.src" :alt="logo.alt" class="h-6 md:h-10 w-auto" />
+      <NuxtLink to="/" class="pl-2 lg:pl-0 shrink-0" @click="isMobileMenuOpen = false">
+        <NuxtImg :src="logo.src" :alt="logo.alt" class="h-6 md:h-9 xl:h-10 w-auto" />
       </NuxtLink>
 
       <!-- Right Side (Nav + Button) -->
-      <div class="flex items-center gap-5 lg:gap-12">
+      <div class="flex items-center gap-4 lg:gap-6 xl:gap-12">
         <!-- Navigation -->
         <nav class="hidden lg:block">
-          <ul class="flex gap-10 lg:gap-8 xl:gap-12 text-white/90 font-medium text-[15px]">
+          <ul class="flex gap-4 lg:gap-5 xl:gap-8 2xl:gap-12 text-white/90 font-medium text-[14px] xl:text-[15px]">
             <li v-for="(link, index) in navLinks" :key="index">
-              <NuxtLink :to="link.href" class="hover:text-lime-400 transition-colors">
+              <NuxtLink :to="link.href" class="hover:text-lime-400 transition-colors whitespace-nowrap">
                 {{ link.label }}
               </NuxtLink>
             </li>
@@ -23,8 +23,8 @@
         </nav>
 
         <!-- CTA Button (Desktop & Icon on Mobile) -->
-        <a :href="ctaButton.href" aria-label="Call Us" class="flex items-center justify-center text-white font-semibold text-[15px] lg:border lg:border-lime-accent/60 lg:px-5 lg:py-2.5 rounded-full hover:bg-lime-accent/10 transition-colors relative z-50">
-          <svg class="w-[20px] h-[20px] lg:w-4 lg:h-4 text-lime-accent" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+        <a :href="ctaButton.href" aria-label="Call Us" class="flex items-center justify-center text-white font-semibold text-[13px] xl:text-[15px] lg:border lg:border-lime-accent/60 lg:px-4 lg:py-2 xl:px-5 xl:py-2.5 rounded-full hover:bg-lime-accent/10 transition-colors relative z-50 whitespace-nowrap">
+          <svg class="w-[20px] h-[20px] lg:w-4 lg:h-4 text-lime-accent shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
           <span class="hidden lg:inline ml-2">{{ ctaButton.label }}</span>
         </a>
 

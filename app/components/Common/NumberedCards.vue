@@ -1,13 +1,13 @@
 <template>
   <section :id="sectionId" :class="['relative pt-20 pb-5 lg:py-24 bg-primary text-white overflow-hidden', sectionClass]">
-    <div class="container relative px-7 xl:px-16 2xl:px-12">
+    <div class="container relative px-6 lg:px-8 xl:px-12 2xl:px-12">
       <!-- Header -->
       <div 
-        class="flex flex-col lg:flex-row justify-between items-center lg:items-center gap-4 lg:gap-32 mb-10 lg:mb-16 text-center lg:text-left px-0" 
+        class="flex flex-col lg:flex-row justify-between items-center lg:items-center gap-4 lg:gap-12 xl:gap-32 mb-10 lg:mb-16 text-center lg:text-left px-0" 
         data-aos="fade-up"
       >
-        <h2 class="text-[32px] lg:text-5xl font-semibold leading-tight" v-html="title"></h2>
-        <p v-if="description" class="text-[14px] lg:text-lg text-white max-w-sm lg:max-w-md mx-auto lg:mx-0 lg:leading-snug">
+        <h2 class="text-[32px] lg:text-4xl xl:text-5xl font-semibold leading-tight" v-html="title"></h2>
+        <p v-if="description" class="text-[14px] lg:text-base xl:text-lg text-white max-w-sm lg:max-w-md mx-auto lg:mx-0 lg:leading-snug">
           {{ description }}
         </p>
       </div>
@@ -15,21 +15,21 @@
       <!-- Slider / Grid Container -->
       <div class="relative w-full">
         <!-- Desktop Grid -->
-        <div :class="['hidden lg:grid gap-6 mb-12', gridColsClass]">
+        <div :class="['hidden lg:grid gap-4 xl:gap-6 mb-12', gridColsClass]">
           <div
             v-for="(item, index) in items"
             :key="index"
-            class="glass-card p-8  flex flex-col"
+            class="glass-card p-5 xl:p-8 flex flex-col"
             data-aos="fade-up"
             :data-aos-delay="index * 150"
           >
-            <span class="glass-number text-[64px] font-black leading-none mb-8 lg:mb-10 block select-none">
+            <span class="glass-number text-[52px] xl:text-[64px] font-black leading-none mb-6 xl:mb-10 block select-none">
               {{ item.number || index + 1 }}
             </span>
-            <h3 class="text-xl font-semibold mb-4 pr-4 leading-snug text-white">
+            <h3 class="text-lg xl:text-xl font-semibold mb-3 xl:mb-4 pr-2 xl:pr-4 leading-snug text-white">
               {{ item.title }}
             </h3>
-            <p class="text-sm text-white lg:leading-snug">
+            <p class="text-[13px] xl:text-sm text-white lg:leading-snug">
               {{ item.description }}
             </p>
           </div>
