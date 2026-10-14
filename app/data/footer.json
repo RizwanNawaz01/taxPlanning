@@ -1,0 +1,55 @@
+{
+  "companyInfo": {
+    "logo": {
+      "src": "/logo.webp",
+      "alt": "taxplanning.ae"
+    },
+    "address": [
+      "Level 4, Burlington Tower, Business Bay,",
+      "Dubai"
+    ],
+    "phone": "+971 800 469",
+    "email": "info@taxplanning.ae"
+  },
+  "mobileLinks": [
+    { "text": "Services", "url": "/services" },
+    { "text": "Who we work with", "url": "/#who-we-work-with" },
+    { "text": "Blogs", "url": "/blog" },
+    { "text": "Our approach", "url": "/#how-we-work" },
+    { "text": "Partners", "url": "/partner" },
+    { "text": "About us", "url": "/about" }
+  ],
+  "footerLinks": [
+    {
+      "links": [
+        { "text": "Services", "url": "/services" },
+        { "text": "Who we work with", "url": "/#who-we-work-with" },
+        { "text": "Blogs", "url": "/blog" },
+        { "text": "Partners", "url": "/partner" },
+        { "text": "About us", "url": "/about" }
+      ]
+    },
+    {
+      "links": [
+        { "text": "Services", "url": "/services" },
+        { "text": "Who we work with", "url": "/#who-we-work-with" },
+        { "text": "Our approach", "url": "/#how-we-work" },
+        { "text": "Partners", "url": "/partner" },
+        { "text": "About us", "url": "/about" }
+      ]
+    },
+    {
+      "links": [
+        { "text": "Services", "url": "/services" },
+        { "text": "Who we work with", "url": "/#who-we-work-with" },
+        { "text": "Our approach", "url": "/#how-we-work" },
+        { "text": "Partners", "url": "/partner" },
+        { "text": "About us", "url": "/about" }
+      ]
+    }
+  ],
+  "legalLinks": [
+    { "text": "Terms and conditions", "url": "#" },
+    { "text": "Privacy Policy", "url": "#" }
+  ]
+}

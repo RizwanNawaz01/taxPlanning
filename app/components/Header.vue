@@ -113,7 +113,7 @@ const navLinks = [
   { label: 'About us', href: '/about' },
   { label: 'Packages', href: '/packages' },
   { label: 'Partner with us', href: '/partner' },
-  { label: 'Book a consultation', href: '/#book-a-consultation' }
+  { label: 'Contact us', href: '/contact' }
 ]
 
 const ctaButton = {

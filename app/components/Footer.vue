@@ -25,7 +25,7 @@
           <ul class="space-y-4 xl:space-y-5 text-white/90 text-[13px] xl:text-lg">
             <li v-for="(link, linkIndex) in section.links" :key="linkIndex" class="flex items-center gap-3">
               <div class="w-1 h-1 bg-white rounded-full shrink-0"></div>
-              <a :href="link.url" class="hover:text-lime-400 transition-colors">{{ link.text }}</a>
+              <NuxtLink :to="link.url" class="hover:text-lime-400 transition-colors">{{ link.text }}</NuxtLink>
             </li>
           </ul>
         </div>
@@ -38,7 +38,7 @@
           <ul class="space-y-4 text-white/90 text-lg">
             <li v-for="(link, linkIndex) in mobileLinks" :key="linkIndex" class="flex items-center gap-3">
               <div class="w-1 h-1 bg-white rounded-full shrink-0"></div>
-              <a :href="link.url" class="hover:text-lime-400 transition-colors">{{ link.text }}</a>
+              <NuxtLink :to="link.url" class="hover:text-lime-400 transition-colors">{{ link.text }}</NuxtLink>
             </li>
           </ul>
         </div>
@@ -70,62 +70,12 @@
 
 <script setup>
 import { computed } from 'vue'
+import footerData from '~/data/footer.json'
 
 const currentYear = computed(() => new Date().getFullYear())
 
-const companyInfo = {
-  logo: {
-    src: '/logo.webp',
-    alt: 'taxplanning.ae'
-  },
-  address: [
-    'Level 4, Burlington Tower, Business Bay,',
-    'Dubai'
-  ],
-  phone: '+971 800 469',
-  email: 'info@taxplanning.ae'
-}
-
-const mobileLinks = [
-  { text: 'Services', url: '/services' },
-  { text: 'Who we work with', url: '/#who-we-work-with' },
-  { text: 'Our approach', url: '/#how-we-work' },
-  { text: 'Partners', url: '/partner' },
-  { text: 'About us', url: '/about' }
-]
-
-const footerLinks = [
-  {
-    links: [
-      { text: 'Services', url: '/services' },
-      { text: 'Who we work with', url: '/#who-we-work-with' },
-      { text: 'Our approach', url: '/#how-we-work' },
-      { text: 'Partners', url: '/partner' },
-      { text: 'About us', url: '/about' }
-    ]
-  },
-  {
-    links: [
-      { text: 'Services', url: '/services' },
-      { text: 'Who we work with', url: '/#who-we-work-with' },
-      { text: 'Our approach', url: '/#how-we-work' },
-      { text: 'Partners', url: '/partner' },
-      { text: 'About us', url: '/about' }
-    ]
-  },
-  {
-    links: [
-      { text: 'Services', url: '/services' },
-      { text: 'Who we work with', url: '/#who-we-work-with' },
-      { text: 'Our approach', url: '/#how-we-work' },
-      { text: 'Partners', url: '/partner' },
-      { text: 'About us', url: '/about' }
-    ]
-  }
-]
-
-const legalLinks = [
-  { text: 'Terms and conditions', url: '#' },
-  { text: 'Privacy Policy', url: '#' }
-]
+const companyInfo = footerData.companyInfo
+const mobileLinks = footerData.mobileLinks
+const footerLinks = footerData.footerLinks
+const legalLinks = footerData.legalLinks
 </script>
