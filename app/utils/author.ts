@@ -50,22 +50,22 @@ export function resolveAuthor(authorData: any): AuthorProfile | null {
   // If authorData is an object
   if (typeof authorData === 'object') {
     const slug = authorData.slug || (authorData.name ? String(authorData.name).toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '') : 'author')
-    const fromDb = getAuthorBySlug(slug) || {}
+    const fromDb = getAuthorBySlug(slug)
 
     return {
       slug,
-      name: authorData.name || fromDb.name || 'Author',
-      role: authorData.role || fromDb.role || 'Contributor',
-      fullRole: authorData.fullRole || fromDb.fullRole,
-      company: authorData.company || fromDb.company || 'Tax Planning UAE',
-      badgeText: authorData.badgeText || fromDb.badgeText || (authorData.company || fromDb.company || 'Tax Planning\nUAE'),
-      bio: authorData.bio || fromDb.bio || '',
-      avatar: authorData.avatar || fromDb.avatar,
-      experience: authorData.experience || fromDb.experience,
-      location: authorData.location || fromDb.location,
-      specialties: authorData.specialties || fromDb.specialties || [],
-      email: authorData.email || fromDb.email,
-      linkedin: authorData.linkedin || fromDb.linkedin,
+      name: authorData.name || fromDb?.name || 'Author',
+      role: authorData.role || fromDb?.role || 'Contributor',
+      fullRole: authorData.fullRole || fromDb?.fullRole,
+      company: authorData.company || fromDb?.company || 'Tax Planning UAE',
+      badgeText: authorData.badgeText || fromDb?.badgeText || (authorData.company || fromDb?.company || 'Tax Planning\nUAE'),
+      bio: authorData.bio || fromDb?.bio || '',
+      avatar: authorData.avatar || fromDb?.avatar,
+      experience: authorData.experience || fromDb?.experience,
+      location: authorData.location || fromDb?.location,
+      specialties: authorData.specialties || fromDb?.specialties || [],
+      email: authorData.email || fromDb?.email,
+      linkedin: authorData.linkedin || fromDb?.linkedin,
       ...authorData
     }
   }

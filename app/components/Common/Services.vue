@@ -3,7 +3,7 @@
     <div class="container px-6 lg:px-8 xl:px-12 2xl:px-12">
       <!-- Section Header -->
       <div class="flex flex-col lg:flex-row justify-between items-start lg:items-end mb-8 lg:mb-16 gap-3 lg:gap-6" data-aos="fade-up">
-        <h2 class="text-4xl lg:text-4xl xl:text-6xl font-semibold text-primary" v-html="title"></h2>
+        <h2 class="text-4xl lg:text-5xl 2xl:text-6xl font-semibold text-primary" v-html="title"></h2>
         <p v-if="description" class="text-black max-w-md text-[15px] lg:text-lg xl:text-lg leading-snug lg:leading-snug xl:leading-snug">
           {{ description }}
         </p>

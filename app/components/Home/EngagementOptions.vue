@@ -1,18 +1,18 @@
 <template>
   <section class="py-20 lg:py-24 bg-primary text-white">
     <div class="container px-6 lg:px-8 xl:px-12 2xl:px-12">
-      <h2 class="text-center text-[35px] lg:text-5xl xl:text-[3.5rem]  font-semibold mb-10 lg:mb-16 leading-tight" data-aos="blur-in">
+      <h2 class="text-center text-[35px] lg:text-5xl 2xl:text-[3.5rem] font-semibold mb-10 lg:mb-16 leading-tight" data-aos="blur-in">
         Engagement Options
       </h2>
       <div class="grid lg:grid-cols-2 gap-4 lg:gap-8 mb-10 lg:mb-12">
         <div 
           v-for="(option, index) in options" 
-          :key="index"
-          :class="['px-6 py-6 lg:px-10 lg:py-20 rounded-xl lg:rounded-[1rem]', option.bgClass, option.textClass]"
-          data-aos="blur-in"
+          :key="index" 
+          :class="['px-6 py-6 lg:px-10 lg:py-20 rounded-xl lg:rounded-[1rem]', option.bgClass, option.textClass]" 
+          data-aos="blur-in" 
           :data-aos-delay="200 + (index * 200)"
         >
-          <h3 class="text-[20px] lg:text-3xl xl:text-5xl font-medium mb-3 lg:mb-6">{{ option.title }}</h3>
+          <h3 class="text-[20px] lg:text-3xl 2xl:text-5xl font-medium mb-3 lg:mb-6">{{ option.title }}</h3>
           <p class="text-[14px] lg:text-lg leading-relaxed lg:leading-snug max-w-[500px] text-black" :class="option.descClass">{{ option.description }}</p>
         </div>
       </div>

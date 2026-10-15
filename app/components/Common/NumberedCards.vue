@@ -3,10 +3,10 @@
     <div class="container relative px-6 lg:px-8 xl:px-12 2xl:px-12">
       <!-- Header -->
       <div 
-        class="flex flex-col lg:flex-row justify-between items-center lg:items-center gap-4 lg:gap-12 xl:gap-32 mb-10 lg:mb-16 text-center lg:text-left px-0" 
+        class="flex flex-col lg:flex-row justify-between items-center lg:items-center gap-4 lg:gap-12 2xl:gap-32 mb-10 lg:mb-16 text-center lg:text-left px-0" 
         data-aos="fade-up"
       >
-        <h2 class="text-[32px] lg:text-4xl xl:text-5xl font-semibold leading-tight" v-html="title"></h2>
+        <h2 class="text-[32px] lg:text-5xl 2xl:text-5xl font-semibold leading-tight" v-html="title"></h2>
         <p v-if="description" class="text-[14px] lg:text-base xl:text-lg text-white max-w-sm lg:max-w-md mx-auto lg:mx-0 lg:leading-snug">
           {{ description }}
         </p>
@@ -26,7 +26,7 @@
             <span class="glass-number text-[52px] xl:text-[64px] font-black leading-none mb-6 xl:mb-10 block select-none">
               {{ item.number || index + 1 }}
             </span>
-            <h3 class="text-lg xl:text-xl font-semibold mb-3 xl:mb-4 pr-2 xl:pr-4 leading-snug text-white">
+            <h3 class="text-lg lg:text-lg 2xl:text-xl font-semibold mb-3 xl:mb-4 pr-2 xl:pr-4 leading-snug text-white">
               {{ item.title }}
             </h3>
             <p class="text-[13px] xl:text-sm text-white lg:leading-snug">

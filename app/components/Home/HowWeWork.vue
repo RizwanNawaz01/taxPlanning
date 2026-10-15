@@ -2,11 +2,11 @@
   <section id="how-we-work" class="lg:py-24 py-12 bg-white">
     <div class="container mx-auto px-6 lg:px-8 xl:px-12 2xl:px-12">
       <div class="mb-12 lg:mb-16 max-w-3xl" data-aos="blur-in">
-        <h2 class="text-4xl lg:text-[2.5rem] xl:text-[3.5rem] font-semibold text-primary mb-4">How We Work</h2>
-        <p class="text-[17px] xl:text-[22px] text-black">We start with where your business actually stands, not a standard form.</p>
+        <h2 class="text-4xl lg:text-5xl 2xl:text-[3.5rem] font-semibold text-primary mb-4">How We Work</h2>
+        <p class="text-[17px] 2xl:text-[22px] text-black">We start with where your business actually stands, not a standard form.</p>
       </div>
 
-      <div class="grid lg:grid-cols-[40%_1fr] gap-10 lg:gap-14 xl:gap-24 items-center px-0">
+      <div class="grid lg:grid-cols-[40%_1fr] gap-10 lg:gap-14 2xl:gap-24 items-center px-0">
         <div class="rounded-[2rem] overflow-hidden h-[400px] lg:h-[600px] bg-slate-100 relative" data-aos="blur-in" data-aos-delay="200">
           <NuxtImg src="/Home/how-it-work.webp" alt="Consultation" format="webp" loading="lazy" class="absolute inset-0 w-full h-full object-cover" />
         </div>

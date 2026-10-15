@@ -4,7 +4,7 @@
       <!-- Left Side -->
       <div class="lg:max-w-xl" data-aos="fade-up">
         <span class="block text-sm lg:text-base font-bold text-slate-400 uppercase tracking-wider mb-2">{{ calloutContent.overline }}</span>
-        <h2 class="text-4xl lg:text-4xl xl:text-6xl font-semibold text-primary leading-[1.15]" v-html="calloutContent.title"></h2>
+        <h2 class="text-4xl lg:text-5xl 2xl:text-6xl font-semibold text-primary leading-[1.15]" v-html="calloutContent.title"></h2>
       </div>
       
       <!-- Right Side -->

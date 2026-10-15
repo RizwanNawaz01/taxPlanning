@@ -6,7 +6,7 @@
         class="flex flex-col lg:flex-row justify-between items-start lg:items-end mb-12 lg:mb-16 gap-4 lg:gap-8" 
         data-aos="fade-up"
       >
-        <h2 class="text-4xl lg:text-5xl xl:text-6xl font-semibold text-primary" v-html="title"></h2>
+        <h2 class="text-4xl lg:text-5xl 2xl:text-6xl font-semibold text-primary" v-html="title"></h2>
         <p v-if="description" class="text-black max-w-md text-base lg:text-lg leading-relaxed">
           {{ description }}
         </p>

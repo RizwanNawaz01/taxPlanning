@@ -2,7 +2,7 @@
   <section :class="['text-center', sectionClass, bgClass]">
     <div class="container px-6 lg:px-8 xl:px-12 2xl:px-12">
       <h2 
-        class="text-4xl lg:text-5xl xl:text-[3rem] font-bold text-primary mb-6" 
+        class="text-4xl lg:text-5xl 2xl:text-[3rem] font-bold text-primary mb-6" 
         data-aos="blur-in"
         v-html="title"
       ></h2>
