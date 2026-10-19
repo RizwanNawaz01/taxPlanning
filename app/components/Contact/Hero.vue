@@ -1,18 +1,23 @@
 <template>
   <section class="relative bg-white overflow-hidden">
-    <!-- Dark Top Banner Background -->
-    <div class="absolute top-0 inset-x-0 bg-[#071721] h-[380px] sm:h-[400px] md:h-[420px] lg:h-[300px] xl:h-[320px] z-0">
-      <div class="absolute inset-0 bg-gradient-to-b from-[#0c1e2e]/40 via-transparent to-transparent"></div>
+    <!-- Dark Top Banner Background with common-background.png -->
+    <div class="absolute top-0 inset-x-0 h-[380px] sm:h-[400px] md:h-[420px] lg:h-[300px] xl:h-[400px] z-0 overflow-hidden bg-[#071721]">
+      <NuxtImg
+        src="/common-background.png"
+        alt=""
+        format="webp"
+        class="w-full h-full object-cover object-top pointer-events-none"
+      />
     </div>
 
-    <div class="container mx-auto px-6 lg:px-8 xl:px-12 2xl:px-16 relative z-10 pt-40 sm:pt-32 lg:pt-36 xl:pt-48 pb-16 lg:pb-20">
+    <div class="container mx-auto px-6 lg:px-8 xl:px-12 2xl:px-12 relative z-10 pt-40 sm:pt-32 lg:pt-36 xl:pt-64 pb-16 lg:pb-20">
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 xl:gap-16 items-start">
         
         <!-- Left Column: Title in dark section, Contact info in white section (desktop) -->
         <div class="col-span-1 lg:col-span-7 flex flex-col justify-between">
           <!-- Title -->
           <div data-aos="blur-in">
-            <h1 class="text-4xl sm:text-5xl lg:text-[3.25rem] xl:text-[3.75rem] font-bold text-white tracking-tight leading-tight mb-10 lg:mb-0">
+            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-semibold text-white tracking-tight leading-tight mb-10 lg:mb-0">
               Contact Us
             </h1>
           </div>

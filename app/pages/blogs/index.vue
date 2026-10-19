@@ -1,11 +1,11 @@
 <template>
   <div class="bg-white">
     <!-- Hero Section (Matches Mockup Desktop & Mobile) -->
-    <section class="relative bg-[#071721] overflow-hidden pt-36 sm:pt-40 lg:pt-48 pb-14 sm:pb-16 lg:pb-24">
+    <section class="relative bg-[#071721] overflow-hidden pt-36 sm:pt-40 lg:pt-60 pb-14 sm:pb-16 lg:pb-24">
       <!-- Subtle Ambient Glow -->
       <div class="absolute inset-0 bg-gradient-to-b from-[#0c1e2e]/50 via-transparent to-transparent pointer-events-none"></div>
 
-      <div class="container mx-auto px-6 lg:px-8 xl:px-12 2xl:px-16 relative z-10">
+      <div class="container mx-auto px-6 lg:px-8 xl:px-12 2xl:px-12 relative z-10">
         <div class="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-4 sm:gap-6 lg:gap-12" data-aos="blur-in">
           <!-- Title on Left -->
           <div>
@@ -26,7 +26,7 @@
 
     <!-- Blog Posts List Section -->
     <section class="py-12 sm:py-16 lg:py-20">
-      <div class="container mx-auto px-6 lg:px-8 xl:px-12 max-w-5xl xl:max-w-6xl">
+      <div class="container mx-auto px-16">
         <!-- Vertical List of Blog Cards -->
         <div class="space-y-8 sm:space-y-10 lg:space-y-12">
           <article
@@ -40,7 +40,7 @@
             <NuxtLink
               :to="`/blogs/${blog.slug}`"
               :aria-label="blog.title"
-              class="w-full md:w-[280px] lg:w-[330px] xl:w-[360px] shrink-0 aspect-[16/10] overflow-hidden rounded-2xl lg:rounded-3xl bg-slate-100 shadow-sm group-hover:shadow-md transition-all duration-300 block"
+              class="w-full md:w-[280px] lg:w-[330px] xl:w-[380px] shrink-0 aspect-[16/10] overflow-hidden rounded-2xl lg:rounded-2xl bg-slate-100 shadow-sm group-hover:shadow-md transition-all duration-300 block"
             >
               <NuxtImg
                 :src="blog.image"

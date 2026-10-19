@@ -19,11 +19,11 @@
           :data-aos-delay="index % 2 === 0 ? '0' : '200'"
         >
           <h3 
-            class="text-3xl md:text-4xl lg:text-[50px] font-bold text-primary mb-6 tracking-tight"
+            class="text-3xl md:text-5xl lg:text-5xl font-bold text-primary mb-6 tracking-tight"
             v-html="item.title"
           ></h3>
           
-          <div class="space-y-4 text-black text-base md:text-lg lg:text-[18px] leading-relaxed max-w-lg">
+          <div class="space-y-4 text-black text-base md:text-lg lg:text-xl lg:leading-snug max-w-xl">
             <template v-if="Array.isArray(item.description)">
               <p 
                 v-for="(para, pIndex) in item.description" 
@@ -75,7 +75,7 @@ defineProps({
       {
         title: 'Our Team',
         description: [
-          'Our team of <strong class="text-primary font-bold">more than 50 tax professionals</strong> includes qualified CAs, ACCAs and CPAs, all senior, experienced practitioners. Between them, they have worked across a wide range of business structures and tax situations, so most questions we hear are ones we have handled before.',
+          'Our team of <strong class="text-primary font-bold">more than 50 tax professionals</strong> <br>includes qualified CAs, ACCAs and CPAs, all senior, experienced practitioners. Between them, they have worked across a wide range of business structures and tax situations, so most questions we hear are ones we have handled before.',
           'If you have a question about where your business stands on tax, we would be glad to talk it through.'
         ],
         image: '/About/team.webp',
@@ -85,7 +85,7 @@ defineProps({
   },
   bgClass: {
     type: String,
-    default: 'bg-[#F9FAFB]'
+    default: ''
   }
 })
 </script>

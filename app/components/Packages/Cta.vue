@@ -4,7 +4,7 @@
       <h2 class="text-2xl md:text-3xl lg:text-[32px] font-bold text-primary mb-3">
         Not sure which package fits?
       </h2>
-      <p class="text-slate-600 text-sm md:text-base mb-8 leading-relaxed">
+      <p class="text-black text-sm md:text-base mb-8 leading-relaxed">
         Tell us your VAT status and approximate transaction volume, and we will point you in the right direction.
       </p>
       <div>

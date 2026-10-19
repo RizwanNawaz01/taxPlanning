@@ -26,12 +26,12 @@
             v-for="(card, index) in items" 
             :key="index"
             :class="[
-              'min-w-[85%] sm:min-w-[48%] flex-shrink-0 bg-[#FBFBFB] rounded-3xl p-4 border border-slate-100 flex flex-col hover:shadow-lg transition-all',
-              items.length <= 3 ? 'lg:min-w-0' : 'lg:min-w-[calc(33.333%-1rem)]'
+              'slider-card min-w-[85%] sm:min-w-[48%] flex-shrink-0 bg-[#FBFBFB] rounded-3xl p-4 border border-slate-100 flex flex-col hover:shadow-lg transition-all',
+              items.length <= 3 ? 'lg:min-w-0' : 'slider-card-3col'
             ]"
           >
             <!-- Card Image -->
-            <div v-if="card.image" class="rounded-2xl overflow-hidden h-52 w-full bg-slate-200 mb-5 relative">
+            <div v-if="card.image" class="rounded-2xl overflow-hidden h-52 lg:h-56 max-h-56 w-full bg-slate-200 mb-5 relative">
               <NuxtImg 
                 :src="card.image" 
                 :alt="card.title"
@@ -56,33 +56,57 @@
         <div v-if="items.length > 3" class="flex justify-center items-center gap-3 mt-8">
           <button 
             @click="scrollPrev"
+            :disabled="!canScrollPrev"
             aria-label="Previous slide"
-            class="w-10 h-10 rounded-full border border-slate-300 text-slate-700 hover:text-black hover:border-slate-500 hover:bg-slate-50 flex items-center justify-center transition-all focus:outline-none"
+            class="w-11 h-11 lg:w-12 lg:h-12 rounded-full border border-gray-200 flex items-center justify-center transition-all duration-200 focus:outline-none"
+            :class="canScrollPrev 
+              ? 'bg-[#EAEAEA] text-black hover:bg-[#dedede] cursor-pointer' 
+              : 'bg-white text-black/40 opacity-50 cursor-not-allowed'"
           >
-            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+            <svg class="w-[20px] h-[12px] lg:w-[22px] lg:h-[13px]" viewBox="0 0 26 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M25.274 7.36401L25.274 8.36401L1.00004 8.36401L1.00004 7.36401L1.00004 6.36401L25.274 6.36401L25.274 7.36401ZM0.292929 8.07112C-0.0975952 7.68059 -0.0975952 7.04743 0.292929 6.6569L6.65689 0.292944C7.04742 -0.0975801 7.68058 -0.0975801 8.0711 0.292944C8.46163 0.683469 8.46163 1.31663 8.0711 1.70716L2.41425 7.36401L8.0711 13.0209C8.46163 13.4114 8.46163 14.0446 8.0711 14.4351C7.68058 14.8256 7.04741 14.8256 6.65689 14.4351L0.292929 8.07112Z" fill="currentColor"/>
+            </svg>
           </button>
           <button 
             @click="scrollNext"
+            :disabled="!canScrollNext"
             aria-label="Next slide"
-            class="w-10 h-10 rounded-full border border-slate-300 text-slate-700 hover:text-black hover:border-slate-500 hover:bg-slate-50 flex items-center justify-center transition-all focus:outline-none"
+            class="w-11 h-11 lg:w-12 lg:h-12 rounded-full border border-gray-200 flex items-center justify-center transition-all duration-200 focus:outline-none"
+            :class="canScrollNext 
+              ? 'bg-[#EAEAEA] text-black hover:bg-[#dedede] cursor-pointer' 
+              : 'bg-white text-black/40 opacity-50 cursor-not-allowed'"
           >
-            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+            <svg class="w-[20px] h-[12px] lg:w-[22px] lg:h-[13px]" viewBox="0 0 26 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0 7.36401L8.74227e-08 8.36401L24.274 8.36401L24.274 7.36401L24.274 6.36401L-8.74227e-08 6.36401L0 7.36401ZM24.9811 8.07112C25.3716 7.68059 25.3716 7.04743 24.9811 6.6569L18.6172 0.292944C18.2266 -0.0975801 17.5935 -0.0975801 17.2029 0.292944C16.8124 0.683469 16.8124 1.31663 17.2029 1.70716L22.8598 7.36401L17.2029 13.0209C16.8124 13.4114 16.8124 14.0446 17.2029 14.4351C17.5935 14.8256 18.2266 14.8256 18.6172 14.4351L24.9811 8.07112Z" fill="currentColor"/>
+            </svg>
           </button>
         </div>
         <div v-else-if="items.length > 1" class="flex lg:hidden justify-center items-center gap-3 mt-8">
           <button 
             @click="scrollPrev"
+            :disabled="!canScrollPrev"
             aria-label="Previous slide"
-            class="w-10 h-10 rounded-full border border-slate-300 text-slate-700 hover:text-black hover:border-slate-500 hover:bg-slate-50 flex items-center justify-center transition-all focus:outline-none"
+            class="w-11 h-11 rounded-full border border-gray-200 flex items-center justify-center transition-all duration-200 focus:outline-none"
+            :class="canScrollPrev 
+              ? 'bg-[#EAEAEA] text-black hover:bg-[#dedede] cursor-pointer' 
+              : 'bg-white text-black/40 opacity-50 cursor-not-allowed'"
           >
-            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+            <svg class="w-[20px] h-[12px]" viewBox="0 0 26 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M25.274 7.36401L25.274 8.36401L1.00004 8.36401L1.00004 7.36401L1.00004 6.36401L25.274 6.36401L25.274 7.36401ZM0.292929 8.07112C-0.0975952 7.68059 -0.0975952 7.04743 0.292929 6.6569L6.65689 0.292944C7.04742 -0.0975801 7.68058 -0.0975801 8.0711 0.292944C8.46163 0.683469 8.46163 1.31663 8.0711 1.70716L2.41425 7.36401L8.0711 13.0209C8.46163 13.4114 8.46163 14.0446 8.0711 14.4351C7.68058 14.8256 7.04741 14.8256 6.65689 14.4351L0.292929 8.07112Z" fill="currentColor"/>
+            </svg>
           </button>
           <button 
             @click="scrollNext"
+            :disabled="!canScrollNext"
             aria-label="Next slide"
-            class="w-10 h-10 rounded-full border border-slate-300 text-slate-700 hover:text-black hover:border-slate-500 hover:bg-slate-50 flex items-center justify-center transition-all focus:outline-none"
+            class="w-11 h-11 rounded-full border border-gray-200 flex items-center justify-center transition-all duration-200 focus:outline-none"
+            :class="canScrollNext 
+              ? 'bg-[#EAEAEA] text-black hover:bg-[#dedede] cursor-pointer' 
+              : 'bg-white text-black/40 opacity-50 cursor-not-allowed'"
           >
-            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+            <svg class="w-[20px] h-[12px]" viewBox="0 0 26 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0 7.36401L8.74227e-08 8.36401L24.274 8.36401L24.274 7.36401L24.274 6.36401L-8.74227e-08 6.36401L0 7.36401ZM24.9811 8.07112C25.3716 7.68059 25.3716 7.04743 24.9811 6.6569L18.6172 0.292944C18.2266 -0.0975801 17.5935 -0.0975801 17.2029 0.292944C16.8124 0.683469 16.8124 1.31663 17.2029 1.70716L22.8598 7.36401L17.2029 13.0209C16.8124 13.4114 16.8124 14.0446 17.2029 14.4351C17.5935 14.8256 18.2266 14.8256 18.6172 14.4351L24.9811 8.07112Z" fill="currentColor"/>
+            </svg>
           </button>
         </div>
       </div>
@@ -91,7 +115,7 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
+import { ref, onMounted, onUnmounted } from 'vue'
 
 const props = defineProps({
   sectionId: {
@@ -117,18 +141,47 @@ const props = defineProps({
 })
 
 const sliderRef = ref(null)
+const canScrollPrev = ref(false)
+const canScrollNext = ref(true)
+
+const checkScroll = () => {
+  if (sliderRef.value) {
+    const { scrollLeft, scrollWidth, clientWidth } = sliderRef.value
+    canScrollPrev.value = scrollLeft > 10
+    canScrollNext.value = scrollLeft + clientWidth < scrollWidth - 10
+  }
+}
 
 const scrollPrev = () => {
-  if (sliderRef.value) {
-    sliderRef.value.scrollBy({ left: -360, behavior: 'smooth' })
+  if (sliderRef.value && canScrollPrev.value) {
+    const card = sliderRef.value.firstElementChild
+    const scrollAmount = card ? card.offsetWidth + 24 : 380
+    sliderRef.value.scrollBy({ left: -scrollAmount, behavior: 'smooth' })
+    setTimeout(checkScroll, 350)
   }
 }
 
 const scrollNext = () => {
-  if (sliderRef.value) {
-    sliderRef.value.scrollBy({ left: 360, behavior: 'smooth' })
+  if (sliderRef.value && canScrollNext.value) {
+    const card = sliderRef.value.firstElementChild
+    const scrollAmount = card ? card.offsetWidth + 24 : 380
+    sliderRef.value.scrollBy({ left: scrollAmount, behavior: 'smooth' })
+    setTimeout(checkScroll, 350)
   }
 }
+
+onMounted(() => {
+  if (sliderRef.value) {
+    sliderRef.value.addEventListener('scroll', checkScroll, { passive: true })
+    checkScroll()
+  }
+})
+
+onUnmounted(() => {
+  if (sliderRef.value) {
+    sliderRef.value.removeEventListener('scroll', checkScroll)
+  }
+})
 </script>
 
 <style scoped>
@@ -138,5 +191,13 @@ const scrollNext = () => {
 .no-scrollbar {
   -ms-overflow-style: none;
   scrollbar-width: none;
+}
+
+@media (min-width: 1024px) {
+  .slider-card-3col {
+    min-width: calc((100% - 3rem) / 3) !important;
+    max-width: calc((100% - 3rem) / 3) !important;
+    width: calc((100% - 3rem) / 3) !important;
+  }
 }
 </style>

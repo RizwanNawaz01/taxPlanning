@@ -21,7 +21,7 @@
     <AboutApproachTeam />
 
     <!-- Partner with Us using Reusable CommonPartner -->
-    <CommonPartner />
+    <CommonPartner bgClass="bg-[#F9FAFB]" />
   </div>
 </template>
 

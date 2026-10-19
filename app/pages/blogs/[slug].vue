@@ -42,19 +42,20 @@
     </section>
 
     <!-- Post Featured Image & Article Body -->
-    <article class="py-12 sm:py-16 lg:py-20">
-      <div class="container mx-auto px-6 lg:px-8 xl:px-12 max-w-4xl">
-        <!-- Featured Image -->
-        <div class="overflow-hidden rounded-2xl lg:rounded-3xl shadow-xl bg-slate-100 aspect-[16/9] mb-10 sm:mb-14">
+    <article class="">
+
+      <div class="container mx-auto ">
+       
+ <!-- Featured Image -->
+        <div class="overflow-hidden bg-slate-100mb-10 sm:mb-10">
           <NuxtImg
             :src="blog.image"
             :alt="blog.imageAlt || blog.title"
             priority
             format="webp"
-            class="w-full h-full object-cover"
+            class="w-full h-full object-cover max-h-[40rem] mt-2 rounded-xl"
           />
         </div>
-
         <!-- Content Body -->
         <div class="prose prose-slate lg:prose-lg max-w-none text-slate-700 leading-relaxed space-y-6">
           <template v-for="(block, idx) in blog.content" :key="idx">
@@ -94,7 +95,7 @@
         </div>
 
         <!-- Navigation back to blogs -->
-        <div class="mt-10 pt-6 border-t border-slate-200 flex items-center justify-between flex-wrap gap-4">
+        <div class="mt-10 pt-6 border-t border-slate-200 flex items-center justify-between flex-wrap gap-4  pb-12">
           <NuxtLink
             to="/blogs"
             class="inline-flex items-center gap-2 text-sm font-semibold text-primary hover:text-secondary hover:underline transition-all"

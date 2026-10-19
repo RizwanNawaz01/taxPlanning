@@ -1,6 +1,6 @@
 <template>
   <section 
-    class="relative pt-36 lg:pt-56 pb-[400px] md:pb-24 overflow-hidden bg-cover bg-center bg-no-repeat hero-bg xl:min-h-[910px]"
+    class="relative pt-36 lg:pt-56 pb-[400px] md:pb-24 overflow-hidden bg-cover bg-center bg-no-repeat hero-bg xl:min-h-[810px]"
     :style="{
       '--hero-bg-desktop': `url(${bgImage})`,
       '--hero-bg-mobile': `url(${bgMobileImage || bgImage})`
@@ -44,7 +44,7 @@
         data-aos="blur-in" 
         data-aos-delay="600"
       >
-        <div class="w-full max-w-[500px] ml-auto">
+        <div class="w-full max-w-[452px] ml-auto">
           <slot name="right">
             <ContactForm 
               :title="formTitle"
@@ -113,4 +113,11 @@ useHead(() => ({
     background-position: center;
   }
 }
+
+@media (min-width: 1280px) {
+  .hero-bg {
+    background-position: right;
+  }
+}
+
 </style>

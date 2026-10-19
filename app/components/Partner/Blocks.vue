@@ -37,10 +37,10 @@
           :data-aos-delay="150"
         >
           <!-- Desktop Title (Visible on lg and above) -->
-          <h2 class="hidden lg:block text-3xl md:text-4xl lg:text-[42px] font-semibold text-primary mb-6 tracking-tight leading-snug">
+          <h2 class="hidden lg:block text-3xl md:text-4xl lg:text-5xl font-semibold text-primary mb-6 tracking-tight leading-snug">
             {{ block.title }}
           </h2>
-          <p class="text-slate-700 text-base md:text-lg lg:text-[17px] lg:leading-snug max-w-xl">
+          <p class="text-black text-base md:text-lg lg:text-xl lg:leading-snug max-w-xl">
             {{ block.description }}
           </p>
         </div>

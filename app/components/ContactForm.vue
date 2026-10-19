@@ -1,6 +1,5 @@
 <template>
-  <div class="bg-surface-light p-10 lg:p-8 lg:py-10 rounded-2xl shadow-2xl relative overflow-hidden min-h-[520px] flex flex-col">
-    
+<div class="bg-surface-light p-8 lg:p-7 lg:py-9 rounded-2xl shadow-2xl relative overflow-hidden min-h-[490px] flex flex-col">    
     <div v-if="!isSubmitted" class="transition-opacity duration-500 h-full flex flex-col justify-center" :class="{'opacity-50 pointer-events-none': isLoading}">
       <h2 class="text-[22px] font-bold text-center text-primary mb-7">{{ title }}</h2>
       
@@ -8,18 +7,18 @@
           <!-- Honeypot anti-spam field (hidden from real users) -->
           <input v-model="formData.website" type="text" name="website" tabindex="-1" autocomplete="off" class="hidden" aria-hidden="true" />
 
-          <input aria-label="Full Name" v-model="formData.name" type="text" class="w-full bg-transparent border-0 border-b border-slate-200 pb-3 px-0 text-[15px] focus:outline-none focus:border-primary focus:ring-0 placeholder:text-slate-400 transition-colors" placeholder="Full Name" required />
+          <input aria-label="Full Name" v-model="formData.name" type="text" class="w-full bg-transparent border-0 border-b border-slate-200 pb-2 px-0 text-sm focus:outline-none focus:border-primary focus:ring-0 placeholder:text-slate-400 transition-colors" placeholder="Full Name" required />
         
-          <input aria-label="Email Address" v-model="formData.email" type="email" class="w-full bg-transparent border-0 border-b border-slate-200 pb-3 px-0 text-[15px] focus:outline-none focus:border-primary focus:ring-0 placeholder:text-slate-400 transition-colors" placeholder="Email" required />
+          <input aria-label="Email Address" v-model="formData.email" type="email" class="w-full bg-transparent border-0 border-b border-slate-200 pb-2 px-0 text-sm focus:outline-none focus:border-primary focus:ring-0 placeholder:text-slate-400 transition-colors" placeholder="Email" required />
         
-          <input aria-label="Phone Number" v-model="formData.phone" type="tel" class="w-full bg-transparent border-0 border-b border-slate-200 pb-3 px-0 text-[15px] focus:outline-none focus:border-primary focus:ring-0 placeholder:text-slate-400 transition-colors" placeholder="Phone" required />
+          <input aria-label="Phone Number" v-model="formData.phone" type="tel" class="w-full bg-transparent border-0 border-b border-slate-200 pb-2 px-0 text-sm focus:outline-none focus:border-primary focus:ring-0 placeholder:text-slate-400 transition-colors" placeholder="Phone" required />
         
           <!-- Custom Styled Service Dropdown -->
           <div ref="dropdownRef" class="relative">
             <button
               type="button"
               @click="toggleDropdown"
-              class="w-full bg-transparent border-0 border-b border-slate-200 pb-3 px-0 text-[15px] flex items-center justify-between text-left focus:outline-none transition-colors cursor-pointer"
+              class="w-full bg-transparent border-0 border-b border-slate-200 pb-2 px-0 text-sm flex items-center justify-between text-left focus:outline-none transition-colors cursor-pointer"
               :class="[
                 isDropdownOpen ? 'border-primary' : '',
                 selectedServiceLabel ? 'text-slate-800 font-medium' : 'text-slate-400'
@@ -74,12 +73,12 @@
             </Transition>
           </div>
         
-          <textarea aria-label="Message" v-model="formData.message" class="w-full bg-transparent border-0 border-b border-slate-200 pb-3 px-0 text-[15px] focus:outline-none focus:border-primary focus:ring-0 placeholder:text-slate-400 transition-colors resize-none mt-2 min-h-[100px]" placeholder="Message" rows="1"></textarea>
+          <textarea aria-label="Message" v-model="formData.message" class="w-full bg-transparent border-0 border-b border-slate-200 pb-2 px-0 text-sm focus:outline-none focus:border-primary focus:ring-0 placeholder:text-slate-400 transition-colors resize-none mt-2 min-h-[80px]" placeholder="Message" rows="1"></textarea>
         
         <p v-if="errorMessage" class="text-rose-500 text-xs text-center mt-2">{{ errorMessage }}</p>
 
         <div class="pt-3 flex justify-center">
-          <Button type="submit" variant="dark" class="w-[80%] md:w-[75%] lg:w-[70%] lg:py-2.5 text-base" :disabled="isLoading">
+          <Button type="submit" variant="dark" class="lg:py-2.5 text-base" :disabled="isLoading">
             <span v-if="isLoading">Sending...</span>
             <span v-else>{{ buttonText }}</span>
           </Button>
@@ -94,7 +93,7 @@
         <path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8" />
       </svg>
       <h3 class="text-2xl font-bold text-primary mb-3 text-center">Thank You!</h3>
-      <p class="text-slate-500 text-center text-[15px] leading-relaxed">
+      <p class="text-slate-500 text-center text-sm leading-relaxed">
         Your message has been sent successfully.<br>We will get back to you shortly.
       </p>
     </div>

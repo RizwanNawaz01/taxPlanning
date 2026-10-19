@@ -11,13 +11,17 @@
               v-html="name"
             ></h2>
 
-            <div v-if="badge" class="inline-block mb-6 lg:mb-4">
-              <span class="inline-flex items-center px-4 py-1.5 rounded-full text-xs md:text-sm xl:text-xl mt-2 font-bold bg-lime-400 text-primary tracking-wide shadow-sm">
+            <div v-if="badge" class="inline-block mb-6 lg:mb-5 mt-2">
+            <span class="inline-flex items-center px-3 py-1.5
+             rounded-t-xl rounded-br-xl rounded-bl-none
+             text-sm md:text-base xl:text-xl
+             font-bold bg-lime-400 text-slate-900
+             leading-none">
                 {{ badge }}
               </span>
             </div>
 
-            <div class="space-y-1 text-black text-left text-[15px] md:text-base lg:text-[19px] leading-[1.65]">
+            <div class="space-y-2 text-black text-left text-[15px] md:text-base lg:text-[19px] leading-[1.65]">
               <template v-if="Array.isArray(paragraphs)">
                 <p 
                   v-for="(para, index) in paragraphs" 
@@ -80,7 +84,7 @@ defineProps({
   },
   sectionClass: {
     type: String,
-    default: 'pt-16 lg:pt-24 pb-12 lg:pb-0'
+    default: 'pt-16 lg:pt-4 pb-12 lg:pb-0'
   }
 })
 </script>
