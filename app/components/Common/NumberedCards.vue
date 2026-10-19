@@ -3,7 +3,7 @@
     <div class="container relative px-0 lg:px-8 xl:px-12 2xl:px-12">
       <!-- Header -->
       <div 
-        class="flex flex-col lg:flex-row justify-between items-center lg:items-center gap-4 lg:gap-12 2xl:gap-32 mb-10 lg:mb-16 text-center lg:text-left px-0" 
+        class="flex flex-col lg:flex-row justify-between items-center lg:items-center gap-4 lg:gap-12 2xl:gap-32 mb-10 lg:mb-16 text-center lg:text-left px-8 lg:px-0" 
         data-aos="fade-up"
       >
         <h2 class="text-4xl lg:text-5xl 2xl:text-6xl font-semibold leading-tight" v-html="title"></h2>
@@ -48,7 +48,7 @@
           <div
             v-for="(item, index) in items"
             :key="index"
-            class="w-full shrink-0 snap-center px-6 flex flex-col"
+            class="w-full shrink-0 snap-center flex flex-col px-5"
           >
             <div class="glass-card px-8 pt-10 pb-10 flex flex-col h-[360px]">
               <span class="glass-number text-[88px] font-black leading-none mb-auto block tracking-tighter select-none">
@@ -241,7 +241,7 @@ onUnmounted(() => {
   position: relative;
   overflow: hidden;
   background: url('/Home/glass-effect.png') no-repeat center center;
-  background-size: 98% 98%;
+  background-size: 100% 100%;
   transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s ease;
   will-change: transform;
 }
