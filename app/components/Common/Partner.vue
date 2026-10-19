@@ -9,7 +9,7 @@
       
       <p 
         v-if="description" 
-        class="text-lg xl:text-xl text-black max-w-3xl mx-auto mb-10" 
+        class="text-[19px] xl:text-xl text-black max-w-3xl mx-auto mb-10" 
         data-aos="blur-in" 
         data-aos-delay="200"
       >
@@ -65,7 +65,7 @@ defineProps({
   },
   sectionClass: {
     type: String,
-    default: 'py-24'
+    default: 'py-14 lg:py-24'
   }
 })
 

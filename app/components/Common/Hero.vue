@@ -1,6 +1,6 @@
 <template>
   <section 
-    class="relative pt-36 lg:pt-56 pb-[400px] md:pb-24 overflow-hidden bg-cover bg-center bg-no-repeat hero-bg xl:min-h-[810px]"
+    class="relative pt-36 lg:pt-56 min-h-[100dvh] lg:min-h-auto pb-[400px] md:pb-24 overflow-hidden bg-cover bg-center bg-no-repeat hero-bg xl:min-h-[810px]"
     :style="{
       '--hero-bg-desktop': `url(${bgImage})`,
       '--hero-bg-mobile': `url(${bgMobileImage || bgImage})`
@@ -13,14 +13,14 @@
         <slot name="badge" />
 
         <h1 
-          class="text-4xl sm:text-5xl lg:text-[3.25rem] 2xl:text-7xl font-semibold leading-tight mb-6" 
+          class="text-5xl sm:text-5xl lg:text-[3.25rem] 2xl:text-7xl font-semibold leading-tight mb-6" 
           data-aos="blur-in" 
           v-html="title"
         ></h1>
 
         <p 
           v-if="description" 
-          class="text-lg xl:text-xl text-white/80 mb-8 max-w-lg" 
+          class="text-base xl:text-xl text-white mb-8 max-w-72 lg:max-w-lg" 
           data-aos="blur-in" 
           data-aos-delay="200"
         >

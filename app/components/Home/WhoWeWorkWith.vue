@@ -1,6 +1,6 @@
 <template>
-  <section id="who-we-work-with" class="pt-0 lg:pt-12 pb-20 lg:pb-28 bg-white overflow-hidden relative">
-    <div class="container mx-auto px-6 lg:px-8 xl:px-12 2xl:px-12 grid lg:grid-cols-2 gap-8 lg:gap-12 xl:gap-20 items-center relative z-10">
+  <section id="who-we-work-with" class="pt-0 lg:pt-12 pb-16 lg:pb-28 bg-white overflow-hidden relative">
+    <div class="container mx-auto px-4 lg:px-8 xl:px-12 2xl:px-12 grid lg:grid-cols-2 gap-8 lg:gap-12 xl:gap-20 items-center relative z-10">
       
       <!-- Left Column -->
       <div class="relative flex flex-col items-center lg:items-start pt-0">
@@ -25,7 +25,7 @@
       </div>
 
       <!-- Right Column (Accordion List) -->
-      <div class="flex flex-col justify-center lg:mt-0">
+      <div class="flex flex-col justify-center lg:mt-0 px-5 lg:px-0">
         <div 
           v-for="(item, index) in items" 
           :key="item.id"
@@ -35,12 +35,12 @@
           data-aos="fade-left"
           :data-aos-delay="index * 100"
         >
-          <span class="text-gray-400 font-medium text-[12px] lg:text-sm pt-1 w-5 shrink-0">{{ item.id }}</span>
+          <span class="text-[#797979] font-medium text-[14px] lg:text-sm pt-1 w-5 shrink-0">{{ item.id }}</span>
           <div class="flex-1">
             <div class="flex justify-between items-start gap-4">
-              <h3 class="text-[17px] lg:text-[28px] font-bold text-black  mb-0 lg:mb-3 leading-tight max-w-xs lg:max-w-lg pr-4 lg:pr-0">{{ item.title }}</h3>
+              <h3 class="text-[20px] lg:text-[28px] font-bold text-black  mb-0 lg:mb-3 leading-tight max-w-xs lg:max-w-lg pr-0 lg:pr-0">{{ item.title }}</h3>
               <!-- Caret (Mobile only) -->
-              <svg class="lg:hidden w-5 h-5 shrink-0 transition-transform duration-300 text-black mt-1" :class="{'rotate-180': activeIndex === index}" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+              <svg class="lg:hidden w-3.5 h-3.5 shrink-0 transition-transform duration-300 text-black mt-1.5" :class="{'rotate-180': activeIndex === index}" fill="currentColor" viewBox="0 0 10 6" xmlns="http://www.w3.org/2000/svg"><path d="M0 0L5 6L10 0H0Z"/></svg>
             </div>
             <!-- Description -->
             <p 

@@ -1,8 +1,8 @@
 <template>
-  <section :id="sectionId" :class="['py-12 lg:py-24 px-5', bgClass]">
-    <div class="container px-6 lg:px-8 xl:px-12 2xl:px-12">
+  <section :id="sectionId" :class="['py-12 lg:py-24', bgClass]">
+    <div class="container px-3 sm:px-6 lg:px-8 xl:px-12 2xl:px-12">
       <!-- Section Header -->
-      <div class="flex flex-col lg:flex-row justify-between items-start lg:items-end mb-8 lg:mb-16 gap-3 lg:gap-6" data-aos="fade-up">
+      <div class="flex flex-col lg:flex-row justify-between items-start lg:items-end mb-8 lg:mb-16 gap-3 lg:gap-6 px-2 sm:px-0" data-aos="fade-up">
         <h2 class="text-4xl lg:text-5xl 2xl:text-6xl font-semibold text-primary" v-html="title"></h2>
         <p v-if="description" class="text-black max-w-md text-[15px] lg:text-lg xl:text-lg leading-snug lg:leading-snug xl:leading-snug">
           {{ description }}
@@ -10,7 +10,7 @@
       </div>
 
       <!-- Services Cards Grid -->
-      <div class="services-grid grid lg:grid-cols-2 gap-6 lg:gap-8" data-aos="fade-up">
+      <div class="services-grid grid lg:grid-cols-2 gap-6 sm:gap-6 lg:gap-8" data-aos="fade-up">
         <div 
           v-for="(service, index) in items" 
           :key="index" 
@@ -40,7 +40,7 @@
               {{ service.title }}
             </h3>
             <p 
-              class="card-desc mb-5 lg:mb-8 text-[11px] lg:text-base leading-snug lg:leading-normal pr-4 lg:pr-0 max-w-full" 
+              class="card-desc mb-5 lg:mb-8 text-[11px] lg:text-base leading-snug lg:leading-normal max-w-full" 
               v-html="service.description"
             ></p>
             

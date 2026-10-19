@@ -2,7 +2,7 @@
   <header class="fixed top-0 left-0 right-0 z-50 pt-4 lg:pt-8 px-4 lg:px-6 xl:px-8 transition-all duration-300">
     <div 
       class="container mx-auto flex justify-between items-center backdrop-blur-md rounded-full px-4 lg:px-6 xl:px-10 shadow-lg relative z-50 transition-all duration-500 border"
-      :class="isScrolled ? 'bg-slate-900/95 border-white/10 py-3 lg:py-3.5' : 'bg-dark-header/50 border-white/15 py-4 lg:py-3.5'"
+      :class="isScrolled ? 'bg-slate-900/95 border-white/10 py-1 lg:py-3.5' : 'bg-dark-header/50 border-white/15 py-1 lg:py-3.5'"
     >
       <!-- Logo -->
       <NuxtLink to="/" class="pl-2 lg:pl-0 shrink-0" @click="isMobileMenuOpen = false">

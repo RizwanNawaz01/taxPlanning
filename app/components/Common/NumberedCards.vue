@@ -1,6 +1,6 @@
 <template>
   <section :id="sectionId" :class="['relative pt-20 pb-16 lg:pb-16 lg:py-24 bg-primary text-white overflow-hidden', sectionClass]">
-    <div class="container relative px-6 lg:px-8 xl:px-12 2xl:px-12">
+    <div class="container relative px-0 lg:px-8 xl:px-12 2xl:px-12">
       <!-- Header -->
       <div 
         class="flex flex-col lg:flex-row justify-between items-center lg:items-center gap-4 lg:gap-12 2xl:gap-32 mb-10 lg:mb-16 text-center lg:text-left px-0" 
@@ -50,7 +50,7 @@
             :key="index"
             class="w-full shrink-0 snap-center px-6 flex flex-col"
           >
-            <div class="glass-card px-8 pt-10 pb-10 flex flex-col h-[380px]">
+            <div class="glass-card px-8 pt-10 pb-10 flex flex-col h-[360px]">
               <span class="glass-number text-[88px] font-black leading-none mb-auto block tracking-tighter select-none">
                 {{ item.number || index + 1 }}
               </span>
@@ -241,7 +241,7 @@ onUnmounted(() => {
   position: relative;
   overflow: hidden;
   background: url('/Home/glass-effect.png') no-repeat center center;
-  background-size: 100% 100%;
+  background-size: 98% 98%;
   transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s ease;
   will-change: transform;
 }
