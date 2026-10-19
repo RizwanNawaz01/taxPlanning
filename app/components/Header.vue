@@ -156,7 +156,7 @@ const ctaButton = {
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
-@media (min-width: 1024px) {
+@media (min-width: 600px) {
   .header-glass {
     background-image: none;
   }

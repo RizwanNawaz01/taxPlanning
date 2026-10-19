@@ -48,9 +48,9 @@
           <div
             v-for="(item, index) in items"
             :key="index"
-            class="w-full shrink-0 snap-start flex flex-col px-5"
+            class="w-full md:w-1/2 shrink-0 snap-start flex flex-col px-5 md:px-3"
           >
-            <div class="glass-card px-8 pt-10 pb-10 flex flex-col h-[360px]">
+            <div class="glass-card px-8 pt-10 pb-10 flex flex-col h-[360px] md:h-[300px]">
               <span class="glass-number text-[88px] font-black leading-none mb-auto block tracking-tighter select-none">
                 {{ item.number || index + 1 }}
               </span>
@@ -193,10 +193,18 @@ const handleScroll = () => {
 const scrollToSlide = (index) => {
   if (!sliderContainer.value) return
   const container = sliderContainer.value
-  container.scrollTo({
-    left: index * container.offsetWidth,
-    behavior: 'smooth'
-  })
+  const child = container.children[index]
+  if (child) {
+    container.scrollTo({
+      left: child.offsetLeft,
+      behavior: 'smooth'
+    })
+  } else {
+    container.scrollTo({
+      left: index * container.offsetWidth,
+      behavior: 'smooth'
+    })
+  }
 }
 
 const startAutoplay = () => {
