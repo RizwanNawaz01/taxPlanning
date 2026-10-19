@@ -40,7 +40,7 @@
         <!-- Mobile Slider -->
         <div
           ref="sliderContainer"
-          class="lg:hidden flex overflow-x-auto snap-x snap-mandatory hide-scrollbar mb-8"
+          class="lg:hidden flex overflow-x-auto hide-scrollbar mb-8"
           @scroll="handleScroll"
           @touchstart="stopAutoplay"
           @touchend="startAutoplay"
@@ -48,7 +48,7 @@
           <div
             v-for="(item, index) in items"
             :key="index"
-            class="w-full shrink-0 snap-center flex flex-col px-5"
+            class="w-full shrink-0 flex flex-col px-5"
           >
             <div class="glass-card px-8 pt-10 pb-10 flex flex-col h-[360px]">
               <span class="glass-number text-[88px] font-black leading-none mb-auto block tracking-tighter select-none">
