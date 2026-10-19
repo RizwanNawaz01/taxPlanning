@@ -1,5 +1,861 @@
 [
   {
+    "id": 10,
+    "slug": "uae-tax-planning-business-owners-guide",
+    "metaTitle": "UAE Tax Planning for Business Owners: A Complete Guide",
+    "metaDescription": "Explore UAE tax planning strategies, from eligible deductions to business reliefs. Learn how to manage tax liabilities and support accurate filing.",
+    "title": "UAE Tax Planning for Business Owners: A Complete Guide 2026",
+    "excerpt": "Explore UAE tax planning strategies, from eligible deductions to business reliefs. Learn how to manage tax liabilities and support accurate filing in 2026.",
+    "category": "Tax Planning",
+    "date": "October 19, 2026",
+    "readTime": "8 min read",
+    "author": {
+      "slug": "aramide-shuaib",
+      "name": "Aramide Shuaib",
+      "role": "Content Writer",
+      "company": "Tax Planning",
+      "badgeText": "Tax Planning",
+      "bio": "Aramide Shuaib is a Content Writer at Tax Planning who works closely with the firm's legal specialists to simplify complex legal topics into accurate and practical guidance for individuals, families, and businesses across the UAE."
+    },
+    "reviewer": {
+      "slug": "tapan-vahal",
+      "name": "Tapan Vahal",
+      "role": "Legal Manager",
+      "company": "Tax Planning",
+      "badgeText": "Tax Planning",
+      "bio": "Tapan Vahal is a Legal Manager and Senior Lawyer at Tax Planning, bringing 9 years of legal experience across UAE personal legal matters, including wills, powers of attorney, and estate planning for individuals and families. He works closely with clients to simplify complex legal matters and guide them through each step with clarity and care. He reviews all content published by Tax Planning to ensure it is accurate, practical, and aligned with current UAE laws."
+    },
+    "showAuthor": false,
+    "showReviewer": false,
+    "image": "/Blog/uae-tax-planning-business-owners-guide.webp",
+    "imageAlt": "UAE Tax Planning for Business Owners",
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "For years, the UAE was known as a place where business owners kept everything they earned. However, the introduction of federal Corporate Tax in June 2023 changed the tax obligations of businesses operating in the country. Corporate Tax now applies alongside Value Added Tax (VAT), bringing additional registration, reporting, and compliance requirements that business owners must understand to avoid unnecessary penalties."
+      },
+      {
+        "type": "paragraph",
+        "text": "Despite these changes, the UAE continues to offer a competitive tax framework. The standard UAE Corporate Tax rate is 0% on taxable income up to AED 375,000 and 9% on the portion exceeding that threshold. Businesses may also benefit from eligible deductions, reliefs and exemptions, provided they meet the relevant legal requirements."
+      },
+      {
+        "type": "paragraph",
+        "text": "This guide explains the key elements of the UAE tax system, explores legitimate tax planning strategies, and covers the registration, filing, and record-keeping requirements business owners need to consider."
+      },
+      {
+        "type": "heading",
+        "text": "Summary"
+      },
+      {
+        "type": "list",
+        "items": [
+          "Corporate tax in the UAE is 0% on taxable income up to AED 375,000 and 9% above it. VAT in the UAE is charged at 5%.",
+          "Small Business Relief covers tax periods ending on or before 31 December 2029, for revenue up to AED 3 million.",
+          "A free zone licence alone does not mean 0% tax. Qualifying Free Zone Person conditions must be met each year.",
+          "Proper bookkeeping and supporting documents help substantiate tax returns and deductions.",
+          "Register on time, file within nine months of your period end and keep records for seven years.",
+          "Late registration costs AED 10,000, and late returns add monthly penalties.",
+          "Reviewing your position during the year helps you act before deadlines pass."
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "What Is UAE Tax Planning and Why Does It Matter for Businesses?"
+      },
+      {
+        "type": "paragraph",
+        "text": "UAE tax planning is the lawful process of structuring your business's financial affairs, transactions and activities so you pay the right amount of tax while staying compliant with the Federal Tax Authority (FTA). Its purpose is to help a company meet its obligations while making legitimate use of available deductions, reliefs and other provisions."
+      },
+      {
+        "type": "paragraph",
+        "text": "A well-planned tax approach helps UAE businesses control costs, manage cash flow and make informed financial decisions. It also allows owners to identify the tax implications of expanding operations, changing ownership or entering a new market before the commitment is made."
+      },
+      {
+        "type": "paragraph",
+        "text": "<strong>For business owners, this matters for several reasons:</strong>"
+      },
+      {
+        "type": "list",
+        "items": [
+          "<strong>Managing tax liabilities:</strong> Eligible deductions and reliefs can affect the amount of corporate tax a business owes.",
+          "<strong>Maintaining compliance:</strong> A clear understanding of UAE tax laws helps businesses meet registration, filing and payment deadlines.",
+          "<strong>Supporting financial decisions:</strong> Tax implications can influence the cost of a transaction, a new investment or a change in company structure.",
+          "<strong>Improving financial visibility:</strong> Accurate accounting records help business owners assess their taxable income and understand their financial position.",
+          "<strong>Reducing compliance risks:</strong> Regular reviews can identify missing documents, reporting errors and potential obligations before they become more difficult to address."
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "Tax planning in the UAE is therefore relevant to startups, established small and medium-sized enterprises, international companies and larger corporate groups. The requirements may differ, but each business benefits from understanding how its activities affect its tax position."
+      },
+      {
+        "type": "heading",
+        "text": "UAE Tax Rates, Thresholds and Key Tax Rules"
+      },
+      {
+        "type": "paragraph",
+        "text": "Businesses operating in the UAE must assess the tax rates, thresholds and reliefs that may affect their tax obligations. The table below outlines the key rules."
+      },
+      {
+        "type": "table",
+        "headers": [
+          "Tax or provision",
+          "Rate or threshold",
+          "Key details"
+        ],
+        "rows": [
+          [
+            "Corporate Tax",
+            "0% up to AED 375,000; 9% above",
+            "Applies to taxable income, subject to the relevant rules."
+          ],
+          [
+            "Value Added Tax (VAT)",
+            "5%",
+            "Mandatory registration generally applies when taxable supplies and imports exceed AED 375,000."
+          ],
+          [
+            "Small Business Relief",
+            "Revenue of AED 3 million or less",
+            "Available to eligible resident businesses that meet the applicable conditions."
+          ],
+          [
+            "Free Zone Corporate Tax",
+            "0% on qualifying income",
+            "Qualifying Free Zone Persons must satisfy the relevant requirements."
+          ],
+          [
+            "Excise Tax",
+            "Varies by product",
+            "Applies to specified goods, including tobacco products and energy drinks."
+          ]
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "These rates and thresholds provide a starting point for UAE tax planning. The rules and eligibility conditions that apply to each business should be checked before making tax decisions."
+      },
+      {
+        "type": "heading",
+        "text": "Key Components of UAE Tax Planning for Businesses"
+      },
+      {
+        "type": "paragraph",
+        "text": "Businesses should consider these five areas when planning their UAE tax obligations, from the rates and reliefs available to the rules governing transactions, accounting and filing."
+      },
+      {
+        "type": "subheading",
+        "text": "1. Corporate Tax Rates and Reliefs"
+      },
+      {
+        "type": "paragraph",
+        "text": "Taxable income up to AED 375,000 is taxed at 0%, and any amount above that threshold is taxed at 9%. In addition, eligible businesses with revenue of up to AED 3 million may elect for <a href=\"https://mof.gov.ae/en/news/ministry-of-finance-announces-extension-of-small-business-relief-for-corporate-tax-purposes-until-31-december-2029/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-primary underline hover:text-secondary\">Small Business Relief</a>. However, this applies only to tax periods ending on or before 31 December 2029. Large multinational groups are subject to a separate 15% Domestic Minimum Top-up Tax."
+      },
+      {
+        "type": "subheading",
+        "text": "2. Free Zone Structuring"
+      },
+      {
+        "type": "paragraph",
+        "text": "A Qualifying Free Zone Person benefits from a 0% rate on qualifying income, provided it satisfies the substance and compliance conditions. Income that does not qualify is taxed at 9%. For this reason, a free zone business should review its revenue streams and physical presence regularly to protect its status."
+      },
+      {
+        "type": "subheading",
+        "text": "3. Deductions, Exemptions and Incentives"
+      },
+      {
+        "type": "paragraph",
+        "text": "Business expenses that are properly recorded reduce taxable income, and dividends and gains from qualifying shareholdings are generally exempt. Furthermore, a <a href=\"https://mof.gov.ae/wp-content/uploads/2026/03/Cabinet-Decision-No.-215-of-2025-on-Research-Development-Tax-Credit-en.pdf\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-primary underline hover:text-secondary\">non-refundable R&D tax credit</a> is now available for qualifying research carried out in the UAE, for tax periods starting on or after 1 January 2026."
+      },
+      {
+        "type": "subheading",
+        "text": "4. Transfer Pricing and Related-Party Transactions"
+      },
+      {
+        "type": "paragraph",
+        "text": "Transactions between related parties and connected persons must comply with the arm's-length principle. Businesses should apply appropriate pricing methods and maintain the required documentation to support these transactions and meet UAE transfer pricing rules."
+      },
+      {
+        "type": "subheading",
+        "text": "5. Compliance and Record Keeping"
+      },
+      {
+        "type": "paragraph",
+        "text": "Businesses must prepare financial statements under IFRS (or IFRS for SMEs, where eligible) and keep their records for seven years. Registration is completed through the FTA's EmaraTax portal, and returns and payments are due within nine months of the end of the tax period."
+      },
+      {
+        "type": "heading",
+        "text": "How to Reduce Your UAE Tax Liability Legally: Key Strategies"
+      },
+      {
+        "type": "paragraph",
+        "text": "The following strategies help UAE businesses manage their tax liability within the law, from claiming expenses to seeking professional advice."
+      },
+      {
+        "type": "subheading",
+        "text": "1. Claim All Eligible Business Expenses"
+      },
+      {
+        "type": "paragraph",
+        "text": "Costs such as staff salaries, rent and professional fees can reduce your taxable income, provided they meet UAE corporate tax rules. However, a deduction is only as strong as the evidence behind it. For this reason, keep your invoices, receipts and contracts on file so that each claim can be supported if the FTA asks."
+      },
+      {
+        "type": "subheading",
+        "text": "2. Check Your Eligibility for Tax Reliefs"
+      },
+      {
+        "type": "paragraph",
+        "text": "Resident businesses with revenue of AED 3 million or less may elect for Small Business Relief, subject to the conditions and tax-period limits that apply. Because the relief changes how your taxable income is calculated, it is worth reviewing the eligibility criteria before you claim it. In particular, note that it only covers tax periods ending on or before 31 December 2029."
+      },
+      {
+        "type": "subheading",
+        "text": "3. Review Your Free Zone Tax Status"
+      },
+      {
+        "type": "paragraph",
+        "text": "A Qualifying Free Zone Person may pay 0% corporate tax on qualifying income, as long as it meets the relevant conditions. Since those conditions apply every year, it helps to review your activities, revenue sources and compliance position regularly. That way, you can confirm that your income still qualifies before a return is prepared."
+      },
+      {
+        "type": "subheading",
+        "text": "4. Structure Related-Party Transactions Correctly"
+      },
+      {
+        "type": "paragraph",
+        "text": "Transactions between related parties and connected persons must follow the arm's-length principle. To meet UAE transfer pricing requirements, apply a suitable pricing method and keep documentation that shows how the price was set. As a result, you reduce the risk of a tax adjustment later on."
+      },
+      {
+        "type": "subheading",
+        "text": "5. Maintain Accurate Financial Records"
+      },
+      {
+        "type": "paragraph",
+        "text": "Reliable bookkeeping makes it easier to identify allowable deductions, prepare your returns and satisfy Federal Tax Authority requirements. It is therefore worth keeping your financial statements and supporting records up to date throughout the year. Equally, review the tax impact of any significant business decision before you commit to it."
+      },
+      {
+        "type": "subheading",
+        "text": "6. Seek Professional UAE Tax Advice"
+      },
+      {
+        "type": "paragraph",
+        "text": "A qualified tax adviser can review your business structure, assess which reliefs apply and identify legitimate ways to manage your UAE corporate tax liability. Moreover, professional support helps you keep pace with changing tax rules and meet filing deadlines. Any compliance issues can then be addressed early, before they become costly."
+      },
+      {
+        "type": "heading",
+        "text": "UAE Corporate Tax Registration, Filing and Compliance Requirements"
+      },
+      {
+        "type": "paragraph",
+        "text": "Every business subject to corporate tax in the UAE must register, file on time and keep proper records. The key requirements are set out below."
+      },
+      {
+        "type": "subheading",
+        "text": "Registration"
+      },
+      {
+        "type": "list",
+        "items": [
+          "Corporate tax registration in the UAE is completed through EmaraTax, the portal run by the FTA UAE.",
+          "New companies generally need to register within three months of incorporation. Other deadlines depend on the licence issue date.",
+          "Registration is required even if your taxable income falls within the 0% band.",
+          "A late application carries a fixed penalty of AED 10,000."
+        ]
+      },
+      {
+        "type": "subheading",
+        "text": "Filing and Payment"
+      },
+      {
+        "type": "list",
+        "items": [
+          "Your corporate tax return and payment are due within nine months of the end of your tax period.",
+          "Late filing attracts AED 500 per month for the first 12 months, then AED 1,000 per month.",
+          "Late payment adds a further penalty on the unpaid amount."
+        ]
+      },
+      {
+        "type": "subheading",
+        "text": "Records and Financial Statements"
+      },
+      {
+        "type": "list",
+        "items": [
+          "Prepare financial statements under IFRS, or IFRS for SMEs where eligible.",
+          "Keep your financial statements and supporting records for seven years.",
+          "Qualifying Free Zone Persons (QFZP) and businesses above certain revenue levels must have their financial statements audited."
+        ]
+      },
+      {
+        "type": "subheading",
+        "text": "Ongoing Compliance"
+      },
+      {
+        "type": "list",
+        "items": [
+          "Track corporate tax and VAT deadlines in one calendar, since each follows its own cycle.",
+          "Update your EmaraTax account whenever your business details change.",
+          "Use professional <a href=\"/\" class=\"text-primary font-semibold underline hover:text-secondary\">tax consultants in the UAE</a> to review your return before submission and keep your records ready for any FTA query."
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Common UAE Tax Planning Mistakes and How to Avoid Them"
+      },
+      {
+        "type": "paragraph",
+        "text": "Most tax problems in the UAE come from a small number of avoidable errors. The six below are the ones that most often lead to higher bills or tax penalties."
+      },
+      {
+        "type": "subheading",
+        "text": "1. Registering for Corporate Tax Late"
+      },
+      {
+        "type": "paragraph",
+        "text": "A missed deadline carries a fixed AED 10,000 penalty, even when no tax is due. To avoid this, register through EmaraTax as soon as your business becomes liable."
+      },
+      {
+        "type": "subheading",
+        "text": "2. Keeping Weak Tax Records"
+      },
+      {
+        "type": "paragraph",
+        "text": "Missing invoices and incomplete ledgers make it hard to support your deductions. As a result, legitimate expenses may be disallowed. Keep accounting and bookkeeping up to date each month, and retain your records for seven years."
+      },
+      {
+        "type": "subheading",
+        "text": "3. Assuming a Free Zone Licence Means 0% Tax"
+      },
+      {
+        "type": "paragraph",
+        "text": "A Qualifying Free Zone Person pays 0% only on qualifying income, and only while it meets the conditions. Therefore, review your revenue sources, staff and premises regularly to protect your status."
+      },
+      {
+        "type": "subheading",
+        "text": "4. Overlooking Small Business Relief"
+      },
+      {
+        "type": "paragraph",
+        "text": "Eligible businesses with revenue of up to AED 3 million can elect for the relief, but it only covers tax periods ending on or before 31 December 2029. It is worth confirming your eligibility with enough time to make the election."
+      },
+      {
+        "type": "subheading",
+        "text": "5. Treating VAT and Corporate Tax as One Obligation"
+      },
+      {
+        "type": "paragraph",
+        "text": "Each tax has its own registration, return and deadline. For this reason, track both in a single compliance calendar so that nothing is missed."
+      },
+      {
+        "type": "subheading",
+        "text": "6. Leaving UAE Tax Planning Until Filing Time"
+      },
+      {
+        "type": "paragraph",
+        "text": "By the time a return is due, most of the decisions that affect it have already been made. A review during the year, and before any major transaction, gives you room to adjust."
+      },
+      {
+        "type": "heading",
+        "text": "Why Choose TaxPlanning.ae for UAE Tax Planning?"
+      },
+      {
+        "type": "paragraph",
+        "text": "UAE Tax planning is most effective when it reflects the structure and activities of your own business. TaxPlanning.ae is a dedicated tax team that helps business owners put sound tax planning into practice, from registration and filing to decisions on structure and growth."
+      },
+      {
+        "type": "list",
+        "items": [
+          "We assess your business structure, records and eligibility for reliefs before advising on the most suitable course of action.",
+          "We manage registration, filing and record keeping, so that deadlines are met and each claim is properly supported.",
+          "We explain what each regulation means for your business in plain terms, and we are clear about the next steps."
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "Whether you are registering for Corporate Tax in the UAE, preparing your first return or reviewing your tax position, our team can advise on the approach that best suits your business."
+      },
+      {
+        "type": "paragraph",
+        "text": "To discuss your UAE tax planning needs, <a href=\"/contact\" class=\"text-primary font-semibold underline hover:text-secondary\">book a consultation with our team</a>."
+      },
+      {
+        "type": "heading",
+        "text": "Frequently Asked Questions"
+      },
+      {
+        "type": "subheading",
+        "text": "When Is the Deadline for UAE Corporate Tax Registration and Filing?"
+      },
+      {
+        "type": "paragraph",
+        "text": "The deadline for UAE corporate tax registration depends on your entity type and incorporation date, while corporate tax filing and payment are due within 9 months from the end of your financial year through the Federal Tax Authority (FTA) EmaraTax Portal."
+      },
+      {
+        "type": "subheading",
+        "text": "What Are the Current UAE Corporate Tax Rates and Any Exemptions?"
+      },
+      {
+        "type": "paragraph",
+        "text": "The current UAE corporate tax rate is 0% on taxable income up to AED 375,000 and 9% on the portion above that threshold. Eligible free zone businesses may receive a 0% rate on qualifying income, while certain entities and income may qualify for other exemptions or reliefs under specific conditions."
+      },
+      {
+        "type": "subheading",
+        "text": "What Happens If a UAE Company Fails to File Its Tax Return on Time?"
+      },
+      {
+        "type": "paragraph",
+        "text": "If a UAE company fails to file its tax return on time, the FTA UAE charges an administrative penalty of AED 500 per month for the first 12 months, rising to AED 1,000 per month after that. Late tax payments may also incur penalties."
+      },
+      {
+        "type": "subheading",
+        "text": "Which Documents Are Needed to Avoid Tax Return Fines in the UAE?"
+      },
+      {
+        "type": "paragraph",
+        "text": "The documents needed to avoid tax return fines in the UAE are financial statements, general ledgers, sales and purchase invoices, bank statements, contracts, payroll records and any transfer pricing documentation that applies. These records should be kept for seven years."
+      },
+      {
+        "type": "subheading",
+        "text": "Are There Any Reliefs or Waivers for First-Time Corporate Tax Penalties in the UAE?"
+      },
+      {
+        "type": "paragraph",
+        "text": "Yes, the FTA has an initiative that waives the AED 10,000 late corporate tax registration penalty when the business meets the specified conditions, including submitting its first corporate tax return within seven months of the end of its first tax period."
+      },
+      {
+        "type": "subheading",
+        "text": "What VAT Considerations Should a Small Business in the UAE Keep in Mind?"
+      },
+      {
+        "type": "paragraph",
+        "text": "A small business in the UAE should keep in mind that VAT registration becomes mandatory once taxable supplies exceed AED 375,000 over the previous 12 months, or are expected to within the next 30 days. Registration is voluntary from AED 187,500. Once registered, the business must charge 5% VAT in the UAE, issue compliant tax invoices and file returns through the FTA UAE, normally within 28 days of each tax period."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "When Is the Deadline for UAE Corporate Tax Registration and Filing?",
+        "answer": "The deadline for UAE corporate tax registration depends on your entity type and incorporation date, while corporate tax filing and payment are due within 9 months from the end of your financial year through the Federal Tax Authority (FTA) EmaraTax Portal."
+      },
+      {
+        "question": "What Are the Current UAE Corporate Tax Rates and Any Exemptions?",
+        "answer": "The current UAE corporate tax rate is 0% on taxable income up to AED 375,000 and 9% on the portion above that threshold. Eligible free zone businesses may receive a 0% rate on qualifying income, while certain entities and income may qualify for other exemptions or reliefs under specific conditions."
+      },
+      {
+        "question": "What Happens If a UAE Company Fails to File Its Tax Return on Time?",
+        "answer": "If a UAE company fails to file its tax return on time, the FTA UAE charges an administrative penalty of AED 500 per month for the first 12 months, rising to AED 1,000 per month after that. Late tax payments may also incur penalties."
+      },
+      {
+        "question": "Which Documents Are Needed to Avoid Tax Return Fines in the UAE?",
+        "answer": "The documents needed to avoid tax return fines in the UAE are financial statements, general ledgers, sales and purchase invoices, bank statements, contracts, payroll records and any transfer pricing documentation that applies. These records should be kept for seven years."
+      },
+      {
+        "question": "Are There Any Reliefs or Waivers for First-Time Corporate Tax Penalties in the UAE?",
+        "answer": "Yes, the FTA has an initiative that waives the AED 10,000 late corporate tax registration penalty when the business meets the specified conditions, including submitting its first corporate tax return within seven months of the end of its first tax period."
+      },
+      {
+        "question": "What VAT Considerations Should a Small Business in the UAE Keep in Mind?",
+        "answer": "A small business in the UAE should keep in mind that VAT registration becomes mandatory once taxable supplies exceed AED 375,000 over the previous 12 months, or are expected to within the next 30 days. Registration is voluntary from AED 187,500. Once registered, the business must charge 5% VAT in the UAE, issue compliant tax invoices and file returns through the FTA UAE, normally within 28 days of each tax period."
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "slug": "uae-small-business-relief-extension-smes",
+    "metaTitle": "UAE Small Business Relief Extended to 2029: Who Qualifies?",
+    "metaDescription": "UAE Small Business Relief now runs to 2029. Check who qualifies, the AED 3 million revenue limit, exclusions, and how to claim through your tax return.",
+    "title": "UAE Small Business Relief Extended to 2029: Who Qualifies and How to Claim It",
+    "excerpt": "The UAE Small Business Relief has been extended to 2029 under Ministerial Decision No. 131 of 2026. Check who qualifies under the AED 3M revenue threshold, exclusions, and how to claim.",
+    "category": "Corporate Tax",
+    "date": "October 19, 2026",
+    "readTime": "7 min read",
+    "author": {
+      "slug": "aramide-shuaib",
+      "name": "Aramide Shuaib",
+      "role": "Content Writer",
+      "company": "Tax Planning",
+      "badgeText": "Tax Planning",
+      "bio": "Aramide Shuaib is a Content Writer at Tax Planning who works closely with the firm's legal specialists to simplify complex legal topics into accurate and practical guidance for individuals, families, and businesses across the UAE."
+    },
+    "reviewer": {
+      "slug": "tapan-vahal",
+      "name": "Tapan Vahal",
+      "role": "Legal Manager",
+      "company": "Tax Planning",
+      "badgeText": "Tax Planning",
+      "bio": "Tapan Vahal is a Legal Manager and Senior Lawyer at Tax Planning, bringing 9 years of legal experience across UAE personal legal matters, including wills, powers of attorney, and estate planning for individuals and families. He works closely with clients to simplify complex legal matters and guide them through each step with clarity and care. He reviews all content published by Tax Planning to ensure it is accurate, practical, and aligned with current UAE laws."
+    },
+    "showAuthor": false,
+    "showReviewer": false,
+    "image": "/Blog/uae-small-business-relief-extension-smes.webp",
+    "imageAlt": "UAE Small Business Relief Extension",
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "The UAE Small Business Relief that was due to expire at the end of 2026 has now been extended. Under <a href=\"https://mof.gov.ae/en/news/ministry-of-finance-announces-extension-of-small-business-relief-for-corporate-tax-purposes-until-31-december-2029/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-primary underline hover:text-secondary\">Ministerial Decision No. 131 of 2026</a>, the Ministry of Finance confirmed in August 2026 that eligible businesses can now claim the relief for tax periods ending on or before 31 December 2029."
+      },
+      {
+        "type": "paragraph",
+        "text": "The AED 3 million revenue threshold has not changed. In practical terms, a qualifying business can still elect to be treated as having no taxable income, which means it pays no UAE corporate tax for each tax period in which it claims the relief."
+      },
+      {
+        "type": "paragraph",
+        "text": "For founders and owners of small and medium-sized enterprises (SMEs), the Small Business Relief extension removes a major planning worry. However, the relief is not available to every business, and it carries trade-offs that can affect your future tax position."
+      },
+      {
+        "type": "paragraph",
+        "text": "This guide explains the UAE small business relief requirements, who qualifies, how to claim the relief, and what the extension means for businesses planning their tax obligations."
+      },
+      {
+        "type": "heading",
+        "text": "Key Takeaways"
+      },
+      {
+        "type": "list",
+        "items": [
+          "Small Business Relief has been extended to tax periods ending on or before 31 December 2029.",
+          "The AED 3 million revenue threshold remains unchanged and applies to the relevant tax period and all previous tax periods.",
+          "Eligible UAE resident businesses must elect for the relief through their Corporate Tax return each tax period.",
+          "Qualifying Free Zone Persons and members of certain multinational enterprise groups cannot claim the relief.",
+          "Businesses must continue to meet their Corporate Tax filing and record-keeping obligations even when they elect for relief.",
+          "VAT registration and other tax obligations remain separate from Small Business Relief eligibility."
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "What Is UAE Small Business Relief?"
+      },
+      {
+        "type": "paragraph",
+        "text": "UAE Small Business Relief (SBR) is a relief under Article 21 of the UAE Corporate Tax Law. It allows an eligible resident person to elect to be treated as having no taxable income for a tax period. As a result, the business owes no corporate tax for that period, even if it made a profit. The relief supports smaller businesses and start-ups by reducing their tax burden and simplifying certain compliance requirements."
+      },
+      {
+        "type": "paragraph",
+        "text": "It was introduced through Ministerial Decision No. 73 of 2023 and applies to tax periods starting on or after 1 June 2023. On 7 August 2026, the Ministry of Finance announced that the relief would continue. With SBR extended till 2029, eligible businesses can claim it for tax periods ending on or before 31 December 2029, and the AED 3 million revenue threshold stays the same."
+      },
+      {
+        "type": "heading",
+        "text": "Why Small Business Relief Matters for UAE Businesses"
+      },
+      {
+        "type": "paragraph",
+        "text": "UAE Small Business Relief helps eligible businesses reduce their Corporate Tax burden while managing their operating costs. By allowing qualifying businesses to be treated as having no taxable income for a tax period, SBR offers several practical benefits:"
+      },
+      {
+        "type": "list",
+        "items": [
+          "<strong>Lower Tax Burden:</strong> Eligible businesses pay no corporate tax on income for the period in which they elect SBR.",
+          "<strong>More Funds for Business Needs:</strong> Savings on corporate tax can help small businesses cover operating expenses, invest in equipment, or support expansion.",
+          "<strong>Support for Start-ups and SMEs:</strong> The relief gives smaller businesses more room to manage their finances as they establish and grow their operations.",
+          "<strong>Simplified Tax Calculations:</strong> Eligible businesses do not need to calculate their taxable income for the relevant period in the usual way, although corporate tax filing and record-keeping obligations still apply."
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "The extension of UAE Small Business Relief to 2029 gives eligible business owners greater certainty when planning their tax obligations over the coming years."
+      },
+      {
+        "type": "heading",
+        "text": "Who Qualifies for Small Business Relief in the UAE?"
+      },
+      {
+        "type": "paragraph",
+        "text": "To qualify for Small Business Relief in the UAE, a business must meet specific residency and revenue conditions set out under the UAE Corporate Tax rules."
+      },
+      {
+        "type": "subheading",
+        "text": "1. The Business Must Be a UAE Resident Person"
+      },
+      {
+        "type": "paragraph",
+        "text": "Small Business Relief is available to resident persons for Corporate Tax purposes, including qualifying natural persons and companies. A UAE trade licence alone does not confirm residency, so status must be assessed under the Corporate Tax rules."
+      },
+      {
+        "type": "subheading",
+        "text": "2. Revenue Must Not Exceed AED 3 Million"
+      },
+      {
+        "type": "paragraph",
+        "text": "Revenue must be AED 3 million or less in the current tax period and in every previous tax period. The test applies to revenue, not taxable profit, and it is measured under the relevant accounting standards."
+      },
+      {
+        "type": "paragraph",
+        "text": "For example, a company with AED 2.4 million in revenue this year does not qualify if it recorded AED 3.4 million in an earlier period, even though its latest revenue has fallen."
+      },
+      {
+        "type": "subheading",
+        "text": "3. The Tax Period Must Be Eligible"
+      },
+      {
+        "type": "paragraph",
+        "text": "The Small Business Relief extension covers tax periods ending on or before 31 December 2029. The UAE small business relief requirements must be met for each period, so a business that qualified last year should not assume it will qualify again."
+      },
+      {
+        "type": "subheading",
+        "text": "4. The Business Must Make an Election"
+      },
+      {
+        "type": "paragraph",
+        "text": "The relief is not automatic. An eligible business must elect for it in its Corporate Tax return for each relevant tax period. It should also keep accounting records that support its revenue and eligibility in case the FTA asks."
+      },
+      {
+        "type": "heading",
+        "text": "Who Cannot Claim UAE Small Business Relief?"
+      },
+      {
+        "type": "paragraph",
+        "text": "Certain businesses are excluded from the relief, even if their revenue falls below the AED 3 million threshold. These exclusions include:"
+      },
+      {
+        "type": "list",
+        "items": [
+          "<strong>Qualifying Free Zone Persons (QFZP):</strong> These businesses are taxed under the free zone rules instead. However, a free zone company that is not a Qualifying Free Zone Person may still qualify if it meets the other conditions.",
+          "<strong>Members of certain multinational enterprise groups:</strong> This applies to groups with consolidated revenue above AED 3.15 billion.",
+          "<strong>Businesses that exceed the revenue threshold:</strong> Revenue above AED 3 million in the current or any previous tax period removes eligibility, and a later fall in revenue does not restore it."
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "Businesses should review their status and revenue history carefully before electing for SBR to ensure they meet the eligibility requirements for the relevant tax period."
+      },
+      {
+        "type": "heading",
+        "text": "How to Claim Small Business Relief in the UAE"
+      },
+      {
+        "type": "paragraph",
+        "text": "Small Business Relief is claimed through your Corporate Tax return, not through a separate application. These five steps show the process in order."
+      },
+      {
+        "type": "subheading",
+        "text": "Step 1: Confirm Your Corporate Tax Registration"
+      },
+      {
+        "type": "paragraph",
+        "text": "First, make sure your business is registered for Corporate Tax in the UAE, even if you expect to owe nothing. If you have not registered yet, speak to a tax professional who can confirm the requirements and deadlines that apply to your business."
+      },
+      {
+        "type": "subheading",
+        "text": "Step 2: Check Your Eligibility"
+      },
+      {
+        "type": "paragraph",
+        "text": "Next, confirm that your business meets the UAE residency requirements and is not excluded from SBR. Check that revenue does not exceed AED 3 million in the current or any previous tax period. If your activities or ownership have changed, consult <a href=\"/\" class=\"text-primary font-semibold underline hover:text-secondary\">tax consultants in the UAE</a> to assess your eligibility."
+      },
+      {
+        "type": "subheading",
+        "text": "Step 3: Review Your Financial Records"
+      },
+      {
+        "type": "paragraph",
+        "text": "Your revenue figure decides your eligibility, so it needs to be accurate. Review your accounting records, sales information, and financial statements for each relevant tax period. This matters most when revenue is close to AED 3 million, because a small error could lead to an incorrect election."
+      },
+      {
+        "type": "subheading",
+        "text": "Step 4: Elect for the Relief in Your Corporate Tax Return"
+      },
+      {
+        "type": "paragraph",
+        "text": "Small Business Relief must be elected through your corporate tax return on EmaraTax for each eligible tax period. Since the election affects whether tax losses can be carried forward, review its implications carefully before proceeding."
+      },
+      {
+        "type": "subheading",
+        "text": "Step 5: File on Time and Keep Your Records"
+      },
+      {
+        "type": "paragraph",
+        "text": "Finally, submit the return within nine months of the end of your tax period. For example, a company with a tax period ending on 31 December 2026 would generally file by 30 September 2027. In addition, keep your accounting records and supporting documents for seven years, since the relief does not remove your record-keeping duties."
+      },
+      {
+        "type": "heading",
+        "text": "What Happens If Your Business Exceeds the AED 3 Million Revenue Threshold?"
+      },
+      {
+        "type": "paragraph",
+        "text": "If your revenue goes above AED 3 million in a tax period, you lose the relief for that period and for later periods. From that point, standard UAE corporate tax rules apply, which means 0% on taxable income up to AED 375,000 and 9% above that. The loss of UAE Small Business Relief does not affect earlier periods in which you met the conditions."
+      },
+      {
+        "type": "paragraph",
+        "text": "This matters most for fast-growing businesses. A strong sales year can move you from paying no tax to preparing a full corporate tax return with a tax calculation. Therefore, track your revenue throughout the year, not only at year-end, and discuss expected growth with a professional before a large contract is signed."
+      },
+      {
+        "type": "paragraph",
+        "text": "Revenue growth can also affect your other obligations. VAT registration, for example, is separate from SBR eligibility. Mandatory VAT registration applies once taxable supplies and imports exceed AED 375,000, so a business can claim the relief and still need to register for VAT."
+      },
+      {
+        "type": "heading",
+        "text": "What the SBR Extension Means for UAE Small Businesses and Start-ups"
+      },
+      {
+        "type": "paragraph",
+        "text": "The Small Business Relief UAE extension gives eligible businesses three additional years of certainty. It also changes how owners should think about each tax period."
+      },
+      {
+        "type": "list",
+        "items": [
+          "<strong>First, it supports longer-term planning.</strong> Owners can budget for zero corporate tax across several periods, provided they stay within the threshold and meet the conditions.",
+          "<strong>Second, it makes the annual decision more important.</strong> The choice to elect is not always the best one. When you elect, tax losses and net interest expenditure for that period cannot be carried forward. For example, a start-up that expects losses now and larger profits later may gain more from keeping its losses than from claiming a relief it does not need this year.",
+          "<strong>Third, it does not remove the need for good records.</strong> The Small Business Relief extension changes the end date, and the other conditions remain. As a result, SMEs still need clean accounts, correct revenue figures, and a clear view of their group structure."
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "In short, the extension is a useful opportunity, and it deserves a deliberate decision each year."
+      },
+      {
+        "type": "heading",
+        "text": "Small Business Relief Mistakes That SMEs Need to Watch For"
+      },
+      {
+        "type": "paragraph",
+        "text": "Small Business Relief can simplify Corporate Tax obligations, but mistakes about eligibility and filing can create unnecessary complications. Businesses should pay particular attention to the following issues:"
+      },
+      {
+        "type": "subheading",
+        "text": "1. Assuming the Relief Is Automatic"
+      },
+      {
+        "type": "paragraph",
+        "text": "An eligible business must elect for Small Business Relief through its Corporate Tax return. Without the election, the relief does not automatically apply."
+      },
+      {
+        "type": "subheading",
+        "text": "2. Checking Only Current Revenue"
+      },
+      {
+        "type": "paragraph",
+        "text": "Revenue must be AED 3 million or less in the current and all previous tax periods. A business should review its full relevant history rather than relying only on the latest figures."
+      },
+      {
+        "type": "subheading",
+        "text": "3. Confusing Revenue With Profit"
+      },
+      {
+        "type": "paragraph",
+        "text": "The threshold is based on revenue, not profit. A business with low profit or a financial loss may still be ineligible if its revenue exceeds the limit."
+      },
+      {
+        "type": "subheading",
+        "text": "4. Assuming All Free Zone Companies Qualify"
+      },
+      {
+        "type": "paragraph",
+        "text": "Qualifying Free Zone Persons (QFZP) cannot elect for Small Business Relief. Other free zone companies must assess whether they meet the resident person and revenue requirements before claiming it."
+      },
+      {
+        "type": "subheading",
+        "text": "5. Forgetting Other Tax Obligations"
+      },
+      {
+        "type": "paragraph",
+        "text": "Small Business Relief does not remove every compliance requirement. Businesses must still meet applicable Corporate Tax registration, return filing and record-keeping obligations. VAT registration is also a separate matter, and businesses must register if they meet the applicable threshold, regardless of SBR eligibility."
+      },
+      {
+        "type": "subheading",
+        "text": "6. Treating the Extension as a Change to the Threshold"
+      },
+      {
+        "type": "paragraph",
+        "text": "The SBR extension to 2029 extends the period in which businesses can claim relief, not the AED 3 million revenue threshold. Businesses must still meet the threshold for the current and all previous tax periods."
+      },
+      {
+        "type": "heading",
+        "text": "How Taxplanning.ae Helps Businesses Claim SBR"
+      },
+      {
+        "type": "paragraph",
+        "text": "UAE Small Business Relief depends on several factors, including your residency status, revenue history, any exclusions, and your filing obligations. Taxplanning.ae helps business owners work through these requirements and decide on the right steps for their circumstances."
+      },
+      {
+        "type": "paragraph",
+        "text": "Our team can review your eligibility, explain what an election means for your tax position and support your Corporate Tax compliance. We can also spot gaps in your accounting records and show how your other obligations, including VAT where it applies, fit alongside the relief."
+      },
+      {
+        "type": "paragraph",
+        "text": "If you are unsure whether the Small Business Relief applies to your business, or your revenue is nearing AED 3 million, it helps to get advice before you file. That way, your election and your tax return both reflect your actual position."
+      },
+      {
+        "type": "paragraph",
+        "text": "To discuss your business, <a href=\"/contact\" class=\"text-primary font-semibold underline hover:text-secondary\">book a consultation with Taxplanning.ae</a>."
+      },
+      {
+        "type": "heading",
+        "text": "Frequently Asked Questions"
+      },
+      {
+        "type": "subheading",
+        "text": "Can a Free Zone Company Claim Small Business Relief?"
+      },
+      {
+        "type": "paragraph",
+        "text": "Yes, a free zone company may qualify for Small Business Relief if it meets the relevant conditions and is not a Qualifying Free Zone Person (QFZP). A Qualifying Free Zone Person cannot elect for SBR, so the company's status must be assessed before claiming the relief."
+      },
+      {
+        "type": "subheading",
+        "text": "Has Small Business Relief Been Extended to 2029?"
+      },
+      {
+        "type": "paragraph",
+        "text": "Yes, the UAE Ministry of Finance announced on 7 August 2026 that Small Business Relief has been extended to tax periods ending on or before 31 December 2029. The AED 3 million revenue threshold remains unchanged, and businesses must continue to meet the eligibility conditions."
+      },
+      {
+        "type": "subheading",
+        "text": "How Do You Elect for Small Business Relief?"
+      },
+      {
+        "type": "paragraph",
+        "text": "You elect for Small Business Relief in your corporate tax return, which is filed through the FTA EmaraTax portal. The election must be made for each relevant tax period, and the business must meet the residency, revenue, and other applicable conditions."
+      },
+      {
+        "type": "subheading",
+        "text": "How Much Income Is Tax-Free in the UAE Under Small Business Relief?"
+      },
+      {
+        "type": "paragraph",
+        "text": "Under Small Business Relief, an eligible business is treated as having no taxable income, so no corporate tax is payable for that period, provided revenue is AED 3 million or less. Without the relief, the first AED 375,000 of taxable income is taxed at 0% and the portion above that at 9%."
+      },
+      {
+        "type": "subheading",
+        "text": "Do You Need Financial Statements When Claiming Small Business Relief?"
+      },
+      {
+        "type": "paragraph",
+        "text": "No, you do not need to submit full financial statements with your Corporate Tax return when claiming Small Business Relief. However, you must maintain accurate accounting records to support your revenue figures and demonstrate that you meet the eligibility requirements. These records must generally be kept for 7 years and made available to the Federal Tax Authority (FTA) upon request."
+      },
+      {
+        "type": "subheading",
+        "text": "Is Small Business Relief Automatic in the UAE?"
+      },
+      {
+        "type": "paragraph",
+        "text": "No, Small Business Relief is not automatic in the UAE. You must elect for it in your corporate tax return for each tax period in which you want to claim it. If you need help confirming your eligibility or managing your filing requirements, our tax consultants at Taxplanning.ae can guide you through the process."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Can a Free Zone Company Claim Small Business Relief?",
+        "answer": "Yes, a free zone company may qualify for Small Business Relief if it meets the relevant conditions and is not a Qualifying Free Zone Person (QFZP). A Qualifying Free Zone Person cannot elect for SBR, so the company's status must be assessed before claiming the relief."
+      },
+      {
+        "question": "Has Small Business Relief Been Extended to 2029?",
+        "answer": "Yes, the UAE Ministry of Finance announced on 7 August 2026 that Small Business Relief has been extended to tax periods ending on or before 31 December 2029. The AED 3 million revenue threshold remains unchanged, and businesses must continue to meet the eligibility conditions."
+      },
+      {
+        "question": "How Do You Elect for Small Business Relief?",
+        "answer": "You elect for Small Business Relief in your corporate tax return, which is filed through the FTA EmaraTax portal. The election must be made for each relevant tax period, and the business must meet the residency, revenue, and other applicable conditions."
+      },
+      {
+        "question": "How Much Income Is Tax-Free in the UAE Under Small Business Relief?",
+        "answer": "Under Small Business Relief, an eligible business is treated as having no taxable income, so no corporate tax is payable for that period, provided revenue is AED 3 million or less. Without the relief, the first AED 375,000 of taxable income is taxed at 0% and the portion above that at 9%."
+      },
+      {
+        "question": "Do You Need Financial Statements When Claiming Small Business Relief?",
+        "answer": "No, you do not need to submit full financial statements with your Corporate Tax return when claiming Small Business Relief. However, you must maintain accurate accounting records to support your revenue figures and demonstrate that you meet the eligibility requirements. These records must generally be kept for 7 years and made available to the Federal Tax Authority (FTA) upon request."
+      },
+      {
+        "question": "Is Small Business Relief Automatic in the UAE?",
+        "answer": "No, Small Business Relief is not automatic in the UAE. You must elect for it in your corporate tax return for each tax period in which you want to claim it. If you need help confirming your eligibility or managing your filing requirements, our tax consultants at Taxplanning.ae can guide you through the process."
+      }
+    ]
+  },
+  {
     "id": 1,
     "slug": "uae-corporate-tax-guide-2026",
     "title": "UAE Corporate Tax Guide: What Businesses Need to Know in 2026",

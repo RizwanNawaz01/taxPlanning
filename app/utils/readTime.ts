@@ -24,6 +24,8 @@ export function extractTextFromContent(content: any): string {
           const parts: string[] = []
           if (block.text) parts.push(String(block.text))
           if (Array.isArray(block.items)) parts.push(block.items.filter(Boolean).join(' '))
+          if (Array.isArray(block.headers)) parts.push(block.headers.filter(Boolean).join(' '))
+          if (Array.isArray(block.rows)) parts.push(block.rows.flat().filter(Boolean).join(' '))
           if (block.quote) parts.push(String(block.quote))
           if (block.content) parts.push(extractTextFromContent(block.content))
           return parts.join(' ')

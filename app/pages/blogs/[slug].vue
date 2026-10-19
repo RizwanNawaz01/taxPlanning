@@ -63,15 +63,34 @@
               {{ block.text }}
             </h2>
 
-            <p v-else-if="block.type === 'paragraph'" class="text-base sm:text-lg text-slate-700 leading-relaxed">
+            <h3 v-else-if="block.type === 'subheading'" class="text-xl sm:text-2xl font-bold text-slate-900 mt-6 mb-3">
               {{ block.text }}
-            </p>
+            </h3>
+
+            <p v-else-if="block.type === 'paragraph'" class="text-base sm:text-lg text-slate-700 leading-relaxed" v-html="block.text"></p>
 
             <ul v-else-if="block.type === 'list'" class="space-y-3 my-4 pl-5 list-disc marker:text-lime-500">
-              <li v-for="(item, itemIdx) in block.items" :key="itemIdx" class="text-base sm:text-lg text-slate-700">
-                {{ item }}
-              </li>
+              <li v-for="(item, itemIdx) in block.items" :key="itemIdx" class="text-base sm:text-lg text-slate-700" v-html="item"></li>
             </ul>
+
+            <!-- Table Block -->
+            <div v-else-if="block.type === 'table'" class="my-6 overflow-x-auto rounded-xl border border-slate-200 shadow-sm not-prose">
+              <table class="min-w-full divide-y divide-slate-200 text-left text-sm">
+                <thead v-if="block.headers && block.headers.length" class="bg-slate-50 text-slate-900 font-bold">
+                  <tr>
+                    <th v-for="(header, hIdx) in block.headers" :key="hIdx" scope="col" class="px-5 py-3.5 whitespace-nowrap">
+                      {{ header }}
+                    </th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-slate-100 bg-white">
+                  <tr v-for="(row, rIdx) in block.rows" :key="rIdx" class="hover:bg-slate-50/50 transition-colors">
+                    <td v-for="(cell, cIdx) in row" :key="cIdx" class="px-5 py-3.5 text-slate-700" :class="cIdx === 0 ? 'text-slate-900 font-semibold' : ''" v-html="cell">
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </template>
         </div>
 
@@ -136,7 +155,7 @@ import { calculateReadTime } from '~/utils/readTime'
 import { resolveAuthor } from '~/utils/author'
 
 definePageMeta({
-  alias: ['/blogs/:slug']
+  alias: ['/blog/:slug', '/blogs/:slug']
 })
 
 const route = useRoute()
@@ -183,50 +202,77 @@ const shouldShowReviewer = computed(() => {
 const siteUrl = 'https://taxplanning.ae'
 
 if (blog.value) {
+  const metaTitle = blog.value.metaTitle || blog.value.title
+  const metaDescription = blog.value.metaDescription || blog.value.excerpt
+
   useSeoMeta({
-    title: `${blog.value.title} | Tax Planning UAE`,
-    description: blog.value.excerpt,
-    ogTitle: blog.value.title,
-    ogDescription: blog.value.excerpt,
-    ogUrl: `${siteUrl}/blogs/${blog.value.slug}`,
+    title: `${metaTitle} | Tax Planning UAE`,
+    description: metaDescription,
+    ogTitle: metaTitle,
+    ogDescription: metaDescription,
+    ogUrl: `${siteUrl}/blog/${blog.value.slug}`,
     ogType: 'article',
     ogImage: `${siteUrl}${blog.value.image}`,
     twitterCard: 'summary_large_image',
-    twitterTitle: blog.value.title,
-    twitterDescription: blog.value.excerpt,
+    twitterTitle: metaTitle,
+    twitterDescription: metaDescription,
     twitterImage: `${siteUrl}${blog.value.image}`
   })
 
-  useHead({
-    title: `${blog.value.title} | Tax Planning UAE`,
-    link: [
-      { rel: 'canonical', href: `${siteUrl}/blogs/${blog.value.slug}` }
-    ],
-    script: [
-      {
-        type: 'application/ld+json',
-        innerHTML: JSON.stringify({
-          '@context': 'https://schema.org',
-          '@type': 'Article',
-          headline: blog.value.title,
-          description: blog.value.excerpt,
-          image: `${siteUrl}${blog.value.image}`,
-          datePublished: blog.value.date,
-          author: {
-            '@type': 'Person',
-            name: blog.value.author?.name || 'Tax Planning UAE Editorial Team'
-          },
-          publisher: {
-            '@type': 'Organization',
-            name: 'taxplanning.ae',
-            logo: {
-              '@type': 'ImageObject',
-              url: `${siteUrl}/logo.webp`
-            }
+  const schemaScripts = [
+    {
+      type: 'application/ld+json',
+      innerHTML: JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'BlogPosting',
+        headline: blog.value.title,
+        description: metaDescription,
+        image: `${siteUrl}${blog.value.image}`,
+        datePublished: blog.value.date,
+        author: {
+          '@type': 'Person',
+          name: resolvedAuthor.value?.name || blog.value.author?.name || 'Tax Planning UAE Editorial Team'
+        },
+        publisher: {
+          '@type': 'Organization',
+          name: 'taxplanning.ae',
+          logo: {
+            '@type': 'ImageObject',
+            url: `${siteUrl}/logo.webp`
           }
-        })
-      }
-    ]
+        },
+        mainEntityOfPage: {
+          '@type': 'WebPage',
+          '@id': `${siteUrl}/blog/${blog.value.slug}`
+        }
+      })
+    }
+  ]
+
+  if (blog.value.faqs && Array.isArray(blog.value.faqs) && blog.value.faqs.length > 0) {
+    schemaScripts.push({
+      type: 'application/ld+json',
+      innerHTML: JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'FAQPage',
+        mainEntity: blog.value.faqs.map(faq => ({
+          '@type': 'Question',
+          name: faq.question,
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: faq.answer
+          }
+        }))
+      })
+    })
+  }
+
+  useHead({
+    title: `${metaTitle} | Tax Planning UAE`,
+    link: [
+      { rel: 'canonical', href: `${siteUrl}/blog/${blog.value.slug}` }
+    ],
+    script: schemaScripts
   })
 }
 </script>

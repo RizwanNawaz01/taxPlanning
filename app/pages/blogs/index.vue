@@ -101,7 +101,7 @@ import rawBlogs from '~/data/blogs.json'
 import { calculateReadTime } from '~/utils/readTime'
 
 definePageMeta({
-  alias: ['/blogs']
+  alias: ['/blog', '/blogs']
 })
 
 // Blog data sourced directly from JSON with dynamic readTime calculation
