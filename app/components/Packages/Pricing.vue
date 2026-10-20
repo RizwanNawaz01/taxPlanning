@@ -1,8 +1,8 @@
 <template>
   <section id="packages-pricing" class="py-16 lg:py-24 lg:pb-12 bg-white scroll-mt-24">
-    <div class="container mx-auto px-7 xl:px-16 2xl:px-12">
+    <div class="container mx-auto px-0 xl:px-16 2xl:px-12">
       <!-- Section Header -->
-      <div class="text-center max-w-5xl mx-auto mb-10 lg:mb-10" data-aos="blur-in">
+      <div class="text-center max-w-5xl mx-auto mb-10 lg:mb-10 px-6 lg:px-0" data-aos="blur-in">
         <h2 class="text-3xl md:text-5xl lg:text-6xl font-semibold text-primary mb-4 lg:mb-5 leading-tight">
           Which Package Fits Your Business
         </h2>
@@ -12,7 +12,7 @@
       </div>
 
       <!-- Transaction Volume Tabs -->
-      <div class="flex justify-center mb-12 lg:mb-16" data-aos="blur-in" data-aos-delay="150">
+      <div class="flex justify-center mb-6 lg:mb-16" data-aos="blur-in" data-aos-delay="150">
         <div class="w-full max-w-full overflow-x-auto no-scrollbar py-2 px-4 flex justify-start md:justify-center">
           <div class="inline-flex items-center bg-[#FAF4F2] rounded-full p-1 md:p-1.5 shrink-0 select-none">
             <button
@@ -39,7 +39,7 @@
           class="flex flex-col rounded-3xl transition-all duration-300 relative group"
           :class="[
             pkg.isPopular 
-              ? 'border-2 border-lime-400 shadow-2xl bg-white z-10 lg:-my-8' 
+              ? 'border-2 border-lime-400 shadow-2xl bg-white z-10 lg:-my-8 mt-4' 
               : 'border border-slate-200/80 shadow-md bg-white hover:shadow-xl hover:-translate-y-1'
           ]"
         >
@@ -112,7 +112,7 @@
       </div>
 
       <!-- Action Button Under Cards -->
-      <div class="text-center" data-aos="blur-in" data-aos-delay="350">
+      <div class="text-center mt-0 lg:mt-20" data-aos="blur-in" data-aos-delay="350">
         <Button
           variant="dark"
           @click="$emit('selectPackage', { tier: selectedTier, packageName: 'General Package Enquiry' })"

@@ -4,11 +4,11 @@
       <div :class="[maxWidthClass, 'mx-auto text-center']" data-aos="blur-in">
         <h2 
           v-if="title" 
-          class="text-3xl md:text-4xl lg:text-[44px] font-bold text-primary mb-8 tracking-tight"
+          class="text-4xl lg:text-5xl 2xl:text-6xl font-bold text-primary mb-4 lg:mb-8 tracking-tight"
           v-html="title"
         ></h2>
         
-        <div :class="['space-y-6 text-base md:text-lg lg:text-[19px] leading-relaxed font-normal', textColorClass]">
+        <div :class="['space-y-6 text-base md:text-lg lg:text-xl leading-snug lg:leading-relaxed font-normal', textColorClass]">
           <template v-if="Array.isArray(paragraphs)">
             <p 
               v-for="(para, index) in paragraphs" 
@@ -50,7 +50,7 @@ defineProps({
   },
   textColorClass: {
     type: String,
-    default: 'text-slate-700'
+    default: 'text-black'
   }
 })
 </script>

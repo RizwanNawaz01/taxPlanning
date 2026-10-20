@@ -1,6 +1,6 @@
 <template>
   <section :class="['py-20 lg:py-28', bgClass]">
-    <div class="container mx-auto px-6 lg:px-12 xl:px-16 space-y-20 lg:space-y-28">
+    <div class="container mx-auto px-6 lg:px-12 xl:px-16 space-y-16 lg:space-y-28">
       
       <div 
         v-for="(item, index) in items" 
@@ -19,11 +19,11 @@
           :data-aos-delay="index % 2 === 0 ? '0' : '200'"
         >
           <h3 
-            class="text-3xl md:text-5xl lg:text-5xl font-bold text-primary mb-6 tracking-tight"
+            class="text-3xl md:text-5xl lg:text-5xl font-bold text-primary mb-4 lg:mb-6 tracking-tight text-center lg:text-left"
             v-html="item.title"
           ></h3>
           
-          <div class="space-y-4 text-black text-base md:text-lg lg:text-xl lg:leading-snug max-w-xl">
+          <div class="space-y-4 text-black text-base md:text-lg lg:text-xl lg:leading-snug max-w-xl text-center lg:text-left">
             <template v-if="Array.isArray(item.description)">
               <p 
                 v-for="(para, pIndex) in item.description" 

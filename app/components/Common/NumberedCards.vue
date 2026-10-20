@@ -23,7 +23,7 @@
             :data-aos-delay="index * 150"
             class="h-full"
           >
-            <div class="glass-card p-5 xl:p-8 flex flex-col h-full">
+            <div class="glass-card p-5 lg:p-8 xl:p-8 flex flex-col h-full">
               <span class="glass-number text-[52px] xl:text-[64px] font-black leading-none mb-6 xl:mb-10 block select-none">
                 {{ item.number || index + 1 }}
               </span>

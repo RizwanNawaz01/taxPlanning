@@ -9,7 +9,7 @@
         <div class="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-4 sm:gap-6 lg:gap-12" data-aos="blur-in">
           <!-- Title on Left -->
           <div>
-            <h1 class="text-4xl sm:text-5xl lg:text-[3.5rem] xl:text-[4rem] font-bold text-white tracking-tight leading-tight">
+            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-semibold text-white tracking-tight leading-tight mb-10 lg:mb-0">
               Blogs
             </h1>
           </div>
@@ -26,7 +26,7 @@
 
     <!-- Blog Posts List Section -->
     <section class="py-12 sm:py-16 lg:py-20">
-      <div class="container mx-auto px-16">
+      <div class="container mx-auto px-8 lg:px-16">
         <!-- Vertical List of Blog Cards -->
         <div class="space-y-8 sm:space-y-10 lg:space-y-12">
           <article
@@ -40,7 +40,7 @@
             <NuxtLink
               :to="`/blogs/${blog.slug}`"
               :aria-label="blog.title"
-              class="w-full md:w-[280px] lg:w-[330px] xl:w-[380px] shrink-0 aspect-[16/10] overflow-hidden rounded-2xl lg:rounded-2xl bg-slate-100 shadow-sm group-hover:shadow-md transition-all duration-300 block"
+              class="w-full md:w-[280px] lg:w-[330px] xl:w-[445px] shrink-0  overflow-hidden rounded-2xl lg:rounded-2xl bg-slate-100 shadow-sm group-hover:shadow-md transition-all duration-300 block"
             >
               <NuxtImg
                 :src="blog.image"
@@ -78,6 +78,7 @@
             variant="dark"
             size="lg"
             @click="loadMore"
+            class="!py-1.5 lg:!py-2.5"
           >
             Load More
           </Button>

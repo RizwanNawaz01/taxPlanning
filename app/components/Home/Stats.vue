@@ -5,7 +5,7 @@
         <h3 class="text-[30px] md:text-[20px] lg:text-[26px]  xl:text-[32px] font-semibold text-black mb-2">
           {{ displayValues[index] }}
         </h3>
-        <p class="text-[20px] md:text-xs lg:text-[15px] xl:text-[20px] text-black max-w-[300px] mx-auto leading-snug" v-html="stat.label"></p>
+        <p class="text-[20px] md:text-xs lg:text-[15px] xl:text-[20px] text-black max-w-[300px] mx-auto leading-snug lg:leading-normal" v-html="stat.label"></p>
       </div>
     </div>
   </section>

@@ -20,7 +20,7 @@ const complianceItems = [
     image: '/Services/vat-deregistration.webp'
   },
   {
-    title: 'Corporate Tax Registration and Filing',
+    title: 'Corporate Tax <br> Registration and Filing',
     description: 'Registering your business for UAE Corporate Tax, and filing your returns each period.',
     image: '/Services/corporate-tax.webp'
   },

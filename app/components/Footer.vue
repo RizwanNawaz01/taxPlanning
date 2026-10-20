@@ -12,7 +12,7 @@
       <!-- Desktop Links Row -->
       <div class="hidden lg:grid lg:grid-cols-5 gap-8 xl:gap-16 mb-32">
         <!-- Contact Info -->
-        <div class="lg:col-span-2 text-white/90 text-[13px] xl:text-lg space-y-5">
+        <div class="lg:col-span-2 text-white text-[13px] lg:text-lg xl:text-lg space-y-5">
           <p class="leading-relaxed">
             <span v-for="(line, index) in companyInfo.address" :key="index" class="block">{{ line }}</span>
           </p>
@@ -62,7 +62,7 @@
         
         <!-- Footer Columns -->
         <div v-for="(section, index) in footerLinks" :key="index">
-          <ul class="space-y-4 xl:space-y-5 text-white/90 text-[13px] xl:text-lg">
+          <ul class="space-y-4 xl:space-y-5 text-white text-[13px] lg:text-lg xl:text-lg">
             <li v-for="(link, linkIndex) in section.links" :key="linkIndex" class="flex items-center gap-3">
               <div class="w-1 h-1 bg-white rounded-full shrink-0"></div>
               <NuxtLink :to="link.url" class="hover:text-lime-400 transition-colors">{{ link.text }}</NuxtLink>
@@ -75,7 +75,7 @@
       <div class="flex flex-col lg:hidden gap-10 mb-12">
         <!-- Main Links -->
         <div>
-          <ul class="space-y-4 text-white/90 text-lg">
+          <ul class="space-y-4 text-white text-lg">
             <li v-for="(link, linkIndex) in mobileLinks" :key="linkIndex" class="flex items-center gap-3">
               <div class="w-1 h-1 bg-white rounded-full shrink-0"></div>
               <NuxtLink :to="link.url" class="hover:text-lime-400 transition-colors">{{ link.text }}</NuxtLink>
@@ -84,7 +84,7 @@
         </div>
 
         <!-- Contact Info -->
-        <div class="text-white/90 text-lg flex flex-col gap-4">
+        <div class="text-white text-lg flex flex-col gap-4">
           <h2 class="text-lime-400 font-bold mb-0 text-lg">Registered Office</h2>
           <p class="leading-relaxed">
             <span v-for="(line, index) in companyInfo.address" :key="index" class="block">{{ line }}</span>
@@ -134,7 +134,7 @@
       </div>
 
       <!-- Bottom Bar -->
-      <div class="pt-5 lg:pt-6 border-t border-white/10 flex flex-row-reverse lg:flex-row justify-between items-center gap-2 lg:gap-4 text-white/60 text-[11px] lg:text-[13px]">
+      <div class="pt-5 lg:pt-6 border-t border-white/10 flex flex-row-reverse lg:flex-row justify-between items-center gap-2 lg:gap-4 text-white/60 text-[11px] lg:text-[13px] lg:text-lg">
         <p class="whitespace-nowrap">&copy;{{ currentYear }} taxplanning.ae</p>
         <div class="flex items-center gap-2 lg:gap-5">
           <a :href="legalLinks[0].url" class="hover:text-white transition-colors whitespace-nowrap">{{ legalLinks[0].text }}</a>

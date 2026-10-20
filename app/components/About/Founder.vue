@@ -7,7 +7,7 @@
           <div class="max-w-[580px] mx-auto lg:mx-0">
             <h2 
               v-if="name" 
-              class="text-3xl md:text-4xl lg:text-[56px] font-semibold text-primary tracking-tight mb-3 uppercase"
+              class="text-4xl lg:text-5xl 2xl:text-6xl font-semibold text-primary tracking-tight mb-3 uppercase"
               v-html="name"
             ></h2>
 

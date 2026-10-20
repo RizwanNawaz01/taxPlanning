@@ -18,7 +18,7 @@
         <div 
           ref="sliderRef"
           :class="[
-            'flex gap-6 overflow-x-auto scroll-smooth no-scrollbar pb-4 -mx-4 px-4 sm:mx-0 sm:px-0',
+            'flex gap-6 overflow-x-auto scroll-smooth no-scrollbar pb-4 -mx-4 px-4 sm:mx-0 sm:px-0 snap-x snap-mandatory lg:snap-none',
             items.length <= 3 ? 'lg:grid lg:grid-cols-3 lg:overflow-visible lg:pb-0' : 'lg:flex'
           ]"
         >
@@ -26,7 +26,7 @@
             v-for="(card, index) in items" 
             :key="index"
             :class="[
-              'slider-card min-w-[85%] sm:min-w-[48%] flex-shrink-0 bg-[#FBFBFB] rounded-3xl p-4 border border-slate-100 flex flex-col hover:shadow-lg transition-all',
+              'slider-card w-full min-w-full sm:w-auto sm:min-w-[48%] snap-center lg:snap-align-none flex-shrink-0 bg-[#FBFBFB] rounded-3xl p-4 border border-slate-100 flex flex-col hover:shadow-lg transition-all',
               items.length <= 3 ? 'lg:min-w-0' : 'slider-card-3col'
             ]"
           >

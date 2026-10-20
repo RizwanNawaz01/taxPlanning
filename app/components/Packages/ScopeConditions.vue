@@ -2,7 +2,7 @@
   <section class="py-12 lg:py-6 bg-white">
     <div class="container mx-auto px-7 xl:px-16 2xl:px-12">
       <!-- Section Header -->
-      <div class="text-center max-w-3xl mx-auto mb-10 lg:mb-14" data-aos="blur-in">
+      <div class="text-center max-w-4xl mx-auto mb-10 lg:mb-14" data-aos="blur-in">
         <h2 class="text-xl md:text-2xl lg:text-3xl font-bold text-primary leading-snug">
           The following may require a higher tier or a separate scope, confirmed in writing before work begins:
         </h2>

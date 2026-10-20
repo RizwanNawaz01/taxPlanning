@@ -1,5 +1,5 @@
 <template>
-<div class="bg-surface-light p-8 lg:p-7 lg:py-9 rounded-2xl shadow-2xl relative overflow-hidden min-h-[490px] flex flex-col">    
+<div class="bg-surface-light p-8 lg:p-7 lg:py-9 rounded-xl lg:rounded-2xl shadow-2xl relative overflow-hidden min-h-[490px] flex flex-col">    
     <div v-if="!isSubmitted" class="transition-opacity duration-500 h-full flex flex-col justify-center" :class="{'opacity-50 pointer-events-none': isLoading}">
       <h2 class="text-[22px] font-bold text-center text-primary mb-7">{{ title }}</h2>
       
