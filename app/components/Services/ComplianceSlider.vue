@@ -21,7 +21,7 @@ const complianceItems = [
   },
   {
     title: 'Corporate Tax <br> Registration and Filing',
-    description: 'Registering your business for UAE Corporate Tax, and filing your returns each period.',
+    description: 'We register your business for UAE Corporate Tax and file your returns each period, so you stay compliant.',
     image: '/Services/corporate-tax.webp'
   },
   {
@@ -31,7 +31,7 @@ const complianceItems = [
   },
   {
     title: 'Tax Residency <br> Certificates',
-    description: 'Support with TRC applications for individuals and companies, including gathering the evidence a specific application requires.',
+    description: 'We support TRC applications for individuals and companies, including gathering the evidence each requires.',
     image: '/Services/tax-residency-certificates.webp'
   },
   {
@@ -41,21 +41,21 @@ const complianceItems = [
   },
   {
     title: 'Financial <br> Reporting',
-    description: 'Your financial statements are prepared to the standard your business is required to follow, and kept audit-ready throughout the year.',
+    description: 'We prepare financial statements to the standard your business must follow and keep them audit-ready all year.',
     image: '/Services/financial-reporting.webp'
   },
   {
-    title: 'Audit',
+    title: 'Audit <br> Support',
     description: 'Your auditor sets the requirements; we prepare the schedules, reconciliations, and evidence to meet them.',
     image: '/Services/audit.webp'
   },
   {
     title: 'AML <br> Compliance',
-    description: 'We review whether AML, UBO, or related governance requirements apply to your business, and put the right controls and records in place.',
+    description: 'We review whether AML, UBO, or related requirements apply to your business and put the right controls in place.',
     image: '/Services/aml-compliance.webp'
   },
   {
-    title: 'Payroll',
+    title: 'Payroll <br> Management',
     description: 'Payroll calculations, records, and WPS coordination, managed so your team gets paid accurately and on time.',
     image: '/Services/payroll.webp'
   }
