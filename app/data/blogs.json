@@ -25,8 +25,8 @@
       "badgeText": "Tax Planning",
       "bio": "Tapan Vahal is a Legal Manager and Senior Lawyer at Tax Planning, bringing 9 years of legal experience across UAE personal legal matters, including wills, powers of attorney, and estate planning for individuals and families."
     },
-    "showAuthor": true,
-    "showReviewer": true,
+    "showAuthor": false,
+    "showReviewer": false,
     "image": "/Blog/accounting-bookkeeping-requirements-uae.webp",
     "imageAlt": "Accounting and Bookkeeping Requirements in the UAE",
     "content": [
