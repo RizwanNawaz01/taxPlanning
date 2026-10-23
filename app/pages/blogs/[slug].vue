@@ -94,6 +94,12 @@
           </template>
         </div>
 
+        <!-- FAQ Accordion Section -->
+        <BlogFaqAccordion
+          v-if="blog.faqs && blog.faqs.length"
+          :faqs="blog.faqs"
+        />
+
         <!-- Author & Legal Reviewer Cards (Matching Design Screenshot) -->
         <div v-if="shouldShowReviewer || shouldShowAuthor" class="mt-14 space-y-6 sm:space-y-8">
           <!-- 1. Legally Reviewed by Section (Can be shown/hidden individually via showReviewer) -->
@@ -164,8 +170,21 @@ const slug = computed(() => route.params.slug)
 const blog = computed(() => {
   const found = rawBlogs.find(item => item.slug === slug.value)
   if (!found) return null
+
+  // If blog has a structured faqs array, strip the plain-text FAQ section from content body
+  let filteredContent = found.content
+  if (found.faqs && Array.isArray(found.faqs) && found.faqs.length > 0 && Array.isArray(found.content)) {
+    const faqHeadingIdx = found.content.findIndex(
+      block => block.type === 'heading' && /frequently asked questions/i.test(block.text)
+    )
+    if (faqHeadingIdx !== -1) {
+      filteredContent = found.content.slice(0, faqHeadingIdx)
+    }
+  }
+
   return {
     ...found,
+    content: filteredContent,
     readTime: calculateReadTime(found.content) || found.readTime
   }
 })
