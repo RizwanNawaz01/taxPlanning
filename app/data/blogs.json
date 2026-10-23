@@ -1,5 +1,442 @@
 [
   {
+    "id": 11,
+    "slug": "accounting-bookkeeping-requirements-uae",
+    "metaTitle": "Accounting and Bookkeeping Requirements for Businesses in the UAE",
+    "metaDescription": "Learn the key accounting and bookkeeping requirements in the UAE, including IFRS, record retention, audits, Corporate Tax, VAT and FTA rules.",
+    "title": "Accounting and Bookkeeping Requirements for Businesses in the UAE",
+    "excerpt": "Learn the key accounting and bookkeeping requirements in the UAE, including IFRS, record retention, audits, Corporate Tax, VAT and FTA rules.",
+    "category": "Accounting",
+    "date": "October 23, 2026",
+    "readTime": "8 min read",
+    "author": {
+      "slug": "aramide-shuaib",
+      "name": "Aramide Shuaib",
+      "role": "Content Writer",
+      "company": "Tax Planning",
+      "badgeText": "Tax Planning",
+      "bio": "Aramide Shuaib is a Content Writer at Tax Planning who works closely with the firm's legal specialists to simplify complex legal topics into accurate and practical guidance for individuals, families, and businesses across the UAE."
+    },
+    "reviewer": {
+      "slug": "tapan-vahal",
+      "name": "Tapan Vahal",
+      "role": "Legal Manager",
+      "company": "Tax Planning",
+      "badgeText": "Tax Planning",
+      "bio": "Tapan Vahal is a Legal Manager and Senior Lawyer at Tax Planning, bringing 9 years of legal experience across UAE personal legal matters, including wills, powers of attorney, and estate planning for individuals and families."
+    },
+    "showAuthor": true,
+    "showReviewer": true,
+    "image": "/Blog/accounting-bookkeeping-requirements-uae.webp",
+    "imageAlt": "Accounting and Bookkeeping Requirements in the UAE",
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "Every business in the UAE must keep accurate accounting records, prepare financial statements, and retain its supporting documents, whether it operates on the mainland or in a free zone. The accounting requirements in the UAE come from three main sources: the Commercial Companies Law, the Corporate Tax Law, and the VAT rules enforced by the Federal Tax Authority (FTA)."
+      },
+      {
+        "type": "paragraph",
+        "text": "For business owners, this is about more than paperwork. Reliable books determine how much tax you pay, how efficiently you can file, and whether a bank will extend finance to your business. However, many small businesses still treat bookkeeping as a year-end task, and that is where penalties usually begin."
+      },
+      {
+        "type": "paragraph",
+        "text": "This guide explains the UAE accounting requirements that apply to your business, the records you need, how long to keep them, and what happens if your accounts fall short. It also outlines how professional accounting and bookkeeping services in the UAE can help businesses manage these responsibilities."
+      },
+      {
+        "type": "heading",
+        "text": "Key Takeaways"
+      },
+      {
+        "type": "list",
+        "items": [
+          "Record-keeping is mandatory for UAE businesses under company law, the Corporate Tax Law, and the VAT rules.",
+          "IFRS is the default accounting framework. IFRS for SMEs is available where revenue does not exceed AED 50 million, and the cash basis where revenue does not exceed AED 3 million.",
+          "The accounting requirements in the UAE cover invoices, ledgers, bank statements, payroll records, VAT records, and supporting contracts.",
+          "Retention periods differ by law: five years for company accounting records, seven years for Corporate Tax records, and five years for VAT records.",
+          "LLCs and joint-stock companies must have an annual audit, and taxable persons with revenue above AED 50 million, all QFZPs, and all Tax Groups must prepare audited financial statements.",
+          "Failing to keep required records carries a penalty of AED 10,000 per violation, rising to AED 20,000 for a repeat violation within 24 months of first violation.",
+          "Professional accounting and bookkeeping services in the UAE help keep records complete throughout the year, not only at filing time."
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Why Are Accounting and Bookkeeping Important for UAE Businesses?"
+      },
+      {
+        "type": "paragraph",
+        "text": "Accurate accounting serves two purposes for a business. It supports compliance with UAE tax and company law, and it gives management the financial information needed to make sound decisions."
+      },
+      {
+        "type": "subheading",
+        "text": "1. Accurate Tax Returns"
+      },
+      {
+        "type": "paragraph",
+        "text": "Corporate Tax calculations begin with a company's accounting profit. As a result, any error in the books carries directly into the tax return. Reliable records allow taxable income to be calculated correctly and reduce the risk of overpaying or underreporting tax."
+      },
+      {
+        "type": "subheading",
+        "text": "2. Better Financial Decisions"
+      },
+      {
+        "type": "paragraph",
+        "text": "Regular financial reports show where revenue is growing, which costs are increasing, and whether cash flow can cover upcoming obligations. Owners can therefore plan hiring, investment and pricing with greater confidence."
+      },
+      {
+        "type": "subheading",
+        "text": "3. Easier Access to Finance"
+      },
+      {
+        "type": "paragraph",
+        "text": "Banks, investors and business partners frequently request financial statements before approving finance or entering into an agreement. Well-organised records allow a business to respond promptly and present its financial position credibly."
+      },
+      {
+        "type": "subheading",
+        "text": "4. Readiness for FTA Reviews"
+      },
+      {
+        "type": "paragraph",
+        "text": "Every entry in the books should be supported by a document. When this is the case, a query from the FTA UAE becomes a routine request for information and not a compliance concern. It also shortens the time needed to respond to a review."
+      },
+      {
+        "type": "subheading",
+        "text": "5. Lower Correction Costs"
+      },
+      {
+        "type": "paragraph",
+        "text": "Recording transactions as they occur is considerably less costly than reconstructing a full year of missing entries. In addition, timely records make errors easier to identify before they affect a return."
+      },
+      {
+        "type": "paragraph",
+        "text": "For these reasons, many businesses engage accounting services in the UAE once their transaction volumes outgrow a spreadsheet."
+      },
+      {
+        "type": "heading",
+        "text": "UAE Accounting Laws and Standards: What Businesses Must Follow"
+      },
+      {
+        "type": "paragraph",
+        "text": "The accounting requirements in the UAE vary with a business’s legal structure and revenue, so it helps to know which rules apply to your company."
+      },
+      {
+        "type": "subheading",
+        "text": "1. Commercial Companies Law"
+      },
+      {
+        "type": "paragraph",
+        "text": "Article 26 requires companies to keep accounting records that clearly show their financial position, generally for at least five years after the end of the financial year. Article 27 requires LLCs and joint-stock companies to prepare annual financial accounts and appoint a licensed auditor to audit them each year."
+      },
+      {
+        "type": "subheading",
+        "text": "2. Corporate Tax Law (Federal Decree-Law No. 47 of 2022)"
+      },
+      {
+        "type": "paragraph",
+        "text": "Taxable persons must keep records and prepare financial statements that support their Corporate Tax returns. Taxable income begins with accounting profit, so the quality of the books directly affects the tax calculation. For this reason, businesses should also keep the supporting documents behind each figure for seven years."
+      },
+      {
+        "type": "subheading",
+        "text": "3. VAT Rules"
+      },
+      {
+        "type": "paragraph",
+        "text": "VAT-registered businesses must keep tax invoices and related records, including records of taxable supplies, purchases, and imports. They must also file returns with the FTA. These records support the VAT calculation and the recovery of input tax, so they need to be complete and accurate."
+      },
+      {
+        "type": "paragraph",
+        "text": "UAE accounting standards are based on International Financial Reporting Standards (IFRS). Under Ministerial Decision No. 114 of 2023, the Ministry of Finance sets out which framework taxable persons use for Corporate Tax purposes:"
+      },
+      {
+        "type": "table",
+        "headers": [
+          "Framework",
+          "Who can use it"
+        ],
+        "rows": [
+          [
+            "Full IFRS",
+            "The default for Corporate Tax purposes, and required where revenue exceeds AED 50 million"
+          ],
+          [
+            "IFRS for SMEs",
+            "Taxable persons with revenue of AED 50 million or less"
+          ],
+          [
+            "Cash basis",
+            "Taxable persons with revenue of AED 3 million or less"
+          ]
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "In practice, the IFRS accounting requirements in the UAE depend largely on revenue. The IFRS for SMEs Standard is a simplified version of full IFRS, designed for entities without public accountability. The cash basis records income when cash is received and expenses when they are paid, whereas the accrual method records them when they are earned or incurred."
+      },
+      {
+        "type": "paragraph",
+        "text": "Annual company-law audit requirements for mainland LLCs and JSCs remain mandatory. Under Ministerial Decision No. 84 of 2025, audited financial statements are mandatory for standalone taxable persons with revenue exceeding AED 50 million, all QFZPs, and all Tax Groups (which must prepare audited special-purpose financial statements). Small Business Relief (extended to tax periods ending on or before 31 December 2029) provides relief from tax liability but does not exempt businesses from keeping proper accounting records or meeting standard filing duties."
+      },
+      {
+        "type": "heading",
+        "text": "Is Bookkeeping Mandatory for Businesses in the UAE?"
+      },
+      {
+        "type": "paragraph",
+        "text": "Yes, bookkeeping is mandatory for businesses in the UAE. The obligation is built into the company, Corporate Tax, and VAT legislation, each of which requires reliable records. Put simply, every transaction must be recorded and supported by a document."
+      },
+      {
+        "type": "paragraph",
+        "text": "<strong>These three points are worth noting:</strong>"
+      },
+      {
+        "type": "list",
+        "items": [
+          "<strong>1. It applies to mainland and free zone companies:</strong> Business accounting requirements apply equally to both, and free zone companies are generally taxable persons too. Their licensing authority may also add its own requirements.",
+          "<strong>2. It applies even when no tax is due:</strong> Registration and bookkeeping obligations remain if you owe nothing, including under the 0% band or Small Business Relief.",
+          "<strong>3. It applies on the cash basis as well:</strong> A business using cash-basis accounting still needs invoices, bank statements, and a clear ledger."
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "In practice, bookkeeping should cover the following areas:"
+      },
+      {
+        "type": "list",
+        "items": [
+          "<strong>Transaction records:</strong> Record income, expenses, purchases, and other financial transactions in the general ledger.",
+          "<strong>Supporting documents:</strong> Keep invoices, receipts, contracts, and other documents that support each entry.",
+          "<strong>Receivables and payables:</strong> Track amounts owed by customers and amounts payable to suppliers.",
+          "<strong>Bank reconciliation:</strong> Reconcile bank statements with the accounting records on a regular basis.",
+          "<strong>Payroll records:</strong> Maintain payroll records and the documents that support employee costs.",
+          "<strong>Tax information:</strong> Retain the information needed for VAT returns and Corporate Tax filings, where applicable."
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "Because these tasks recur every month, many small firms use accounting services in the UAE to manage their financial records, prepare reports, and meet their tax obligations."
+      },
+      {
+        "type": "heading",
+        "text": "What Accounting Records Must UAE Businesses Maintain?"
+      },
+      {
+        "type": "paragraph",
+        "text": "The accounting records a UAE business needs depend on its activities, size, legal structure, and tax obligations. However, most businesses should maintain a consistent set of financial records that explain their transactions and support their financial statements."
+      },
+      {
+        "type": "table",
+        "headers": [
+          "Record type",
+          "What to keep",
+          "Why it matters"
+        ],
+        "rows": [
+          [
+            "Sales and purchase documents",
+            "Sales invoices, supplier invoices, receipts, credit notes, and purchase orders",
+            "Supports revenue, expenses, and amounts owed"
+          ],
+          [
+            "Bank records",
+            "Bank statements, payment confirmations, and reconciliation reports",
+            "Helps identify missing entries and unexplained differences"
+          ],
+          [
+            "Expense records",
+            "Receipts and invoices for rent, utilities, subscriptions, travel, and professional fees",
+            "Supports business expenses and tax calculations"
+          ],
+          [
+            "General ledger and trial balance",
+            "Transaction entries, account balances, and adjustments",
+            "Provides the foundation for financial reporting"
+          ],
+          [
+            "Payroll records",
+            "Salary calculations, payment records, and relevant employee cost documents",
+            "Supports payroll accounting and expense reporting"
+          ],
+          [
+            "VAT records",
+            "Tax invoices, taxable sales and purchases, import documents, and input tax evidence where relevant",
+            "Supports VAT returns and claims"
+          ],
+          [
+            "Corporate Tax records",
+            "Financial statements, tax calculations, revenue records, and supporting documents",
+            "Helps substantiate the figures reported to the FTA"
+          ],
+          [
+            "Contracts and asset records",
+            "Lease agreements, financing contracts, asset purchases, disposals, and liability records",
+            "Documents significant financial commitments and transactions"
+          ]
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "How Long Must Businesses Keep Accounting Records in the UAE?"
+      },
+      {
+        "type": "paragraph",
+        "text": "Businesses in the UAE must keep accounting records for at least five to seven years, depending on the type of record. The table below sets out the minimum period for each."
+      },
+      {
+        "type": "table",
+        "headers": [
+          "Record type",
+          "Minimum retention period"
+        ],
+        "rows": [
+          [
+            "Accounting records under the Commercial Companies Law",
+            "Five years after the end of the financial year"
+          ],
+          [
+            "Corporate Tax records",
+            "Seven years after the end of the tax period"
+          ],
+          [
+            "VAT records",
+            "Five years"
+          ],
+          [
+            "Certain real estate records",
+            "15 years"
+          ]
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "As a simple rule, keeping everything for seven years covers most situations. However, longer periods apply to some records, so confirm the correct period for each type before you discard anything. The FTA can ask to see your records at any time within these periods, which is why they should stay organised and easy to retrieve."
+      },
+      {
+        "type": "heading",
+        "text": "What Happens If Your UAE Company Has No Proper Accounts?"
+      },
+      {
+        "type": "paragraph",
+        "text": "A company that does not maintain proper accounts is exposed to administrative penalties and to wider commercial consequences. The current penalties include the following:"
+      },
+      {
+        "type": "list",
+        "items": [
+          "<strong>Failure to keep required records:</strong> AED 10,000 per violation, rising to AED 20,000 for a repeat violation.",
+          "<strong>Late Corporate Tax registration:</strong> AED 10,000.",
+          "<strong>Late Corporate Tax return:</strong> AED 500 per month for the first 12 months, then AED 1,000 per month.",
+          "<strong>Late VAT registration:</strong> AED 10,000.",
+          "<strong>Late VAT return:</strong> AED 1,000 for a first offence and AED 2,000 for a repeat offence within 24 months."
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "Penalties are only one part of the exposure. Without adequate accounts, a business may be unable to substantiate its deductions, which can result in legitimate expenses being disallowed. In addition, banks may delay due diligence, licence renewals may be held up where an audit report is required, and an FTA UAE review becomes considerably harder to defend."
+      },
+      {
+        "type": "paragraph",
+        "text": "Businesses should address gaps in their records before they lead to compliance issues. A professional review by tax consultants in the UAE can help identify missing documents, correct accounting errors, and bring the books up to date. Ongoing support can then help maintain accurate records and meet the company’s accounting and tax obligations."
+      },
+      {
+        "type": "heading",
+        "text": "Get Expert Accounting and Bookkeeping Support from Taxplanning.ae"
+      },
+      {
+        "type": "paragraph",
+        "text": "Keeping up with UAE accounting requirements is easier when one team handles the routine work and explains the rules in plain terms. Taxplanning.ae provides accounting and bookkeeping services in the UAE for mainland and free zone businesses, so your records stay ready for filing and for any FTA query."
+      },
+      {
+        "type": "list",
+        "items": [
+          "We maintain your books monthly, including bank reconciliations and supporting documents.",
+          "We prepare financial statements under the framework that suits your revenue.",
+          "We handle VAT returns and Corporate Tax filing from the same set of records.",
+          "We review your existing accounts to find gaps before the FTA does."
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "If you are unsure whether your current records meet the Accounting Requirements in the UAE, our accounting specialists can review your books and help you maintain accurate, compliant financial records. Speak to Taxplanning.ae today."
+      },
+      {
+        "type": "heading",
+        "text": "Frequently Asked Questions"
+      },
+      {
+        "type": "subheading",
+        "text": "How Does the UAE Corporate Tax Law Affect Accounting Requirements?"
+      },
+      {
+        "type": "paragraph",
+        "text": "The UAE Corporate Tax Law makes your accounts the starting point for your tax return, because taxable income begins with accounting profit. Taxable persons must prepare financial statements under IFRS, or IFRS for SMEs where eligible, keep their records for seven years, and file within nine months of the end of the tax period. Businesses with revenue up to AED 3 million may use the cash basis."
+      },
+      {
+        "type": "subheading",
+        "text": "How Long Must I Keep My Business Records in the UAE?"
+      },
+      {
+        "type": "paragraph",
+        "text": "Businesses in the UAE must generally keep accounting records for at least five years, Corporate Tax records for seven years after the end of the relevant tax period, and VAT records for five years. Certain real estate records must be retained for 15 years. The required period depends on the type of record and the applicable legislation."
+      },
+      {
+        "type": "subheading",
+        "text": "What Happens If I Do Not Maintain Proper Bookkeeping Records?"
+      },
+      {
+        "type": "paragraph",
+        "text": "A business that fails to maintain proper bookkeeping records may face an administrative penalty of AED 10,000 per violation, rising to AED 20,000 for a repeat violation. In addition, you may be unable to support your deductions or defend your figures in an FTA review. If your records are already incomplete, accounting and bookkeeping services in the UAE can help you rebuild them before a problem arises."
+      },
+      {
+        "type": "subheading",
+        "text": "What Is the Penalty for Filing a Corporate Tax Return Late in the UAE?"
+      },
+      {
+        "type": "paragraph",
+        "text": "The penalty for filing a Corporate Tax return late is AED 500 per month, or part of a month, for the first 12 months. From the 13th month onwards, the penalty increases to AED 1,000 per month, or part of a month. Businesses should file their Corporate Tax returns within nine months of the end of the relevant tax period to avoid late-filing penalties."
+      },
+      {
+        "type": "subheading",
+        "text": "How Often Should Businesses in the UAE Conduct Financial Audits?"
+      },
+      {
+        "type": "paragraph",
+        "text": "Most businesses in the UAE that are required to have a financial audit must do so annually (once per financial year or tax period). This applies to the annual statutory audit required by company law for LLCs/JSCs, as well as Corporate Tax requirements under Ministerial Decision No. 84 of 2025 for standalone entities exceeding AED 50 million in revenue, all QFZPs, and all Tax Groups. Furthermore, individual Free Zone licensing authorities (such as DMCC or RAKEZ) maintain their own separate annual audit submission regulations for licence renewals."
+      },
+      {
+        "type": "subheading",
+        "text": "Do UAE Businesses Need to Comply With IFRS?"
+      },
+      {
+        "type": "paragraph",
+        "text": "Yes, UAE businesses need to comply with IFRS for Corporate Tax purposes. Businesses with revenue of AED 50 million or less may apply IFRS for SMEs, while those with revenue of AED 3 million or less may use the cash basis, subject to applicable conditions. These IFRS accounting requirements in the UAE apply alongside relevant audit and record-keeping obligations. Need help meeting these requirements? Contact Taxplanning.ae for accounting and bookkeeping services in the UAE tailored to your business."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How Does the UAE Corporate Tax Law Affect Accounting Requirements?",
+        "answer": "The UAE Corporate Tax Law makes your accounts the starting point for your tax return, because taxable income begins with accounting profit. Taxable persons must prepare financial statements under IFRS, or IFRS for SMEs where eligible, keep their records for seven years, and file within nine months of the end of the tax period. Businesses with revenue up to AED 3 million may use the cash basis."
+      },
+      {
+        "question": "How Long Must I Keep My Business Records in the UAE?",
+        "answer": "Businesses in the UAE must generally keep accounting records for at least five years, Corporate Tax records for seven years after the end of the relevant tax period, and VAT records for five years. Certain real estate records must be retained for 15 years. The required period depends on the type of record and the applicable legislation."
+      },
+      {
+        "question": "What Happens If I Do Not Maintain Proper Bookkeeping Records?",
+        "answer": "A business that fails to maintain proper bookkeeping records may face an administrative penalty of AED 10,000 per violation, rising to AED 20,000 for a repeat violation. In addition, you may be unable to support your deductions or defend your figures in an FTA review. If your records are already incomplete, accounting and bookkeeping services in the UAE can help you rebuild them before a problem arises."
+      },
+      {
+        "question": "What Is the Penalty for Filing a Corporate Tax Return Late in the UAE?",
+        "answer": "The penalty for filing a Corporate Tax return late is AED 500 per month, or part of a month, for the first 12 months. From the 13th month onwards, the penalty increases to AED 1,000 per month, or part of a month. Businesses should file their Corporate Tax returns within nine months of the end of the relevant tax period to avoid late-filing penalties."
+      },
+      {
+        "question": "How Often Should Businesses in the UAE Conduct Financial Audits?",
+        "answer": "Most businesses in the UAE that are required to have a financial audit must do so annually (once per financial year or tax period). This applies to the annual statutory audit required by company law for LLCs/JSCs, as well as Corporate Tax requirements under Ministerial Decision No. 84 of 2025 for standalone entities exceeding AED 50 million in revenue, all QFZPs, and all Tax Groups. Furthermore, individual Free Zone licensing authorities (such as DMCC or RAKEZ) maintain their own separate annual audit submission regulations for licence renewals."
+      },
+      {
+        "question": "Do UAE Businesses Need to Comply With IFRS?",
+        "answer": "Yes, UAE businesses need to comply with IFRS for Corporate Tax purposes. Businesses with revenue of AED 50 million or less may apply IFRS for SMEs, while those with revenue of AED 3 million or less may use the cash basis, subject to applicable conditions. These IFRS accounting requirements in the UAE apply alongside relevant audit and record-keeping obligations. Need help meeting these requirements? Contact Taxplanning.ae for accounting and bookkeeping services in the UAE tailored to your business."
+      }
+    ]
+  },
+  {
     "id": 10,
     "slug": "uae-tax-planning-business-owners-guide",
     "metaTitle": "UAE Tax Planning for Business Owners: A Complete Guide",

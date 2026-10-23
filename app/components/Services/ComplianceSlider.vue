@@ -26,7 +26,7 @@ const complianceItems = [
   },
   {
     title: 'Corporate Tax <br> Deregistration',
-    description: 'Closures, restructuring, or a change in tax status can all trigger deregistration. We handle the process either way.',
+    description: 'Closures, restructuring, or tax status changes can trigger deregistration. We handle the process either way.',
     image: '/Services/corporate-tax-deregistration.webp'
   },
   {
@@ -36,12 +36,12 @@ const complianceItems = [
   },
   {
     title: 'Accounting and <br> Bookkeeping',
-    description: 'New books, ongoing records, backlog catch-up, or a handover from a previous provider. We take on any of these.',
+    description: 'New books, ongoing records, backlog catch-up or previous provider handover. We take on any of these.',
     image: '/Services/accounting-and-bookkeeping.webp'
   },
   {
     title: 'Financial <br> Reporting',
-    description: 'We prepare financial statements to the standard your business must follow and keep them audit-ready all year.',
+    description: 'We prepare financial statements to the standard your business must follow and keep them audit-ready.',
     image: '/Services/financial-reporting.webp'
   },
   {
@@ -51,12 +51,12 @@ const complianceItems = [
   },
   {
     title: 'AML <br> Compliance',
-    description: 'We review whether AML, UBO, or related requirements apply to your business and put the right controls in place.',
+    description: 'We review whether AML, UBO, or related requirements apply to your business and put controls in place.',
     image: '/Services/aml-compliance.webp'
   },
   {
     title: 'Payroll <br> Management',
-    description: 'Payroll calculations, records, and WPS coordination, managed so your team gets paid accurately and on time.',
+    description: 'Payroll calculations, records, and WPS coordination, managed so your team gets paid accurately.',
     image: '/Services/payroll.webp'
   }
 ];
