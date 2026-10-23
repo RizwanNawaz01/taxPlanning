@@ -26,12 +26,12 @@ const complianceItems = [
   },
   {
     title: 'Corporate Tax <br> Deregistration',
-    description: 'Closures, restructuring, or tax status changes can trigger deregistration. We handle the process either way.',
+    description: 'Closures, restructuring, or tax status changes can trigger deregistration. We handle all the processes.',
     image: '/Services/corporate-tax-deregistration.webp'
   },
   {
     title: 'Tax Residency <br> Certificates',
-    description: 'We support TRC applications for individuals and companies, including gathering the evidence each requires.',
+    description: 'We support TRC applications for individuals and companies, gathering the required evidence.',
     image: '/Services/tax-residency-certificates.webp'
   },
   {
