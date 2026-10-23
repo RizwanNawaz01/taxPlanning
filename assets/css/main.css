@@ -33,6 +33,18 @@ a {
   color: inherit;
 }
 
+.prose a {
+  color: var(--primary-navy);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.prose a:hover {
+  color: #152238;
+}
+
 /* common utilities */
 .container {
   max-width: 1200px;
