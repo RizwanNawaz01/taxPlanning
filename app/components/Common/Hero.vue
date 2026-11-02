@@ -1,6 +1,9 @@
 <template>
   <section 
-    class="relative pt-36 lg:pt-56 min-h-[100dvh] md:min-h-[60dvh] lg:min-h-auto pb-[400px] md:pb-24 overflow-hidden bg-cover bg-center bg-no-repeat hero-bg xl:min-h-[810px]"
+    :class="[
+      'relative pt-36 lg:pt-72 min-h-[100dvh] md:min-h-[60dvh] lg:min-h-auto pb-[400px] md:pb-24 overflow-hidden bg-cover bg-center bg-no-repeat hero-bg',
+      customClass || 'xl:min-h-[810px]'
+    ]"
     :style="{
       '--hero-bg-desktop': `url(${bgImage})`,
       '--hero-bg-mobile': `url(${bgMobileImage || bgImage})`
@@ -90,6 +93,10 @@ const props = defineProps({
   formButtonText: {
     type: String,
     default: "Book a Consultation"
+  },
+  customClass: {
+    type: String,
+    default: ''
   }
 })
 

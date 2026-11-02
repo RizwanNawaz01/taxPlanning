@@ -75,7 +75,7 @@ defineProps({
       {
         title: 'Our Team',
         description: [
-          'Our team of <strong class="text-primary font-bold">more than 50 tax professionals</strong> <br>includes qualified CAs, ACCAs and CPAs, all senior, experienced practitioners. Between them, they have worked across a wide range of business structures and tax situations, so most questions we hear are ones we have handled before.',
+          'Our team of qualified CAs, ACCAs and CPAs, all senior, experienced practitioners. Between them, they have worked across a wide range of business structures and tax situations, so most questions we hear are ones we have handled before.',
           'If you have a question about where your business stands on tax, we would be glad to talk it through.'
         ],
         image: '/About/team.webp',

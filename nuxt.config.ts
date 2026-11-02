@@ -9,6 +9,11 @@ export default defineNuxtConfig({
   css: ['~/assets/css/main.css'],
   ssr: true,
   devtools: { enabled: false },
+  vite: {
+    server: {
+      allowedHosts: true
+    }
+  },
   modules: [
     '@nuxtjs/tailwindcss',
     '@nuxt/image',

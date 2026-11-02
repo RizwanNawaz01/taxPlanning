@@ -20,7 +20,7 @@ definePageMeta({
 
 const siteUrl = 'https://taxplanning.ae'
 const pageTitle = 'Contact Us | Tax Planning UAE'
-const pageDescription = 'Get in touch with our tax advisory experts in Dubai. Book a consultation for UAE Corporate Tax, VAT registration, accounting, and structuring.'
+const pageDescription = 'Get in touch with our tax advisory experts in Dubai. Book a Consultation for UAE Corporate Tax, VAT registration, accounting, and structuring.'
 
 useSeoMeta({
   title: pageTitle,

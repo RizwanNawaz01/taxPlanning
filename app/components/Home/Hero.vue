@@ -7,6 +7,7 @@
     :bg-mobile-image="heroContent.bgMobileImage"
     :form-title="formContent.title"
     :form-button-text="formContent.buttonText"
+    :show-form="false"
   />
 </template>
 

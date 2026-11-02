@@ -7,6 +7,7 @@
     <HomeWhoWeWorkWith />
     <HomeWhyUs />
     <HomeHowWeWork />
+    <HomeTestimonials />
     <HomeEngagementOptions />
     <HomePartner />
   </div>

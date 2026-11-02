@@ -24,7 +24,7 @@
 
         <!-- CTA Button (Desktop & Icon on Mobile) -->
         <a :href="ctaButton.href" aria-label="Call Us" class="flex items-center justify-center text-white font-semibold text-[13px] xl:text-[15px] lg:border lg:border-lime-accent/60 lg:px-4 lg:py-2 xl:px-5 xl:py-2.5 rounded-full hover:bg-lime-accent/10 transition-colors relative z-50 whitespace-nowrap">
-          <svg class="w-[20px] h-[20px] lg:w-4 lg:h-4 text-lime-accent shrink-0 lg:top-0 top-0.5 relative" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M21.384 17.752a2.108 2.108 0 0 1-2.177 2.248 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 1.5 2.618 2.108 2.108 0 0 1 3.745.5H6.88a2.108 2.108 0 0 1 2.11 1.81 13.57 13.57 0 0 0 .74 2.97 2.108 2.108 0 0 1-.47 2.22L7.65 9.11a16.894 16.894 0 0 0 6.24 6.24l1.61-1.61a2.108 2.108 0 0 1 2.22-.47 13.57 13.57 0 0 0 2.97.74 2.108 2.108 0 0 1 1.694 2.742z"/></svg>
+          <svg class="w-[20px] h-[20px] lg:w-4 lg:h-4 text-lime-accent shrink-0 lg:top-[2px] top-0.5 relative rotate-[10deg] " viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M21.384 17.752a2.108 2.108 0 0 1-2.177 2.248 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 1.5 2.618 2.108 2.108 0 0 1 3.745.5H6.88a2.108 2.108 0 0 1 2.11 1.81 13.57 13.57 0 0 0 .74 2.97 2.108 2.108 0 0 1-.47 2.22L7.65 9.11a16.894 16.894 0 0 0 6.24 6.24l1.61-1.61a2.108 2.108 0 0 1 2.22-.47 13.57 13.57 0 0 0 2.97.74 2.108 2.108 0 0 1 1.694 2.742z"/></svg>
           <span class="hidden lg:inline ml-2">{{ ctaButton.label }}</span>
         </a>
 
@@ -110,10 +110,10 @@ const logo = {
 
 const navLinks = [
   { label: 'Services', href: '/services' },
-  { label: 'About us', href: '/about' },
-  { label: 'Packages', href: '/packages' },
+  // { label: 'Packages', href: '/packages' },
   { label: 'Partner with us', href: '/partner' },
-  { label: 'Contact us', href: '/contact' }
+  { label: 'About us', href: '/about' },
+  { label: 'Contact us', href: '/contact' },
 ]
 
 const ctaButton = {

@@ -43,7 +43,7 @@ useHead({
         telephone: '+971 800 469',
         address: {
           '@type': 'PostalAddress',
-          streetAddress: 'Level 4, Burlington Tower, Business Bay',
+          streetAddress: '616, Burlington Tower, Business Bay',
           addressLocality: 'Dubai',
           addressCountry: 'AE'
         },

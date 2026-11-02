@@ -9,30 +9,46 @@
         <NuxtImg src="/footer-logo-arrow.webp" alt="" class="h-10 lg:h-8 w-auto lg:hidden" />
       </div>
 
-      <!-- Desktop Links Row -->
-      <div class="hidden lg:grid lg:grid-cols-5 gap-8 xl:gap-16 mb-32">
-        <!-- Contact Info -->
-        <div class="lg:col-span-2 text-white text-[13px] lg:text-lg xl:text-lg space-y-5">
+      <!-- Desktop / Main Links Grid (3 Sections) -->
+      <div class="hidden lg:grid lg:grid-cols-3 gap-8 xl:gap-28 mb-32">
+        <!-- Section 1: Helping text with white color -->
+        <div class="text-white text-[13px] lg:text-lg xl:text-lg">
+          <p class="text-white font-normal leading-relaxed">
+            Helping UAE businesses stay on top of their accounting, tax and compliance obligations. An InZone company.
+          </p>
+        </div>
+
+        <!-- Section 2: Contact Info & Socials (LinkedIn, Facebook, Instagram) -->
+        <div class="text-white text-[13px] lg:text-lg xl:text-lg space-y-4 pl-10">
           <p class="leading-relaxed">
-            <span v-for="(line, index) in companyInfo.address" :key="index" class="block">{{ line }}</span>
+            <a 
+              href="https://maps.google.com/?q=Burlington+Tower+Business+Bay+Dubai" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              class="hover:text-lime-400 transition-colors block"
+            >
+              <span v-for="(line, index) in companyInfo.address" :key="index" class="block">{{ line }}</span>
+            </a>
           </p>
           <p><a :href="'tel:' + companyInfo.phone" class="hover:text-lime-400 transition-colors">{{ companyInfo.phone }}</a></p>
           <p><a :href="'mailto:' + companyInfo.email" class="hover:text-lime-400 transition-colors">{{ companyInfo.email }}</a></p>
 
           <!-- Social Icons -->
           <div class="flex items-center gap-3 pt-2">
+            <!-- LinkedIn -->
             <a 
-              href="https://www.tiktok.com/@taxplanning.ae" 
+              href="https://www.linkedin.com/company/taxplanningae" 
               target="_blank" 
               rel="noopener noreferrer" 
-              aria-label="Follow us on TikTok"
+              aria-label="Follow us on LinkedIn"
               class="w-10 h-10 rounded-full bg-white/10 hover:bg-lime-400 text-white hover:text-primary transition-all duration-300 flex items-center justify-center border border-white/10 hover:border-lime-400 hover:-translate-y-0.5"
             >
               <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24" aria-hidden="true">
-                <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 3 15.66 6.34 6.34 0 0 0 9.34 22a6.34 6.34 0 0 0 6.34-6.34V9.4a8.16 8.16 0 0 0 4.77 1.52V7.48a4.85 4.85 0 0 1-.86-.79z"/>
+                <path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"/>
               </svg>
             </a>
 
+            <!-- Facebook -->
             <a 
               href="https://www.facebook.com/taxplanningae" 
               target="_blank" 
@@ -45,6 +61,7 @@
               </svg>
             </a>
 
+            <!-- Instagram -->
             <a 
               href="https://www.instagram.com/taxplanning.ae" 
               target="_blank" 
@@ -59,8 +76,7 @@
           </div>
         </div>
 
-        
-        <!-- Footer Columns -->
+        <!-- Section 3: Pages Links -->
         <div v-for="(section, index) in footerLinks" :key="index">
           <ul class="space-y-4 xl:space-y-5 text-white text-[13px] lg:text-lg xl:text-lg">
             <li v-for="(link, linkIndex) in section.links" :key="linkIndex" class="flex items-center gap-3">
@@ -87,25 +103,34 @@
         <div class="text-white text-lg flex flex-col gap-4">
           <h2 class="text-lime-400 font-bold mb-0 text-lg">Registered Office</h2>
           <p class="leading-relaxed">
-            <span v-for="(line, index) in companyInfo.address" :key="index" class="block">{{ line }}</span>
+            <a 
+              href="https://maps.google.com/?q=Burlington+Tower+Business+Bay+Dubai" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              class="hover:text-lime-400 transition-colors block"
+            >
+              <span v-for="(line, index) in companyInfo.address" :key="index" class="block">{{ line }}</span>
+            </a>
           </p>
           <p><a :href="'tel:' + companyInfo.phone" class="hover:text-lime-400 transition-colors">{{ companyInfo.phone }}</a></p>
           <p><a :href="'mailto:' + companyInfo.email" class="hover:text-lime-400 transition-colors">{{ companyInfo.email }}</a></p>
 
           <!-- Social Icons (Mobile) -->
           <div class="flex items-center gap-3 pt-2">
+            <!-- LinkedIn -->
             <a 
-              href="https://www.tiktok.com/@taxplanning.ae" 
+              href="https://www.linkedin.com/company/taxplanningae" 
               target="_blank" 
               rel="noopener noreferrer" 
-              aria-label="Follow us on TikTok"
+              aria-label="Follow us on LinkedIn"
               class="w-10 h-10 rounded-full bg-white/10 hover:bg-lime-400 text-white hover:text-primary transition-all duration-300 flex items-center justify-center border border-white/10 hover:border-lime-400"
             >
               <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24" aria-hidden="true">
-                <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 3 15.66 6.34 6.34 0 0 0 9.34 22a6.34 6.34 0 0 0 6.34-6.34V9.4a8.16 8.16 0 0 0 4.77 1.52V7.48a4.85 4.85 0 0 1-.86-.79z"/>
+                <path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"/>
               </svg>
             </a>
 
+            <!-- Facebook -->
             <a 
               href="https://www.facebook.com/taxplanningae" 
               target="_blank" 
@@ -118,6 +143,7 @@
               </svg>
             </a>
 
+            <!-- Instagram -->
             <a 
               href="https://www.instagram.com/taxplanning.ae" 
               target="_blank" 

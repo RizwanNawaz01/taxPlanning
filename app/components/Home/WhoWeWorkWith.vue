@@ -17,9 +17,7 @@
             <p class="text-white/80 mb-0 lg:mb-5 text-[13px] lg:text-[16px] lg:leading-snug max-w-sm lg:max-w-md mx-auto lg:mx-0">
               From a single company to an international group, we work across the structures and industries that make up the UAE economy.
             </p>
-            <Button @click="isModalOpen = true" variant="primary" class="hidden lg:inline-flex mt-6 lg:mt-0">
-              Book a Consultation
-            </Button>
+            
           </div>
         </div>
       </div>

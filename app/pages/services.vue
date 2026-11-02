@@ -9,6 +9,7 @@
       bg-mobile-image="/Services/hero-mobile.webp"
       form-title="Let's Discuss Your Tax Needs"
       form-button-text="Book a Consultation"
+      :show-form="false"
     />
 
     <!-- Tax & Compliance Slider Section -->

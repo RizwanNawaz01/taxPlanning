@@ -49,9 +49,17 @@
             <!-- Address -->
             <div>
               <span class="block text-sm xl:text-lg font-bold text-black mb-0 tracking-wide">Address:</span>
-              <p class="text-black text-base lg:text-lg xl:text-lg leading-relaxed max-w-xs xl:max-w-sm">
-                {{ contactInfo.address }}
-              </p>
+              <a 
+                :href="contactInfo.mapUrl"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="group inline-flex items-start gap-1.5 text-black hover:text-lime-600 transition-colors text-base lg:text-lg xl:text-lg leading-relaxed max-w-xs xl:max-w-sm"
+              >
+                <span>{{ contactInfo.address }}</span>
+                <svg class="w-4 h-4 shrink-0 mt-1 opacity-60 group-hover:opacity-100 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                </svg>
+              </a>
             </div>
           </div>
         </div>
@@ -69,10 +77,10 @@
         <div class="lg:hidden col-span-1 pt-8 sm:pt-10 space-y-6 lg:space-y-6" data-aos="fade-up">
           <!-- Call -->
           <div>
-            <span class="block text-sm font-bold text-black mb-0 tracking-wide">Call:</span>
+            <span class="block text-sm xl:text-lg font-bold text-black mb-0 tracking-wide">Call:</span>
             <a 
               :href="'tel:' + contactInfo.phoneRaw" 
-              class="text-black hover:text-lime-600 transition-colors text-base font-medium inline-block"
+              class="text-black hover:text-lime-600 transition-colors text-base lg:text-lg xl:text-lg font-medium inline-block"
             >
               {{ contactInfo.phone }}
             </a>
@@ -80,10 +88,10 @@
 
           <!-- Email -->
           <div>
-            <span class="block text-sm font-bold text-black mb-0 tracking-wide">Email:</span>
+            <span class="block text-sm xl:text-lg font-bold text-black mb-0 tracking-wide">Email:</span>
             <a 
               :href="'mailto:' + contactInfo.email" 
-              class="text-black hover:text-lime-600 transition-colors text-base font-medium inline-block"
+              class="text-black hover:text-lime-600 transition-colors text-base lg:text-lg xl:text-lg font-medium inline-block"
             >
               {{ contactInfo.email }}
             </a>
@@ -91,10 +99,18 @@
 
           <!-- Address -->
           <div>
-            <span class="block text-sm font-bold text-black mb-0 tracking-wide">Address:</span>
-            <p class="text-black text-base leading-relaxed max-w-xs">
-              {{ contactInfo.address }}
-            </p>
+            <span class="block text-sm xl:text-lg font-bold text-black mb-0 tracking-wide">Address:</span>
+            <a 
+              :href="contactInfo.mapUrl"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="group inline-flex items-start gap-1.5 text-black hover:text-lime-600 transition-colors text-base lg:text-lg xl:text-lg leading-relaxed max-w-xs xl:max-w-sm"
+            >
+              <span>{{ contactInfo.address }}</span>
+              <svg class="w-4 h-4 shrink-0 mt-1 opacity-60 group-hover:opacity-100 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+              </svg>
+            </a>
           </div>
         </div>
 
@@ -105,9 +121,10 @@
 
 <script setup>
 const contactInfo = {
-  phone: '+971 800 469',
-  phoneRaw: '+971800469',
+  phone: '+971 4 553 4844',
+  phoneRaw: '+9715534844',
   email: 'consult@taxplanning.ae',
-  address: 'Tax Planning Advisory, Level 4, Burlington Tower, Business Bay, Dubai'
+  address: 'Tax Planning Advisory, 616, Burlington Tower, Business Bay, Dubai',
+  mapUrl: 'https://maps.google.com/?q=Burlington+Tower+Business+Bay+Dubai'
 }
 </script>

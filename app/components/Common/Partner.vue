@@ -19,7 +19,8 @@
       <slot name="action">
         <Button 
           variant="dark"
-          @click="isModalOpen = true" 
+          :to="buttonTo"
+          @click="!buttonTo ? (isModalOpen = true) : undefined" 
           data-aos="blur-in" 
           data-aos-delay="400"
         >
@@ -29,7 +30,7 @@
     </div>
 
     <!-- Modal Popup for Contact Form -->
-    <Modal v-model="isModalOpen">
+    <Modal v-if="!buttonTo" v-model="isModalOpen">
       <ContactForm :title="modalTitle" :buttonText="modalButtonText" />
     </Modal>
   </section>
@@ -50,6 +51,10 @@ defineProps({
   buttonText: {
     type: String,
     default: 'Book a Consultation'
+  },
+  buttonTo: {
+    type: String,
+    default: null
   },
   modalTitle: {
     type: String,

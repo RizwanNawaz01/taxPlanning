@@ -1,20 +1,20 @@
 <template>
-<div class="bg-surface-light p-8 lg:p-7 lg:py-9 rounded-xl lg:rounded-2xl shadow-2xl relative overflow-hidden min-h-[490px] flex flex-col">    
+<div class="bg-surface-light p-8 lg:p-8 lg:py-9 rounded-xl lg:rounded-2xl shadow-2xl relative overflow-hidden min-h-[500px] flex flex-col">    
     <div v-if="!isSubmitted" class="transition-opacity duration-500 h-full flex flex-col justify-center" :class="{'opacity-50 pointer-events-none': isLoading}">
-      <h2 class="text-[22px] font-bold text-center text-primary mb-7">{{ title }}</h2>
+      <h2 class="text-[22px] font-bold text-center text-primary mb-7 pt-5">{{ title }}</h2>
       
       <form @submit.prevent="handleSubmit" class="space-y-4">
           <!-- Honeypot anti-spam field (hidden from real users) -->
           <input v-model="formData.website" type="text" name="website" tabindex="-1" autocomplete="off" class="hidden" aria-hidden="true" />
 
-          <input aria-label="Full Name" v-model="formData.name" type="text" class="w-full bg-transparent border-0 border-b border-slate-200 pb-2 px-0 text-sm focus:outline-none focus:border-primary focus:ring-0 placeholder:text-slate-400 transition-colors" placeholder="Full Name" required />
+          <input aria-label="Full Name" v-model="formData.name" type="text" class="w-full bg-transparent border-0 border-b border-slate-200 pb-3 px-0 text-sm focus:outline-none focus:border-primary focus:ring-0 placeholder:text-slate-400 transition-colors" placeholder="Full Name" required />
         
-          <input aria-label="Email Address" v-model="formData.email" type="email" class="w-full bg-transparent border-0 border-b border-slate-200 pb-2 px-0 text-sm focus:outline-none focus:border-primary focus:ring-0 placeholder:text-slate-400 transition-colors" placeholder="Email" required />
+          <input aria-label="Email Address" v-model="formData.email" type="email" class="w-full bg-transparent border-0 border-b border-slate-200 pb-3 px-0 text-sm focus:outline-none focus:border-primary focus:ring-0 placeholder:text-slate-400 transition-colors" placeholder="Email" required />
         
-          <input aria-label="Phone Number" v-model="formData.phone" type="tel" class="w-full bg-transparent border-0 border-b border-slate-200 pb-2 px-0 text-sm focus:outline-none focus:border-primary focus:ring-0 placeholder:text-slate-400 transition-colors" placeholder="Phone" required />
+          <input aria-label="Phone Number" v-model="formData.phone" type="tel" class="w-full bg-transparent border-0 border-b border-slate-200 pb-3 px-0 text-sm focus:outline-none focus:border-primary focus:ring-0 placeholder:text-slate-400 transition-colors" placeholder="Phone" required />
         
           <!-- Custom Styled Service Dropdown -->
-          <div ref="dropdownRef" class="relative">
+          <div ref="dropdownRef" class="relative hidden">
             <button
               type="button"
               @click="toggleDropdown"

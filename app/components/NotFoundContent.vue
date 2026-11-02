@@ -384,7 +384,7 @@ const searchableItems = [
   { title: 'Tax Planning Packages', desc: 'Fixed-fee comprehensive compliance packages', href: '/packages' },
   { title: 'Partner Program', desc: 'Referral & co-advisory network for UAE professionals', href: '/partner' },
   { title: 'About taxplanning.ae', desc: 'Learn about our Dubai-based senior tax team & credentials', href: '/about' },
-  { title: 'Contact Advisory Desk', desc: 'Book a consultation or call our Business Bay office', href: '/contact' },
+  { title: 'Contact Advisory Desk', desc: 'Book a Consultation or call our Business Bay office', href: '/contact' },
   { title: 'Tax & Regulatory Insights', desc: 'Latest articles on UAE tax laws and FTA deadlines', href: '/blogs' }
 ]
 

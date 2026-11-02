@@ -33,7 +33,7 @@ defineProps({
     type: [Array, String],
     default: () => [
       'UAE businesses face a growing set of tax obligations. Registration and filing are only part of the picture; ownership structure, cross-border transactions, and long-term planning all carry tax implications of their own.',
-      'taxplanning.ae is a dedicated team built specifically for tax, covering everything from day-to-day compliance to the advisory work behind bigger decisions.'
+      '<span class="font-bold"> As part of InZone Group</span>, taxplanning.ae brings a dedicated tax focus to the Group’s wider business and corporate services. Our team supports businesses with everything from day-to-day compliance to the tax advice behind bigger decisions.'
     ]
   },
   bgClass: {

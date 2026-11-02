@@ -11,22 +11,25 @@
           <NuxtImg src="/Home/how-it-work.webp" alt="Consultation" format="webp" loading="lazy" class="absolute inset-0 w-full h-full object-cover" />
         </div>
         
-        <div class="flex flex-col gap-10 max-w-[600px] lg:pt-12">
+        <div ref="stepsContainer" class="flex flex-col gap-10 max-w-[600px] lg:pt-12">
           <div 
             v-for="(item, index) in items" 
             :key="index"
-            class="flex gap-8 group relative"
-            data-aos="blur-in"
-            :data-aos-delay="400 + (index * 150)"
+            class="step-item flex gap-8 group relative"
+            :class="{ 'is-active': isVisible }"
+            :style="{ '--step-idx': index }"
           >
-            <!-- Connecting line -->
-            <div v-if="index !== items.length - 1" class="absolute left-[3.5px] top-[14px] w-px h-[calc(100%+40px)] bg-slate-800 z-0"></div>
+            <!-- Connecting line with downward draw animation -->
+            <div 
+              v-if="index !== items.length - 1" 
+              class="step-line absolute left-[3.5px] top-[14px] w-[1px] h-[calc(100%+40px)] origin-top bg-slate-800 z-0"
+            ></div>
             
-            <!-- Dot -->
-            <div class="w-2 h-2 bg-slate-900 rounded-full mt-2.5 relative z-10 shrink-0"></div>
+            <!-- Dot / Point with pop-in pulse animation -->
+            <div class="step-dot w-2.5 h-2.5 bg-slate-900 rounded-full mt-2 relative z-10 shrink-0"></div>
             
-            <!-- Text Content -->
-            <div>
+            <!-- Text Content with slide & fade-in animation -->
+            <div class="step-content">
               <h3 class="text-[20px] lg:text-[22px] font-bold text-black mb-2 leading-tight">{{ item.title }}</h3>
               <p class="text-black text-[15px] lg:text-[16px] xl:lg:text-[18px] lg:leading-snug">{{ item.description }}</p>
             </div>
@@ -47,9 +50,43 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
+import { ref, onMounted, onUnmounted } from 'vue'
 
 const isModalOpen = ref(false)
+const stepsContainer = ref(null)
+const isVisible = ref(false)
+
+let observer = null
+
+onMounted(() => {
+  if (typeof window !== 'undefined' && 'IntersectionObserver' in window) {
+    observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            isVisible.value = true
+            if (observer && stepsContainer.value) {
+              observer.unobserve(stepsContainer.value)
+            }
+          }
+        })
+      },
+      { threshold: 0.25 }
+    )
+
+    if (stepsContainer.value) {
+      observer.observe(stepsContainer.value)
+    }
+  } else {
+    isVisible.value = true
+  }
+})
+
+onUnmounted(() => {
+  if (observer) {
+    observer.disconnect()
+  }
+})
 
 const items = [
   {
@@ -70,3 +107,48 @@ const items = [
   }
 ]
 </script>
+
+<style scoped>
+/* Initial States before step is triggered */
+.step-dot {
+  opacity: 0;
+  transform: scale(0);
+  transition: opacity 0.35s cubic-bezier(0.34, 1.56, 0.64, 1), transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.step-content {
+  opacity: 0;
+  transform: translateX(16px);
+  filter: blur(6px);
+  transition: opacity 0.45s ease-out, transform 0.45s ease-out, filter 0.45s ease-out;
+}
+
+.step-line {
+  transform: scaleY(0);
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* 
+  Sequence timing per step (Base step interval ~0.9s):
+  1. Point shows: (var(--step-idx) * 0.9s)
+  2. Text shows:  (var(--step-idx) * 0.9s + 0.25s)
+  3. Line grows downward to next point: (var(--step-idx) * 0.9s + 0.5s)
+*/
+.step-item.is-active .step-dot {
+  opacity: 1;
+  transform: scale(1);
+  transition-delay: calc(var(--step-idx) * 0.9s);
+}
+
+.step-item.is-active .step-content {
+  opacity: 1;
+  transform: translateX(0);
+  filter: blur(0);
+  transition-delay: calc(var(--step-idx) * 0.9s + 0.25s);
+}
+
+.step-item.is-active .step-line {
+  transform: scaleY(1);
+  transition-delay: calc(var(--step-idx) * 0.9s + 0.5s);
+}
+</style>
