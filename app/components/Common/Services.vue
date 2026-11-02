@@ -40,7 +40,7 @@
               {{ service.title }}
             </h3>
             <p 
-              class="card-desc mb-5 lg:mb-8 text-[11px] lg:text-base leading-snug lg:leading-normal max-w-full" 
+              class="card-desc mb-5 lg:mb-8 text-[14px] lg:text-base leading-snug lg:leading-normal max-w-full" 
               v-html="service.description"
             ></p>
             

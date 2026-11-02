@@ -5,14 +5,14 @@
       <!-- Left Column -->
       <div class="relative flex flex-col items-center lg:items-start pt-0">
         <!-- Image -->
-        <NuxtImg src="/Home/who-we-work.webp" alt="Who We Work With" format="webp" loading="lazy" class="relative max-h-80 lg:max-h-full z-10 w-[500px] max-w-[300px] md:w-[100%] lg:max-w-[340px] xl:max-w-[340px] xl:left-8 2xl:left-14 -mb-[1px] object-contain" data-aos="fade-right" />
+        <NuxtImg src="/Home/who-we-work.webp" alt="Who We Work With" format="webp" loading="lazy" class="relative max-h-80 lg:max-h-full z-10 w-[500px] max-w-[300px] md:w-[100%] lg:max-w-[340px] xl:max-w-[340px] xl:left-8 2xl:left-14 -mb-[1px] object-contain" :data-aos="isDesktop ? 'fade-right' : null" />
         
         <!-- Text Content -->
         <div class="relative z-0 w-full flex flex-col items-center lg:items-start">
           <!-- Background Shape (Desktop) -->
           <div class="hidden lg:block absolute top-0 bottom-0 right-[-1rem] lg:right-0 w-[150vw] bg-primary rounded-r-[3rem] lg:rounded-tr-[10rem] lg:rounded-br-[10rem] z-0"></div>
           
-          <div class="relative z-20 w-full bg-dark-card lg:bg-transparent rounded-3xl lg:rounded-none px-6 py-10 lg:px-12 lg:pb-12 lg:pt-16 text-white text-center lg:text-left flex flex-col items-center lg:items-start shadow-xl lg:shadow-none" data-aos="fade-up">
+          <div class="relative z-20 w-full bg-dark-card lg:bg-transparent rounded-3xl lg:rounded-none px-6 py-10 lg:px-12 lg:pb-12 lg:pt-16 text-white text-center lg:text-left flex flex-col items-center lg:items-start shadow-xl lg:shadow-none" :data-aos="isDesktop ? 'fade-up' : null">
             <h2 class="text-[24px] lg:text-[2.5rem] font-semibold mb-3 leading-tight">Who We Work With</h2>
             <p class="text-white/80 mb-0 lg:mb-5 text-[13px] lg:text-[16px] lg:leading-snug max-w-sm lg:max-w-md mx-auto lg:mx-0">
               From a single company to an international group, we work across the structures and industries that make up the UAE economy.
@@ -30,8 +30,8 @@
           class="flex gap-4 lg:gap-8 py-6 lg:py-8 cursor-pointer lg:cursor-auto"
           :class="[index !== items.length - 1 ? 'border-b border-gray-200' : '']"
           @click="toggleAccordion(index)"
-          data-aos="fade-left"
-          :data-aos-delay="index * 100"
+          :data-aos="isDesktop ? 'fade-left' : null"
+          :data-aos-delay="isDesktop ? index * 100 : null"
         >
           <span class="text-[#797979] font-medium text-[14px] lg:text-sm pt-1 w-5 shrink-0">{{ item.id }}</span>
           <div class="flex-1">
@@ -68,10 +68,15 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
+import { ref, onMounted } from 'vue'
 
 const isModalOpen = ref(false)
 const activeIndex = ref(null)
+const isDesktop = ref(false)
+
+onMounted(() => {
+  isDesktop.value = window.innerWidth >= 1024
+})
 
 const toggleAccordion = (index) => {
   activeIndex.value = activeIndex.value === index ? null : index

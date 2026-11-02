@@ -89,6 +89,13 @@
 
       <!-- Mobile Links Row -->
       <div class="flex flex-col lg:hidden gap-10 mb-12">
+        <!-- Brand Description (Mobile) -->
+        <div class="text-white text-base">
+          <p class="text-white font-normal leading-relaxed">
+            Helping UAE businesses stay on top of their accounting, tax and compliance obligations. An InZone company.
+          </p>
+        </div>
+
         <!-- Main Links -->
         <div>
           <ul class="space-y-4 text-white text-lg">

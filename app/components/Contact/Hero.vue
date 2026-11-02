@@ -17,11 +17,11 @@
         <div class="col-span-1 lg:col-span-7 flex flex-col justify-between">
           <!-- Title -->
           <div data-aos="blur-in">
-            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-semibold text-white tracking-tight leading-tight mb-10 lg:mb-0">
+            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-semibold text-white tracking-tight leading-tight mb-2 lg:mb-0">
               Contact Us
             </h1>
 
-            <p class="text-white text-base pt-3 lg:text-lg xl:text-lg leading-relaxed max-w-xs xl:max-w-3xl">
+            <p class="text-white text-base pt-0 lg:pt-3 lg:text-lg xl:text-lg leading-relaxed max-w-xs xl:max-w-3xl">
               Speak to our experts about your tax and accounting needs.Get clear guidance and practical solutions tailored to your business.
             </p>
           </div>
