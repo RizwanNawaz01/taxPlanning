@@ -48,7 +48,7 @@
       <div class="lg:hidden" data-aos="fade-up" data-aos-delay="200">
         <div
           ref="sliderRef"
-          class="flex gap-4 overflow-x-auto scroll-smooth snap-x snap-mandatory no-scrollbar pb-6 -mx-6 px-6"
+          class="flex gap-4 overflow-x-auto scroll-smooth snap-x snap-mandatory no-scrollbar pb-6 -mr-6 pr-6"
           @scroll="handleScroll"
         >
           <div
