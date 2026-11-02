@@ -21,7 +21,7 @@
               Contact Us
             </h1>
 
-            <p class="text-white text-base lg:text-lg xl:text-lg leading-relaxed max-w-xs xl:max-w-3xl">
+            <p class="text-white text-base pt-3 lg:text-lg xl:text-lg leading-relaxed max-w-xs xl:max-w-3xl">
               Speak to our experts about your tax and accounting needs.Get clear guidance and practical solutions tailored to your business.
             </p>
           </div>
