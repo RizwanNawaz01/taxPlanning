@@ -110,14 +110,6 @@ const testimonials = [
     author: 'Tracy Peter254',
   },
   {
-    quote: 'Sometimes it is the employees who make all the difference to a company. I have had my own challenges with InZone, but two people have stood out and made my experience a good one. Nidhi Singh handled our recent 2-year Meydan licence renewal from start to finish. She listened patiently to our concerns, worked with her internal teams to sort out the issues we raised, and helped us with a change in our business activity. She was clear, transparent and followed through until everything was done. I also want to give a special mention to Jinu Anil from Finance, who has always been very helpful to us. She supported us with our VAT filings and was always prompt, very clear and very professional. It made our finance work much easier. It is employees like Nidhi and Jinu who make all the difference for customers and help retain customers like me. Well done, both of you. InZone is lucky to have you both.',
-    author: 'Jayasree Gk',
-  },
-  {
-    quote: '22/10/2026 I want to thank Afreen Shara at InZone for taking great care of our company’s business licence renewal. The service was delivered rightly on time, met all the high standards of timeliness and completeness. I highly recommend InZone and specifically Afreen if you happen to seek the professional services in this regard. 11/06/2026 I am glad to leave a new feedback on my continious coopertaion with InZone. We have been using various services of InZone since 2022 and it has always been our pleasure dealing with InZones team of solid pros in each and every area they would support us. This time I want to specifically mention Jinu Anil, the Senior Accountant at InZones Finance Department. Jinu has delivered the high level services to our company since 2023 by keeping our books, filing our taxes to FTA, advising on tax and financial matters timely and accurately which did allow us to enjoy respective tax benefits and mainatain our financial and tax standing accordingly. I hope we can further enjoy working with Jinu and I do recomend Jinus professional services within InZone company.',
-    author: 'Александр Любин',
-  },
-  {
     quote: 'Their accounting and taxation department was very helpful with our 2025 CT Filing. They know very well how to handle the filing, and making sure everything is compliant. We worked on filing for 2 companies simultaneously and it was done properly on time.',
     author: 'Semuel Oerlemans',
   },
@@ -140,6 +132,14 @@ const testimonials = [
   {
     quote: 'It was a pleasure to work with Karan and Vishal. I really appreciated there excellent  communication and follow up. I’ve been working with them the last couple of years and would highly recommend to anybody wanting to set up a business and assist with their tax affairs. Also very nice people and courteous.',
     author: 'Mark Rich',
+  },
+  {
+    quote: 'Sometimes it is the employees who make all the difference to a company. I have had my own challenges with InZone, but two people have stood out and made my experience a good one. Nidhi Singh handled our recent 2-year Meydan licence renewal from start to finish. She listened patiently to our concerns, worked with her internal teams to sort out the issues we raised, and helped us with a change in our business activity. She was clear, transparent and followed through until everything was done. I also want to give a special mention to Jinu Anil from Finance, who has always been very helpful to us. She supported us with our VAT filings and was always prompt, very clear and very professional. It made our finance work much easier. It is employees like Nidhi and Jinu who make all the difference for customers and help retain customers like me. Well done, both of you. InZone is lucky to have you both.',
+    author: 'Jayasree Gk',
+  },
+  {
+    quote: '22/10/2026 I want to thank Afreen Shara at InZone for taking great care of our company’s business licence renewal. The service was delivered rightly on time, met all the high standards of timeliness and completeness. I highly recommend InZone and specifically Afreen if you happen to seek the professional services in this regard. 11/06/2026 I am glad to leave a new feedback on my continious coopertaion with InZone. We have been using various services of InZone since 2022 and it has always been our pleasure dealing with InZones team of solid pros in each and every area they would support us. This time I want to specifically mention Jinu Anil, the Senior Accountant at InZones Finance Department. Jinu has delivered the high level services to our company since 2023 by keeping our books, filing our taxes to FTA, advising on tax and financial matters timely and accurately which did allow us to enjoy respective tax benefits and mainatain our financial and tax standing accordingly. I hope we can further enjoy working with Jinu and I do recomend Jinus professional services within InZone company.',
+    author: 'Александр Любин',
   },
 ]
 
