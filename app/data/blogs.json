@@ -1293,57 +1293,6 @@
     ]
   },
   {
-    "id": 5,
-    "slug": "accounting-financial-reporting-compliance-uae",
-    "title": "Accounting and Bookkeeping Requirements for Businesses in the UAE",
-    "excerpt": "Comprehensive overview of closing year-end accounts, managing depreciation schedules, and structuring general ledgers for seamless Corporate Tax filing.",
-    "category": "Bookkeeping",
-    "date": "September 08, 2026",
-    "readTime": "7 min read",
-    "author": {
-      "slug": "aramide-shuaib",
-      "name": "Aramide Shuaib",
-      "role": "Content Writer",
-      "company": "Tax Planning",
-      "badgeText": "Tax Planning",
-      "bio": "Aramide Shuaib is a Content Writer at Tax Planning who works closely with the firm's legal specialists to simplify complex legal topics into accurate and practical guidance for individuals, families, and businesses across the UAE."
-    },
-    "reviewer": {
-      "slug": "tapan-vahal",
-      "name": "Tapan Vahal",
-      "role": "Legal Manager",
-      "company": "Tax Planning",
-      "badgeText": "Tax Planning",
-      "bio": "Tapan Vahal is a Legal Manager and Senior Lawyer at Tax Planning, bringing 9 years of legal experience across UAE personal legal matters, including wills, powers of attorney, and estate planning for individuals and families."
-    },
-    "showAuthor": true,
-    "showReviewer": true,
-    "image": "/Blog/annual-audit-financial-reporting-guide.webp",
-    "imageAlt": "Senior finance executive reviewing company financial report",
-    "content": [
-      {
-        "type": "paragraph",
-        "text": "Accurate accounting acts as the foundation upon which accurate tax calculations rest. For Corporate Tax purposes, taxable income calculation begins with the net accounting profit or loss derived from commercial financial statements."
-      },
-      {
-        "type": "heading",
-        "text": "Accounting Adjustments for Tax Purposes"
-      },
-      {
-        "type": "paragraph",
-        "text": "Not all accounting expenses are tax-deductible under UAE Corporate Tax law. Key adjustments include limitations on entertainment expenditure (50% deductible), restrictions on fines and penalties (100% non-deductible), and interest capping rules under the General Interest Deduction Limitation Rule."
-      },
-      {
-        "type": "list",
-        "items": [
-          "Ensuring appropriate separation of business vs personal expenditure.",
-          "Correct documentation for owner drawings and director remuneration.",
-          "Proper foreign currency conversion rates published by the Central Bank of the UAE."
-        ]
-      }
-    ]
-  },
-  {
     "id": 6,
     "slug": "free-zone-corporate-tax-substance-rules",
     "title": "Free Zone Corporate Tax 0% Rate: Mastering Substance & Qualifying Income",
