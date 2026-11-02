@@ -27,7 +27,7 @@
         >
           <!-- Quote -->
           <div class="flex-1 mb-8">
-            <p class="text-black text-[15px] lg:text-[16px] xl:text-[17px] lg:leading-loose xl:leading-[1.75] line-clamp-5">
+            <p class="text-black text-[15px] lg:text-[16px] xl:text-[17px] lg:leading-loose xl:leading-[1.75] line-clamp-6">
               “{{ item.quote }}”
             </p>
           </div>
