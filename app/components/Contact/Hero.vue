@@ -1,7 +1,7 @@
 <template>
   <section class="relative bg-white overflow-hidden">
     <!-- Dark Top Banner Background with common-background.png -->
-    <div class="absolute top-0 inset-x-0 h-[380px] sm:h-[400px] md:h-[420px] lg:h-[400px] xl:h-[400px] z-0 overflow-hidden bg-[#071721]">
+    <div class="absolute top-0 inset-x-0 h-[380px] sm:h-[400px] md:h-[420px] lg:h-[400px] xl:h-[430px] z-0 overflow-hidden bg-[#071721]">
       <NuxtImg
         src="/common-background.png"
         alt=""
@@ -10,7 +10,7 @@
       />
     </div>
 
-    <div class="container mx-auto px-6 lg:px-8 xl:px-12 2xl:px-12 relative z-10 pt-40 sm:pt-32 lg:pt-64 xl:pt-64 pb-16 lg:pb-20">
+    <div class="container mx-auto px-6 lg:px-8 xl:px-12 2xl:px-12 relative z-10 pt-40 sm:pt-32 lg:pt-64 xl:pt-56 pb-16 lg:pb-20">
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 xl:gap-16 items-start">
         
         <!-- Left Column: Title in dark section, Contact info in white section (desktop) -->
@@ -20,6 +20,10 @@
             <h1 class="text-4xl sm:text-5xl lg:text-6xl font-semibold text-white tracking-tight leading-tight mb-10 lg:mb-0">
               Contact Us
             </h1>
+
+            <p class="text-white text-base lg:text-lg xl:text-lg leading-relaxed max-w-xs xl:max-w-3xl">
+              Speak to our experts about your tax and accounting needs.Get clear guidance and practical solutions tailored to your business.
+            </p>
           </div>
 
           <!-- Desktop Contact Details (sitting cleanly in the white area below the dark banner) -->
