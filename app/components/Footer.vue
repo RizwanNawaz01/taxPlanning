@@ -14,8 +14,8 @@
         </span>
       </div>
 
-      <!-- Desktop / Main Links Grid (3 Sections) -->
-      <div class="hidden lg:grid lg:grid-cols-3 gap-8 xl:gap-28 mb-32">
+      <!-- Desktop / Main Links Grid (4 Sections: Bio, Contact, Col 1 Links, Col 2 Links) -->
+      <div class="hidden lg:grid lg:grid-cols-4 gap-8 xl:gap-16 mb-32">
         <!-- Section 1: Helping text -->
         <div class="text-white text-[13px] lg:text-lg xl:text-lg">
           <p class="text-white font-normal leading-relaxed max-w-sm">
@@ -24,7 +24,7 @@
         </div>
 
         <!-- Section 2: Contact Info & Socials (LinkedIn, Facebook, Instagram) -->
-        <div class="text-white text-[13px] lg:text-lg xl:text-lg space-y-4 pl-10">
+        <div class="text-white text-[13px] lg:text-lg xl:text-lg space-y-4">
           <p class="leading-relaxed">
             <a 
               href="https://maps.google.com/?q=Burlington+Tower+Business+Bay+Dubai" 
@@ -81,7 +81,7 @@
           </div>
         </div>
 
-        <!-- Section 3: Pages Links -->
+        <!-- Section 3 & 4: Pages Links (2 columns) -->
         <div v-for="(section, index) in footerLinks" :key="index">
           <ul class="space-y-4 xl:space-y-5 text-white text-[13px] lg:text-lg xl:text-lg">
             <li v-for="(link, linkIndex) in section.links" :key="linkIndex" class="flex items-center gap-3">
@@ -101,14 +101,16 @@
           </p>
         </div>
 
-        <!-- Main Links -->
-        <div>
-          <ul class="space-y-4 text-white text-lg">
-            <li v-for="(link, linkIndex) in mobileLinks" :key="linkIndex" class="flex items-center gap-3">
-              <div class="w-1 h-1 bg-white rounded-full shrink-0"></div>
-              <NuxtLink :to="link.url" class="hover:text-lime-400 transition-colors">{{ link.text }}</NuxtLink>
-            </li>
-          </ul>
+        <!-- Main Links (2 columns on mobile) -->
+        <div class="grid grid-cols-2 gap-4">
+          <div v-for="(section, index) in footerLinks" :key="index">
+            <ul class="space-y-4 text-white text-base sm:text-lg">
+              <li v-for="(link, linkIndex) in section.links" :key="linkIndex" class="flex items-center gap-2 sm:gap-3">
+                <div class="w-1 h-1 bg-white rounded-full shrink-0"></div>
+                <NuxtLink :to="link.url" class="hover:text-lime-400 transition-colors">{{ link.text }}</NuxtLink>
+              </li>
+            </ul>
+          </div>
         </div>
 
         <!-- Contact Info -->

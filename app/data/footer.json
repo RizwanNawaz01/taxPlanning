@@ -41,24 +41,32 @@
     {
       "links": [
         {
-          "text": "Services",
+          "text": "Our Services",
           "url": "/services"
         },
         {
-          "text": "Who we work with",
+          "text": "Who We Work With",
           "url": "/#who-we-work-with"
         },
         {
           "text": "Blogs",
           "url": "/blogs"
-        },
-        {
-          "text": "Partners",
-          "url": "/partner"
-        },
+        }
+      ]
+    },
+    {
+      "links": [
         {
           "text": "About us",
           "url": "/about"
+        },
+        {
+          "text": "Partner with us",
+          "url": "/partner"
+        },
+        {
+          "text": "Contact us",
+          "url": "/contact"
         }
       ]
     }
