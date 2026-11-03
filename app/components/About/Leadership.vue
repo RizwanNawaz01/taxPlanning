@@ -104,7 +104,7 @@ const props = defineProps({
   },
   description: {
     type: String,
-    default: 'Our leadership team brings decades of collective experience in UAE corporate tax, legal advisory, and accounting compliance. United by a shared commitment to clarity and precision, they guide taxplanning.ae’s advisory standard and support businesses across the UAE.'
+    default: 'Our leadership team draws on extensive experience to set the standard for how we advise businesses. United by a shared commitment to clarity and precision, they guide taxplanning.ae’s advisory standard and support businesses across the UAE.'
   },
   bgClass: {
     type: String,
