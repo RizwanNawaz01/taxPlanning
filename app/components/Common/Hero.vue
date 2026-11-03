@@ -1,7 +1,7 @@
 <template>
   <section 
     :class="[
-      'relative pt-36 lg:pt-72 min-h-[100dvh] md:min-h-[60dvh] lg:min-h-auto pb-[400px] md:pb-24 overflow-hidden bg-cover bg-center bg-no-repeat hero-bg',
+      'relative pt-40 lg:pt-72 min-h-[100dvh] md:min-h-[60dvh] lg:min-h-auto pb-[400px] md:pb-24 overflow-hidden bg-cover bg-center bg-no-repeat hero-bg',
       customClass || 'xl:min-h-[810px]'
     ]"
     :style="{

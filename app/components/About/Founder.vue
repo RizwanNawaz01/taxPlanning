@@ -40,7 +40,7 @@
             <NuxtImg
               :src="image"
               :alt="imageAlt || name"
-              class="w-full h-auto object-contain block mx-auto lg:ml-auto lg:mr-0 filter drop-shadow-md"
+              class="w-full h-auto object-contain block mx-auto lg:ml-auto lg:mr-0  drop-shadow-md"
               loading="lazy"
             />
           </div>

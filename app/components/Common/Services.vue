@@ -4,7 +4,7 @@
       <!-- Section Header -->
       <div class="flex flex-col lg:flex-row justify-between items-start lg:items-end mb-8 lg:mb-16 gap-3 lg:gap-6 px-2 sm:px-0" data-aos="fade-up">
         <h2 class="text-4xl lg:text-5xl 2xl:text-6xl font-semibold text-primary" v-html="title"></h2>
-        <p v-if="description" class="text-black max-w-md text-[15px] lg:text-lg xl:text-lg leading-snug lg:leading-snug xl:leading-snug">
+        <p v-if="description" class="text-black max-w-md text-[17px] lg:text-lg xl:text-lg leading-snug lg:leading-snug xl:leading-snug">
           {{ description }}
         </p>
       </div>
@@ -15,7 +15,7 @@
           v-for="(service, index) in items" 
           :key="index" 
           :class="[
-            'service-card p-6 lg:px-14 lg:pt-24 lg:pb-24 rounded-2xl lg:rounded-[2rem] relative overflow-hidden flex flex-col justify-center cursor-pointer',
+            'service-card py-14 px-7 lg:px-14 lg:pt-24 lg:pb-24 rounded-2xl lg:rounded-[2rem] relative overflow-hidden flex flex-col justify-center cursor-pointer',
             `service-card-${index}`
           ]"
         >
@@ -40,7 +40,7 @@
               {{ service.title }}
             </h3>
             <p 
-              class="card-desc mb-5 lg:mb-8 text-[14px] lg:text-base leading-snug lg:leading-normal max-w-full" 
+              class="card-desc mb-5 lg:mb-8 text-[15px] lg:text-base leading-snug lg:leading-normal max-w-full" 
               v-html="service.description"
             ></p>
             

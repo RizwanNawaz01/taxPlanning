@@ -9,7 +9,7 @@
           v-for="(option, index) in options" 
           :key="index" 
           :class="[
-            'option-card px-8 py-8 lg:px-10 lg:py-20 rounded-xl lg:rounded-[1rem] cursor-pointer flex flex-col justify-center',
+            'option-card px-8 py-12 lg:px-10 lg:py-20 rounded-xl lg:rounded-[1rem] cursor-pointer flex flex-col justify-center',
             `option-card-${index}`
           ]" 
           @click="openContactModal(option)"
@@ -18,7 +18,7 @@
           <p class="option-desc text-lg lg:text-base leading-[21px] lg:leading-snug max-w-[500px]">{{ option.description }}</p>
         </div>
       </div>
-      <div class="text-center" data-aos="blur-in" data-aos-delay="600">
+      <div class="text-center">
         <Button to="/packages" variant="light" size="lg">
           Discover our Packages
         </Button>

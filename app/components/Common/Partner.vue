@@ -3,15 +3,12 @@
     <div class="container px-6 lg:px-8 xl:px-12 2xl:px-12">
       <h2 
         class="text-4xl lg:text-5xl 2xl:text-[3rem] font-bold text-primary mb-6" 
-        data-aos="blur-in"
         v-html="title"
       ></h2>
       
       <p 
         v-if="description" 
         class="text-[19px] xl:text-xl text-black max-w-3xl mx-auto mb-10" 
-        data-aos="blur-in" 
-        data-aos-delay="200"
       >
         {{ description }}
       </p>
@@ -21,8 +18,6 @@
           variant="dark"
           :to="buttonTo"
           @click="!buttonTo ? (isModalOpen = true) : undefined" 
-          data-aos="blur-in" 
-          data-aos-delay="400"
         >
           {{ buttonText }}
         </Button>
@@ -50,7 +45,7 @@ defineProps({
   },
   buttonText: {
     type: String,
-    default: 'Book a Consultation'
+    default: 'Learn more'
   },
   buttonTo: {
     type: String,

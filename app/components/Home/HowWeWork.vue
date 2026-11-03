@@ -1,5 +1,5 @@
 <template>
-  <section id="how-we-work" class="lg:py-24 py-12 bg-white">
+  <section id="how-we-work" class="lg:py-24 py-16 bg-white">
     <div class="container mx-auto px-6 lg:px-8 xl:px-12 2xl:px-12">
       <div class="mb-12 lg:mb-16 max-w-3xl" data-aos="blur-in">
         <h2 class="text-4xl lg:text-5xl 2xl:text-5xl font-semibold text-primary mb-4">How We Work</h2>
@@ -113,42 +113,42 @@ const items = [
 .step-dot {
   opacity: 0;
   transform: scale(0);
-  transition: opacity 0.35s cubic-bezier(0.34, 1.56, 0.64, 1), transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+  transition: opacity 0.25s cubic-bezier(0.34, 1.56, 0.64, 1), transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
 .step-content {
   opacity: 0;
   transform: translateX(16px);
   filter: blur(6px);
-  transition: opacity 0.45s ease-out, transform 0.45s ease-out, filter 0.45s ease-out;
+  transition: opacity 0.35s ease-out, transform 0.35s ease-out, filter 0.35s ease-out;
 }
 
 .step-line {
   transform: scaleY(0);
-  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 0.38s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* 
-  Sequence timing per step (Base step interval ~0.9s):
-  1. Point shows: (var(--step-idx) * 0.9s)
-  2. Text shows:  (var(--step-idx) * 0.9s + 0.25s)
-  3. Line grows downward to next point: (var(--step-idx) * 0.9s + 0.5s)
+  Sequence timing per step (Base step interval ~0.55s):
+  1. Point shows: (var(--step-idx) * 0.55s)
+  2. Text shows:  (var(--step-idx) * 0.55s + 0.15s)
+  3. Line grows downward to next point: (var(--step-idx) * 0.55s + 0.32s)
 */
 .step-item.is-active .step-dot {
   opacity: 1;
   transform: scale(1);
-  transition-delay: calc(var(--step-idx) * 0.9s);
+  transition-delay: calc(var(--step-idx) * 0.55s);
 }
 
 .step-item.is-active .step-content {
   opacity: 1;
   transform: translateX(0);
   filter: blur(0);
-  transition-delay: calc(var(--step-idx) * 0.9s + 0.25s);
+  transition-delay: calc(var(--step-idx) * 0.55s + 0.15s);
 }
 
 .step-item.is-active .step-line {
   transform: scaleY(1);
-  transition-delay: calc(var(--step-idx) * 0.9s + 0.5s);
+  transition-delay: calc(var(--step-idx) * 0.55s + 0.32s);
 }
 </style>

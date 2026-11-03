@@ -14,7 +14,7 @@
           
           <div class="relative z-20 w-full bg-dark-card lg:bg-transparent rounded-3xl lg:rounded-none px-6 py-10 lg:px-12 lg:pb-12 lg:pt-16 text-white text-center lg:text-left flex flex-col items-center lg:items-start shadow-xl lg:shadow-none" :data-aos="isDesktop ? 'fade-up' : null">
             <h2 class="text-[24px] lg:text-[2.5rem] font-semibold mb-3 leading-tight">Who We Work With</h2>
-            <p class="text-white/80 mb-0 lg:mb-5 text-[13px] lg:text-[16px] lg:leading-snug max-w-sm lg:max-w-md mx-auto lg:mx-0">
+            <p class="text-white/80 mb-0 lg:mb-5 text-[16px] lg:text-[16px] lg:leading-snug max-w-sm lg:max-w-md mx-auto lg:mx-0">
               From a single company to an international group, we work across the structures and industries that make up the UAE economy.
             </p>
             
@@ -42,7 +42,7 @@
             </div>
             <!-- Description -->
             <p 
-              class="text-black text-[14px] lg:text-base lg:leading-snug mt-3 lg:mt-0"
+              class="text-black text-[16px] lg:text-base lg:leading-snug mt-3 lg:mt-0"
               :class="{'hidden lg:block': activeIndex !== index, 'block': activeIndex === index}"
             >
               {{ item.description }}
