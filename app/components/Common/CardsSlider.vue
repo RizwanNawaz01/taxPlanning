@@ -1,15 +1,19 @@
 <template>
   <section :id="sectionId" :class="['py-20 lg:py-28 bg-white', sectionClass]">
-    <div class="container px-7 xl:px-16 2xl:px-12">
+    <div class="container px-6 lg:px-8 xl:px-12 2xl:px-12">
       <!-- Header -->
       <div 
-        class="flex flex-col lg:flex-row justify-between items-start lg:items-end mb-12 lg:mb-16 gap-4 lg:gap-8" 
+        class="grid lg:grid-cols-2 gap-8 lg:gap-12 xl:gap-16 items-start mb-12 lg:mb-16" 
         data-aos="fade-up"
       >
-        <h2 class="text-4xl lg:text-5xl 2xl:text-6xl font-semibold text-primary" v-html="title"></h2>
-        <p v-if="description" class="text-black max-w-md text-base lg:text-lg leading-relaxed">
-          {{ description }}
-        </p>
+        <div class="lg:max-w-xl text-center lg:text-left">
+          <h2 class="text-4xl lg:text-5xl 2xl:text-6xl font-semibold text-primary leading-tight" v-html="title"></h2>
+        </div>
+        <div class="lg:pt-3 text-center lg:text-left">
+          <p v-if="description" class="text-[17px] xl:text-[20px] text-black leading-snug lg:max-w-lg xl:max-w-2xl">
+            {{ description }}
+          </p>
+        </div>
       </div>
 
       <!-- Slider / Grid Container -->
@@ -18,9 +22,13 @@
         <div 
           ref="sliderRef"
           :class="[
-            'flex gap-6 overflow-x-auto scroll-smooth no-scrollbar pb-4 -mx-4 px-4 sm:mx-0 sm:px-0 snap-x snap-mandatory lg:snap-none',
+            'flex gap-6 overflow-x-auto no-scrollbar pb-4 -mx-4 px-4 sm:mx-0 sm:px-0 snap-x snap-mandatory lg:snap-none',
             items.length <= 3 ? 'lg:grid lg:grid-cols-3 lg:overflow-visible lg:pb-0' : 'lg:flex'
           ]"
+          @mouseenter="pauseAutoplay"
+          @mouseleave="resumeAutoplay"
+          @touchstart="pauseAutoplay"
+          @touchend="resumeAutoplay"
         >
           <div 
             v-for="(card, index) in items" 
@@ -144,6 +152,10 @@ const sliderRef = ref(null)
 const canScrollPrev = ref(false)
 const canScrollNext = ref(true)
 
+let animationFrameId = null
+let isPaused = false
+let resumeTimeoutId = null
+
 const checkScroll = () => {
   if (sliderRef.value) {
     const { scrollLeft, scrollWidth, clientWidth } = sliderRef.value
@@ -152,21 +164,67 @@ const checkScroll = () => {
   }
 }
 
+const pauseAutoplay = () => {
+  isPaused = true
+  if (resumeTimeoutId) {
+    clearTimeout(resumeTimeoutId)
+    resumeTimeoutId = null
+  }
+}
+
+const resumeAutoplay = () => {
+  // If user interacted, resume after 30 seconds
+  if (resumeTimeoutId) clearTimeout(resumeTimeoutId)
+  resumeTimeoutId = setTimeout(() => {
+    isPaused = false
+  }, 15000)
+}
+
+// Gentle, slow continuous scroll
+const stepScroll = () => {
+  if (sliderRef.value && !isPaused && props.items.length > 3) {
+    const { scrollLeft, scrollWidth, clientWidth } = sliderRef.value
+    // If reached or near the end, wrap smoothly to start
+    if (scrollLeft + clientWidth >= scrollWidth - 2) {
+      sliderRef.value.scrollLeft = 0
+    } else {
+      // 0.6px per frame for a very gentle, subtle drift
+      sliderRef.value.scrollLeft += 0.6
+    }
+    checkScroll()
+  }
+  animationFrameId = requestAnimationFrame(stepScroll)
+}
+
+// Helper to get exact card width + gap for 1-by-1 stepping
+const getCardStep = () => {
+  if (!sliderRef.value) return 380
+  const firstCard = sliderRef.value.children[0]
+  const secondCard = sliderRef.value.children[1]
+  if (firstCard && secondCard) {
+    return secondCard.offsetLeft - firstCard.offsetLeft
+  }
+  return (firstCard ? firstCard.offsetWidth : 360) + 24
+}
+
+// On manual button click: scroll exactly one card and pause for 30 seconds
 const scrollPrev = () => {
   if (sliderRef.value && canScrollPrev.value) {
-    const card = sliderRef.value.firstElementChild
-    const scrollAmount = card ? card.offsetWidth + 24 : 380
-    sliderRef.value.scrollBy({ left: -scrollAmount, behavior: 'smooth' })
+    pauseAutoplay()
+    const step = getCardStep()
+    sliderRef.value.scrollBy({ left: -step, behavior: 'smooth' })
     setTimeout(checkScroll, 350)
+    resumeAutoplay() // will restart after 30s
   }
 }
 
 const scrollNext = () => {
   if (sliderRef.value && canScrollNext.value) {
-    const card = sliderRef.value.firstElementChild
-    const scrollAmount = card ? card.offsetWidth + 24 : 380
-    sliderRef.value.scrollBy({ left: scrollAmount, behavior: 'smooth' })
+    pauseAutoplay()
+    const step = getCardStep()
+    sliderRef.value.scrollBy({ left: step, behavior: 'smooth' })
     setTimeout(checkScroll, 350)
+    resumeAutoplay() // will restart after 30s
   }
 }
 
@@ -174,12 +232,19 @@ onMounted(() => {
   if (sliderRef.value) {
     sliderRef.value.addEventListener('scroll', checkScroll, { passive: true })
     checkScroll()
+    animationFrameId = requestAnimationFrame(stepScroll)
   }
 })
 
 onUnmounted(() => {
   if (sliderRef.value) {
     sliderRef.value.removeEventListener('scroll', checkScroll)
+  }
+  if (animationFrameId) {
+    cancelAnimationFrame(animationFrameId)
+  }
+  if (resumeTimeoutId) {
+    clearTimeout(resumeTimeoutId)
   }
 })
 </script>

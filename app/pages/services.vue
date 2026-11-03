@@ -17,9 +17,6 @@
 
     <!-- Strategic Advisory Numbered Cards Section -->
     <ServicesStrategicAdvisory />
-
-    <!-- Partner with Us using Reusable CommonPartner -->
-    <CommonPartner />
   </div>
 </template>
 

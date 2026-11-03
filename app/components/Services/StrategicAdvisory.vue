@@ -1,14 +1,17 @@
 <template>
-  <CommonNumberedCards
-    section-id="strategic-advisory"
-    title='Strategic <span class="text-lime-400">Advisory</span>'
-    description="Support for the decisions behind a transaction, a restructure, or a change in how your business is set up."
-    :items="advisoryItems"
-    section-class="lg:py-28"
-  >
-    <template #action>
-      <div class="text-center max-w-5xl mx-auto" data-aos="fade-up">
-        <p class="text-base lg:text-lg text-white/90 mb-6 leading-relaxed">
+  <div>
+    <CommonNumberedCards
+      section-id="strategic-advisory"
+      title='Strategic <span class="text-lime-400">Advisory</span>'
+      description="Support for the decisions behind a transaction, a restructure, or a change in how your business is set up."
+      :items="advisoryItems"
+      section-class="pt-20 pb-12 lg:pt-28 lg:pb-16"
+    />
+
+    <!-- Bottom CTA Section (White Area) -->
+    <section class="py-16 lg:py-24 bg-white text-center">
+      <div class="container px-6 lg:px-8 xl:px-12 2xl:px-12 max-w-4xl mx-auto" data-aos="fade-up">
+        <p class="text-lg lg:text-2xl text-black font-medium mb-8 leading-relaxed">
           Not sure which of these applies to you? Tell us where your business is, and we will point you in the right direction.
         </p>
         <Button 
@@ -23,8 +26,8 @@
       <Modal v-model="isModalOpen">
         <ContactForm title="Strategic Advisory Inquiry" buttonText="Book a Consultation" />
       </Modal>
-    </template>
-  </CommonNumberedCards>
+    </section>
+  </div>
 </template>
 
 <script setup>

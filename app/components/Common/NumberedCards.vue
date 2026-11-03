@@ -1,15 +1,19 @@
 <template>
   <section :id="sectionId" :class="['relative pt-20 pb-16 lg:pb-16 lg:py-24 bg-primary text-white overflow-hidden', sectionClass]">
-    <div class="container relative px-0 lg:px-8 xl:px-12 2xl:px-12">
+    <div class="container relative px-6 lg:px-8 xl:px-12 2xl:px-12">
       <!-- Header -->
       <div 
-        class="flex flex-col lg:flex-row justify-between items-center lg:items-center gap-4 lg:gap-12 2xl:gap-32 mb-10 lg:mb-16 text-center lg:text-left px-8 lg:px-0" 
+        class="grid lg:grid-cols-2 gap-8 lg:gap-12 xl:gap-16 items-start mb-10 lg:mb-16" 
         data-aos="fade-up"
       >
-        <h2 class="text-4xl lg:text-5xl 2xl:text-6xl font-semibold leading-tight" v-html="title"></h2>
-        <p v-if="description" class="text-[14px] lg:text-base xl:text-lg text-white max-w-sm lg:max-w-md mx-auto lg:mx-0 lg:leading-snug">
-          {{ description }}
-        </p>
+        <div class="lg:max-w-xl text-center lg:text-left">
+          <h2 class="text-4xl lg:text-5xl 2xl:text-6xl font-semibold leading-tight" v-html="title"></h2>
+        </div>
+        <div class="lg:pt-3 text-center lg:text-left">
+          <p v-if="description" class="text-[17px] xl:text-[20px] text-white leading-snug lg:max-w-lg xl:max-w-2xl">
+            {{ description }}
+          </p>
+        </div>
       </div>
 
       <!-- Slider / Grid Container -->
