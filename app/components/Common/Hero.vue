@@ -21,14 +21,19 @@
           v-html="title"
         ></h1>
 
-        <p 
+        <div 
           v-if="description"   
-          class="text-base md:text-lg lg:text-xl xl:text-xl text-white mb-8 max-w-72 md:max-w-lg lg:max-w-lg" 
+          class="text-base md:text-lg lg:text-xl xl:text-xl text-white mb-8 max-w-72 md:max-w-lg lg:max-w-lg space-y-4" 
           data-aos="blur-in" 
           data-aos-delay="200"
         >
-          {{ description }}
-        </p>
+          <template v-if="Array.isArray(description)">
+            <p v-for="(para, index) in description" :key="index">
+              {{ para }}
+            </p>
+          </template>
+          <p v-else v-html="description"></p>
+        </div>
 
         <!-- Actions / Button -->
         <slot name="actions">
@@ -71,7 +76,7 @@ const props = defineProps({
     required: true
   },
   description: {
-    type: String,
+    type: [String, Array],
     default: ''
   },
   button: {
