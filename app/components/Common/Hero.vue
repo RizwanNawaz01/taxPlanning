@@ -33,7 +33,11 @@
         <!-- Actions / Button -->
         <slot name="actions">
           <div v-if="button?.text" data-aos="blur-in" data-aos-delay="400">
-            <Button :to="button.link || '#'" :variant="button.variant || 'primary'">
+            <Button 
+              :to="button.link && !button.action ? button.link : undefined" 
+              :variant="button.variant || 'primary'"
+              @click="button.action ? button.action() : $emit('clickButton')"
+            >
               {{ button.text }}
             </Button>
           </div>
@@ -107,6 +111,7 @@ useHead(() => ({
     ...(props.bgImage ? [{ rel: 'preload', as: 'image', href: props.bgImage, media: '(min-width: 1024px)' }] : [])
   ]
 }))
+defineEmits(['clickButton'])
 </script>
 
 <style scoped>

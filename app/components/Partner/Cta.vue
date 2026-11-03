@@ -9,7 +9,7 @@
           variant="dark"
           @click="$emit('openConsultation')"
         >
-          Book a Consultation
+          Let's Talk Partnership
         </Button>
       </div>
     </div>

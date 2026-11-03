@@ -3,8 +3,9 @@
     <!-- Hero Section using Reusable CommonHero -->
     <CommonHero
       title="Partner with us"
-      description="We work alongside advisers whose clients face the same kind of tax questions we specialise in."
-      :button="{ text: 'Explore Our Tax Services', link: '/services', variant: 'primary' }"
+      description="When your clients need specialist tax advice, we work alongside you to help them navigate UAE tax compliance and understand the tax implications of their business decisions. We partner with lawyers, accountants, auditors, corporate advisers, private bankers and wealth managers."
+      :button="{ text: 'Become a Partner', variant: 'primary' }"
+      @clickButton="isModalOpen = true"
       bg-image="/Partner/hero.webp"
       bg-mobile-image="/Partner/hero-mobile.webp"
       form-title="Let's Discuss Your Tax Needs"
