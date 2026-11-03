@@ -44,7 +44,7 @@
 
     <!-- Modal Popup for Contact Form -->
     <Modal v-model="isModalOpen">
-      <ContactForm title="How We Work" buttonText="Book a Consultation" />
+      <ContactForm title="How We Work" buttonText="Become a partner" />
     </Modal>
   </section>
 </template>

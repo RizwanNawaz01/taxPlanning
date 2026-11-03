@@ -111,7 +111,7 @@ defineProps({
   },
   buttonText: {
     type: String,
-    default: "Book a Consultation"
+    default: "Become a partner"
   }
 })
 

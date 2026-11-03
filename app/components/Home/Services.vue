@@ -11,7 +11,7 @@ const services = [
   {
     title: 'Tax & Compliance',
     description: 'VAT Registration and Filing, VAT Deregistration, Corporate Tax Registration and Filing, Corporate Tax Deregistration, Tax Residency Certificates, Accounting and Bookkeeping, Financial Reporting, Audit, AML Compliance, and Payroll.',
-    link: '#',
+    link: '/services#tax-compliance',
     linkText: 'Learn more',
     cardClass: 'bg-primary text-white',
     descClass: 'text-white/80',
@@ -21,7 +21,7 @@ const services = [
   {
     title: 'Strategic Advisory',
     description: 'International Tax Planning, Residence and Domicile <br class="hidden lg:block">advice, Corporate Tax and Substance, Corporate Tax Consultation, and tax advisory for structuring and  <br class="hidden lg:block">transactions.',
-    link: '#',
+    link: '/services#strategic-advisory',
     linkText: 'Learn more',
     cardClass: 'bg-surface-muted text-primary',
     descClass: 'text-slate-600',

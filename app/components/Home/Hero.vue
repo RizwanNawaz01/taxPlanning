@@ -8,6 +8,7 @@
     :form-title="formContent.title"
     :form-button-text="formContent.buttonText"
     :show-form="false"
+    
   />
 </template>
 
@@ -19,7 +20,7 @@ const heroContent = {
   description: 'We help UAE businesses manage their tax obligations from registration and filing through to questions around growth and structure.',
   button: {
     text: 'Explore Our Tax Services',
-    link: '#services'
+    link: '/services'
   }
 }
 

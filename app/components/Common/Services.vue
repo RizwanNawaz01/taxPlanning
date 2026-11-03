@@ -47,7 +47,8 @@
             ></p>
             
             <Button 
-              @click.prevent="openContactModal(service)" 
+              :to="service.link && service.link !== '#' ? service.link : undefined"
+              @click="(!service.link || service.link === '#') ? openContactModal(service) : undefined" 
               size="sm"
               class="card-btn lg:text-[15px] lg:px-8 lg:py-2"
             >
