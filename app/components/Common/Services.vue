@@ -1,12 +1,14 @@
 <template>
   <section :id="sectionId" :class="['py-12 lg:py-24', bgClass]">
-    <div class="container px-3 sm:px-6 lg:px-8 xl:px-12 2xl:px-12">
+    <div class="container px-6 lg:px-8 xl:px-12 2xl:px-12">
       <!-- Section Header -->
-      <div class="flex flex-col lg:flex-row justify-between items-start lg:items-end mb-8 lg:mb-16 gap-3 lg:gap-6 px-2 sm:px-0" data-aos="fade-up">
+      <div class="grid lg:grid-cols-2 gap-8 lg:gap-12 xl:gap-16 items-end mb-8 lg:mb-16" data-aos="fade-up">
         <h2 class="text-4xl lg:text-5xl 2xl:text-6xl font-semibold text-primary" v-html="title"></h2>
-        <p v-if="description" class="text-black max-w-md text-[17px] lg:text-lg xl:text-lg leading-snug lg:leading-snug xl:leading-snug">
-          {{ description }}
-        </p>
+        <div class="lg:max-w-lg xl:max-w-2xl">
+          <p v-if="description" class="text-black text-[17px] xl:text-[20px] leading-snug">
+            {{ description }}
+          </p>
+        </div>
       </div>
 
       <!-- Services Cards Grid -->

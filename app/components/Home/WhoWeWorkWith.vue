@@ -12,7 +12,7 @@
           <!-- Background Shape (Desktop) -->
           <div class="hidden lg:block absolute top-0 bottom-0 right-[-1rem] lg:right-0 w-[150vw] bg-primary rounded-r-[3rem] lg:rounded-tr-[10rem] lg:rounded-br-[10rem] z-0"></div>
           
-          <div class="relative z-20 w-full bg-dark-card lg:bg-transparent rounded-3xl lg:rounded-none px-6 py-10 lg:px-12 lg:pb-12 lg:pt-16 text-white text-center lg:text-left flex flex-col items-center lg:items-start shadow-xl lg:shadow-none" data-aos="fade-up">
+          <div class="relative z-20 w-full bg-dark-card lg:bg-transparent rounded-3xl lg:rounded-none px-6 py-10 lg:px-12 lg:pb-12 lg:pt-16 text-white text-center lg:text-left flex flex-col items-center lg:items-start shadow-xl lg:shadow-none">
             <h2 class="text-[24px] lg:text-[2.5rem] font-semibold mb-3 leading-tight">Who We Work With</h2>
             <p class="text-white/80 mb-0 lg:mb-5 text-[16px] lg:text-[16px] lg:leading-snug max-w-sm lg:max-w-md mx-auto lg:mx-0">
               From a single company to an international group, we work across the structures and industries that make up the UAE economy.

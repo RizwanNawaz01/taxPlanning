@@ -19,8 +19,8 @@
         </div>
       </div>
       <div class="text-center">
-        <Button to="/packages" variant="light" size="lg">
-          Discover our Packages
+        <Button to="/contact" variant="light" size="lg">
+          Contact Us
         </Button>
       </div>
     </div>
