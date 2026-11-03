@@ -85,14 +85,7 @@
         </div>
       </div>
     </section>
-
-    <!-- Partner with Us Section (Reusable Component matching mockups) -->
-    <CommonPartner
-      title="Partner with Us"
-      description="For lawyers, accountants, auditors, corporate advisers, private bankers, and wealth managers with clients who need tax expertise."
-      button-text="Book a Consultation"
-      bg-class="bg-[#F5F5F5]"
-    />
+ 
   </div>
 </template>
 
