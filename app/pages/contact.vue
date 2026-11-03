@@ -9,6 +9,7 @@
       description="For lawyers, accountants, auditors, corporate advisers, private bankers, and wealth managers with clients who need tax expertise."
       button-text="Learn more"
       bg-class="bg-[#F4F5F7]"
+      :buttonTo="'/partner'"
     />
   </div>
 </template>

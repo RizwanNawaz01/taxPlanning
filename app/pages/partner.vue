@@ -9,6 +9,7 @@
       bg-mobile-image="/Partner/hero-mobile.webp"
       form-title="Let's Discuss Your Tax Needs"
       form-button-text="Book a Consultation"
+      :show-form="false"
     />
 
     <!-- Alternating Partner Blocks Section -->
