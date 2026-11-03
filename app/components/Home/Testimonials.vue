@@ -1,13 +1,20 @@
 <template>
-  <section id="testimonials" class="lg:py-24 py-16 bg-[#F4F4F4] overflow-hidden">
+  <section id="testimonials" class="lg:py-24 py-16 relative overflow-hidden bg-dark text-white">
+    <!-- Review Background Image (more visible) -->
+    <div 
+      class="absolute inset-0 bg-cover bg-center opacity-70 pointer-events-none"
+      style="background-image: url('/Home/review-bg.webp');"
+    ></div>
+    <!-- Lighter footer color tint (#0B121A) so the background image shows through clearly -->
+    <div class="absolute inset-0 bg-gradient-to-b from-dark/50 via-dark/40 to-dark/65 pointer-events-none"></div>
     <!-- Header container (stays aligned with page container) -->
-    <div class="container mx-auto px-6 lg:px-8 xl:px-12 2xl:px-12">
+    <div class="container mx-auto px-6 lg:px-8 xl:px-12 2xl:px-12 relative z-10">
       <!-- Section Header -->
       <div class="mb-12 lg:mb-16 max-w-3xl" data-aos="blur-in">
-        <h2 class="text-4xl lg:text-5xl 2xl:text-5xl font-semibold text-primary mb-4">
+        <h2 class="text-4xl lg:text-5xl 2xl:text-5xl font-semibold text-white mb-4">
           Trust, earned over time
         </h2>
-        <p class="text-[17px] 2xl:text-[20px] text-black">
+        <p class="text-[17px] 2xl:text-[20px] text-white/80">
           What founders and financial leaders say about working with our tax advisory team.
         </p>
       </div>
@@ -82,10 +89,10 @@
           @click="scrollPrev"
           :disabled="!canScrollPrev"
           aria-label="Previous slide"
-          class="w-11 h-11 lg:w-12 lg:h-12 rounded-full border border-gray-200 flex items-center justify-center transition-all duration-200 focus:outline-none"
+          class="w-11 h-11 lg:w-12 lg:h-12 rounded-full border flex items-center justify-center transition-all duration-200 focus:outline-none"
           :class="canScrollPrev
-            ? 'bg-[#EAEAEA] text-black hover:bg-[#dedede] cursor-pointer'
-            : 'bg-white text-black/40 opacity-50 cursor-not-allowed'"
+            ? 'bg-white text-dark border-white hover:bg-lime-400 hover:border-lime-400 hover:text-dark shadow-md cursor-pointer'
+            : 'bg-white/10 text-white/30 border-white/10 cursor-not-allowed'"
         >
           <svg class="w-[20px] h-[12px] lg:w-[22px] lg:h-[13px]" viewBox="0 0 26 15" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M25.274 7.36401L25.274 8.36401L1.00004 8.36401L1.00004 7.36401L1.00004 6.36401L25.274 6.36401L25.274 7.36401ZM0.292929 8.07112C-0.0975952 7.68059 -0.0975952 7.04743 0.292929 6.6569L6.65689 0.292944C7.04742 -0.0975801 7.68058 -0.0975801 8.0711 0.292944C8.46163 0.683469 8.46163 1.31663 8.0711 1.70716L2.41425 7.36401L8.0711 13.0209C8.46163 13.4114 8.46163 14.0446 8.0711 14.4351C7.68058 14.8256 7.04741 14.8256 6.65689 14.4351L0.292929 8.07112Z" fill="currentColor"/>
@@ -95,10 +102,10 @@
           @click="scrollNext"
           :disabled="!canScrollNext"
           aria-label="Next slide"
-          class="w-11 h-11 lg:w-12 lg:h-12 rounded-full border border-gray-200 flex items-center justify-center transition-all duration-200 focus:outline-none"
+          class="w-11 h-11 lg:w-12 lg:h-12 rounded-full border flex items-center justify-center transition-all duration-200 focus:outline-none"
           :class="canScrollNext
-            ? 'bg-[#EAEAEA] text-black hover:bg-[#dedede] cursor-pointer'
-            : 'bg-white text-black/40 opacity-50 cursor-not-allowed'"
+            ? 'bg-white text-dark border-white hover:bg-lime-400 hover:border-lime-400 hover:text-dark shadow-md cursor-pointer'
+            : 'bg-white/10 text-white/30 border-white/10 cursor-not-allowed'"
         >
           <svg class="w-[20px] h-[12px] lg:w-[22px] lg:h-[13px]" viewBox="0 0 26 15" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M0 7.36401L8.74227e-08 8.36401L24.274 8.36401L24.274 7.36401L24.274 6.36401L-8.74227e-08 6.36401L0 7.36401ZM24.9811 8.07112C25.3716 7.68059 25.3716 7.04743 24.9811 6.6569L18.6172 0.292944C18.2266 -0.0975801 17.5935 -0.0975801 17.2029 0.292944C16.8124 0.683469 16.8124 1.31663 17.2029 1.70716L22.8598 7.36401L17.2029 13.0209C16.8124 13.4114 16.8124 14.0446 17.2029 14.4351C17.5935 14.8256 18.2266 14.8256 18.6172 14.4351L24.9811 8.07112Z" fill="currentColor"/>
