@@ -2,19 +2,24 @@
   <footer class="bg-dark text-white pt-12 lg:pt-28 pb-8">
     <div class="container mx-auto px-8 lg:px-10 xl:px-16">
       <!-- Logo Row -->
-      <div class="flex items-center gap-10 lg:gap-3 mb-10 lg:mb-20">
-        <NuxtLink to="/">
-          <NuxtImg :src="companyInfo.logo.src" :alt="companyInfo.logo.alt" class="h-8 lg:h-12 w-auto" />
-        </NuxtLink>
-        <NuxtImg src="/footer-logo-arrow.webp" alt="" class="h-10 lg:h-8 w-auto lg:hidden" />
+      <div class="flex flex-col items-start mb-8 lg:mb-14">
+        <div class="flex items-center gap-10 lg:gap-3">
+          <NuxtLink to="/">
+            <NuxtImg :src="companyInfo.logo.src" :alt="companyInfo.logo.alt" class="h-8 lg:h-12 w-auto" />
+          </NuxtLink>
+          <NuxtImg src="/footer-logo-arrow.webp" alt="" class="h-10 lg:h-8 w-auto lg:hidden" />
+        </div>
+        <span class="text-white/80 text-sm lg:text-base font-medium mt-2">
+          An InZone company.
+        </span>
       </div>
 
       <!-- Desktop / Main Links Grid (3 Sections) -->
       <div class="hidden lg:grid lg:grid-cols-3 gap-8 xl:gap-28 mb-32">
-        <!-- Section 1: Helping text with white color -->
+        <!-- Section 1: Helping text -->
         <div class="text-white text-[13px] lg:text-lg xl:text-lg">
-          <p class="text-white font-normal leading-relaxed">
-            Helping UAE businesses stay on top of their accounting, tax and compliance obligations. An InZone company.
+          <p class="text-white font-normal leading-relaxed max-w-sm">
+            Helping UAE businesses stay on top of their accounting, tax and compliance obligations.
           </p>
         </div>
 
@@ -92,7 +97,7 @@
         <!-- Brand Description (Mobile) -->
         <div class="text-white text-base">
           <p class="text-white font-normal leading-relaxed">
-            Helping UAE businesses stay on top of their accounting, tax and compliance obligations. An InZone company.
+            Helping UAE businesses stay on top of their accounting, tax and compliance obligations.
           </p>
         </div>
 
