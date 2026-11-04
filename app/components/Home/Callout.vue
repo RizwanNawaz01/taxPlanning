@@ -17,7 +17,7 @@
     </div>
     <!-- Modal Popup for Contact Form -->
     <Modal v-model="isModalOpen">
-      <ContactForm title="Book a Consultation " buttonText="Become a partner" />
+      <ContactForm title="Book a Consultation " buttonText="Book a Consultation" />
     </Modal>
   </section>
 </template>

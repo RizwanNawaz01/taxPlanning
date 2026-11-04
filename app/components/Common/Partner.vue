@@ -57,7 +57,7 @@ defineProps({
   },
   modalButtonText: {
     type: String,
-    default: 'Submit Inquiry'
+    default: 'Become a Partner'
   },
   bgClass: {
     type: String,

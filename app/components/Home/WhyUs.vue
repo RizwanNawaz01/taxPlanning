@@ -5,7 +5,7 @@
     description="Tax advice should make the path forward easier to understand. We bring the filing, the structure and the decision into one conversation."
     :items="items"
     button-text="Explore Our Services"
-    button-link="#services"
+    button-link="/services"
   />
 </template>
 

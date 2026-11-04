@@ -9,7 +9,7 @@
       bg-image="/Partner/hero.webp"
       bg-mobile-image="/Partner/hero-mobile.webp"
       form-title="Let's Discuss Your Tax Needs"
-      form-button-text="Become a partner"
+      form-button-text="Become a Partner"
       :show-form="false"
     />
 
@@ -21,7 +21,7 @@
 
     <!-- Interactive Contact Modal -->
     <Modal v-model="isModalOpen">
-      <ContactForm title="Partner with Us" buttonText="Become a partner" />
+      <ContactForm title="Partner with Us" buttonText="Become a Partner" />
     </Modal>
   </div>
 </template>
